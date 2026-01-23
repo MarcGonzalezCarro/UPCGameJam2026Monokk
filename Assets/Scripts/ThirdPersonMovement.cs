@@ -8,11 +8,13 @@ public class ThirdPersonMovement : MonoBehaviour
     public Transform cameraTransform;
 
     private CharacterController controller;
+    public Animator animator;
     private Vector3 velocity;
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        
     }
 
     void Update()
@@ -32,10 +34,20 @@ public class ThirdPersonMovement : MonoBehaviour
 
         Vector3 moveDirection = camForward * vertical + camRight * horizontal;
 
-        // Mover solo la posición (sin rotar)
+
         controller.Move(moveDirection * speed * Time.deltaTime);
 
-        // Gravedad
+        bool isMoving = moveDirection.magnitude > 0.1f;
+        animator.SetBool("isMoving", isMoving);
+
+        
+        if (horizontal != 0)
+        {
+            bool facingRight = horizontal > 0;
+            animator.SetBool("FacingR", facingRight);
+        }
+
+        
         if (controller.isGrounded && velocity.y < 0)
             velocity.y = -2f;
 

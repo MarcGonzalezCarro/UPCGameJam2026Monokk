@@ -22,10 +22,10 @@ public class ThirdPersonCamera : MonoBehaviour
     void LateUpdate()
     {
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        //float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
         rotationY += mouseX;
-        rotationX -= mouseY;
+        //rotationX -= mouseY;
         rotationX = Mathf.Clamp(rotationX, minY, maxY);
 
         Quaternion rotation = Quaternion.Euler(rotationX, rotationY, 0);
