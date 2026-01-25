@@ -14,5 +14,10 @@ public class FaceItemsPanel : MonoBehaviour
             var item = Instantiate(itemPrefab, gridParent);
             item.Init(data, previewController);
         }
+
+        DialogueManager.Instance.LoadDialogueFile("perro_inicio.json");
+
+        var line = DialogueManager.Instance.GetLine("perro_01");
+        Debug.Log(line != null ? line.texto : "NO SE ENCONTRÓ EL DIÁLOGO");
     }
 }

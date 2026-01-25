@@ -1,0 +1,27 @@
+{
+  "escena": "mision_pez",
+  "dialogos": [
+    {
+      "id": "maca_inicio",
+      "personaje": "MACA",
+      "texto": "PROTA, encuentra a DUEÑO y te diré lo que sé.",
+      "accion": "activar_busqueda_dueno"
+    },
+    {
+      "id": "maca_sin_dibujos",
+      "personaje": "MACA",
+      "texto": "¿No los tienes? Quiero volver a mi pecera…"
+    },
+    {
+      "id": "maca_dibujos_mal",
+      "personaje": "MACA",
+      "texto": "No reconozco a nadie."
+    },
+    {
+      "id": "maca_dibujos_bien",
+      "personaje": "MACA",
+      "texto": "¡DUEÑO! ¡Es él!",
+      "accion": "dar_boca_dueña"
+    }
+  ]
+}

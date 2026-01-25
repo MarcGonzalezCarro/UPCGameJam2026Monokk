@@ -1,0 +1,39 @@
+{
+  "escena": "mision_kokopilis",
+  "dialogos": [
+    {
+      "id": "coco_inicio_01",
+      "personaje": "COCO",
+      "texto": "Ey, PROTA…"
+    },
+    {
+      "id": "coco_inicio_02",
+      "personaje": "COCO",
+      "texto": "¡He sido víctima de un robo! ¡Mis kokopilis!",
+      "accion": "activar_mision_kokopilis"
+    },
+    {
+      "id": "coco_puzle_intro",
+      "personaje": "NARRADOR",
+      "texto": "Durante el tiempo establecido deberás petar las burbujas negras.",
+      "accion": "activar_puzle_memoria"
+    },
+    {
+      "id": "coco_puzle_fallo",
+      "personaje": "COCO",
+      "texto": "No… No recuerdo nada."
+    },
+    {
+      "id": "coco_puzle_exito",
+      "personaje": "COCO",
+      "texto": "¡Ya está! ¡Ya me acuerdo!",
+      "accion": "activar_dibujo_ladron"
+    },
+    {
+      "id": "coco_final",
+      "personaje": "COCO",
+      "texto": "¡Es él! ¡El ladrón!",
+      "accion": "dar_pista_dueña"
+    }
+  ]
+}

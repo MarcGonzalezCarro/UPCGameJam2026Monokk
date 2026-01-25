@@ -1,0 +1,33 @@
+{
+  "escena": "mision_hogar",
+  "dialogos": [
+    {
+      "id": "gato_inicio_01",
+      "personaje": "GATO",
+      "texto": "¡PROTA!"
+    },
+    {
+      "id": "gato_inicio_02",
+      "personaje": "GATO",
+      "texto": "Te la describo a cambio de que encuentres mi casa, ¿trato?",
+      "accion": "activar_mision_gato"
+    },
+    {
+      "id": "gato_falta_caras",
+      "personaje": "GATO",
+      "texto": "Te falta algo, ¿no?",
+      "condicion": "caras_dueños < 3"
+    },
+    {
+      "id": "gato_cara_mal",
+      "personaje": "GATO",
+      "texto": "No me suena ninguno. Sigue intentándolo."
+    },
+    {
+      "id": "gato_cara_bien",
+      "personaje": "GATO",
+      "texto": "¡Espléndido! Le va a encantar.",
+      "accion": "dar_pista_dueña"
+    }
+  ]
+}

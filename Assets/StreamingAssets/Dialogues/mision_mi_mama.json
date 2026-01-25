@@ -1,0 +1,31 @@
+{
+  "escena": "final",
+  "dialogos": [
+    {
+      "id": "final_inicio",
+      "personaje": "PROTA",
+      "texto": "Vale, voy a abrir la libreta para dibujarla de una vez por todas.",
+      "accion": "activar_puzle_final"
+    },
+    {
+      "id": "final_fallo",
+      "personaje": "PROTA",
+      "texto": "No… Así no era DUEÑA… Era más bonita."
+    },
+    {
+      "id": "final_exito",
+      "personaje": "PROTA",
+      "texto": "¡DUEÑA!"
+    },
+    {
+      "id": "final_perro",
+      "personaje": "PERRO",
+      "texto": "Creo que lo sabes, PROTA."
+    },
+    {
+      "id": "final_cierre",
+      "personaje": "PROTA",
+      "texto": "…"
+    }
+  ]
+}

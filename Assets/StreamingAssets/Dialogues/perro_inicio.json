@@ -1,0 +1,81 @@
+{
+  "escena": "perro_inicio",
+  "dialogos": [
+    {
+      "id": "perro_01",
+      "personaje": "PERRO",
+      "texto": "Hola, PROTA, hace buen día, ¿no?",
+      "siguiente": "perro_02"
+    },
+    {
+      "id": "perro_02",
+      "personaje": "PROTA",
+      "texto": "Hola PERRO, sí, es el tiempo perfecto para olisquear traseros y buscar huesos.",
+      "siguiente": "perro_03"
+    },
+    {
+      "id": "perro_03",
+      "personaje": "PERRO",
+      "texto": "¡Totalmente! Creo que hasta cavaré algún agujero. Ah…! ¿Qué es eso que llevas allí?",
+      "siguiente": "perro_04"
+    },
+    {
+      "id": "perro_04",
+      "personaje": "PROTA",
+      "texto": "¿Mm? ¿La libreta?"
+    },
+    {
+      "id": "perro_05",
+      "personaje": "PERRO",
+      "texto": "*Asiente*"
+    },
+    {
+      "id": "perro_06",
+      "personaje": "PROTA",
+      "texto": "Es de DUEÑA. Supongo que la usa para dibujar gente, tiene algunos bocetos empezados."
+    },
+    {
+      "id": "perro_07",
+      "personaje": "PERRO",
+      "texto": "¿Has probado de hacerlo?"
+    },
+    {
+      "id": "perro_08",
+      "personaje": "PERRO",
+      "texto": "Dibujar retratos. Quizás es tu talento oculto."
+    },
+    {
+      "id": "perro_09",
+      "personaje": "PERRO",
+      "texto": "Inténtalo, seguro que se te da mejor de lo que piensas.",
+      "accion": "abrir_libreta"
+    },
+    {
+      "id": "libreta_abierta_01",
+      "personaje": "PERRO",
+      "texto": "Mira, tiene algunos bocetos de partes de la cara. Prueba de usarlos para dibujar algo propio."
+    },
+    {
+      "id": "libreta_abierta_02",
+      "personaje": "NARRACIÓN",
+      "texto": "Clica las partes de la cara para crear tu propio rostro.",
+      "accion": "activar_puzle_dibujo"
+    },
+    {
+      "id": "libreta_exito",
+      "personaje": "PERRO",
+      "texto": "¡Has nacido para esto, PROTA!"
+    },
+    {
+      "id": "libreta_cierre_01",
+      "personaje": "PROTA",
+      "texto": "No. De DUEÑA. No recuerdo su cara."
+    },
+    {
+      "id": "libreta_cierre_02",
+      "personaje": "PERRO",
+      "texto": "Seguro que alguien sabrá algo de su cara. ¿Por qué no vas a preguntar a los demás?",
+      "accion": "activar_mision_hogar"
+    }
+  ]
+}
