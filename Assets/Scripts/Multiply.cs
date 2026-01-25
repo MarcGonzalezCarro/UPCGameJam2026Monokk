@@ -1,0 +1,71 @@
+
+
+using UnityEngine;
+
+public class Multiply : MonoBehaviour
+{
+    public GameObject prefab;
+    public float time;
+    public float interval;
+    public Canvas canvas;
+    public float finalTime = 10.0f;
+    public float startTime;
+    public bool isActive = true;
+
+    void Start()
+    {
+        startTime = Time.time;
+        time = Time.time;
+    }
+
+
+    void Update()
+    {
+      
+        if(Time.time - startTime >= finalTime)
+        {
+            isActive = false;
+            return;
+        }
+        if (!isActive)
+        {
+            return;
+        }
+        float timeNow = Time.time;
+
+        if (timeNow - time >= interval && isActive)
+        {
+            RectTransform canvasRect = canvas.GetComponent<RectTransform>();
+         
+
+
+            float x = Random.Range(
+            -canvasRect.rect.width / 2,
+            canvasRect.rect.width / 2
+            );
+
+
+            float y = Random.Range(
+            -canvasRect.rect.height / 2,
+            canvasRect.rect.height / 2
+            );
+
+
+            // Instantiate UNDER the canvas
+            GameObject button = Instantiate(prefab, canvas.transform);
+
+
+            // Position using RectTransform
+            RectTransform buttonRect = button.GetComponent<RectTransform>();
+            buttonRect.anchoredPosition = new Vector2(x, y);
+
+            if(!button.activeSelf && isActive)
+            {
+                button.SetActive(true);
+            }
+
+            time = Time.time;
+        }
+
+    }
+}
