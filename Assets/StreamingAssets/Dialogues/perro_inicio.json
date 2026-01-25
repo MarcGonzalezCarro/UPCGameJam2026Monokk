@@ -1,5 +1,19 @@
 {
-  "escena": "perro_inicio",
+  "escena": "exterior",
+  "conversaciones": [
+    {
+      "id": "conv_1",
+      "inicio": "perro_01"
+    },
+    {
+      "id": "conv_libreta_abierta",
+      "inicio": "perro_libreta_01"
+    },
+    {
+      "id": "conv_no_recuerda",
+      "inicio": "perro_no_recuerda_01"
+    }
+  ],
   "dialogos": [
     {
       "id": "perro_01",
@@ -22,60 +36,131 @@
     {
       "id": "perro_04",
       "personaje": "PROTA",
-      "texto": "¿Mm? ¿La libreta?"
+      "texto": "¿Mm? ¿La libreta?",
+      "siguiente": "perro_05"
     },
     {
       "id": "perro_05",
       "personaje": "PERRO",
-      "texto": "*Asiente*"
+      "texto": "*Asiente*",
+      "siguiente": "perro_06"
     },
     {
       "id": "perro_06",
       "personaje": "PROTA",
-      "texto": "Es de DUEÑA. Supongo que la usa para dibujar gente, tiene algunos bocetos empezados."
+      "texto": "Es de DUEÑA. Supongo que la usa para dibujar gente, tiene algunos bocetos empezados.",
+      "siguiente": "perro_07"
     },
     {
       "id": "perro_07",
       "personaje": "PERRO",
-      "texto": "¿Has probado de hacerlo?"
+      "texto": "¿Has probado de hacerlo?",
+      "siguiente": "perro_08"
     },
     {
       "id": "perro_08",
-      "personaje": "PERRO",
-      "texto": "Dibujar retratos. Quizás es tu talento oculto."
+      "personaje": "PROTA",
+      "texto": "¿El qué?",
+      "siguiente": "perro_09"
     },
     {
       "id": "perro_09",
       "personaje": "PERRO",
+      "texto": "Dibujar retratos. Quizás es tu talento oculto.",
+      "siguiente": "perro_10"
+    },
+    {
+      "id": "perro_10",
+      "personaje": "PROTA",
+      "texto": "No creo-",
+      "siguiente": "perro_11"
+    },
+    {
+      "id": "perro_11",
+      "personaje": "PERRO",
       "texto": "Inténtalo, seguro que se te da mejor de lo que piensas.",
       "accion": "abrir_libreta"
     },
+
     {
-      "id": "libreta_abierta_01",
+      "id": "perro_libreta_01",
       "personaje": "PERRO",
-      "texto": "Mira, tiene algunos bocetos de partes de la cara. Prueba de usarlos para dibujar algo propio."
+      "texto": "Mira, tiene algunos bocetos de partes de la cara. Prueba de usarlos para dibujar algo propio.",
+      "siguiente": "perro_libreta_02"
     },
     {
-      "id": "libreta_abierta_02",
+      "id": "perro_libreta_02",
       "personaje": "NARRACIÓN",
       "texto": "Clica las partes de la cara para crear tu propio rostro.",
       "accion": "activar_puzle_dibujo"
     },
+
     {
-      "id": "libreta_exito",
+      "id": "perro_exito_01",
       "personaje": "PERRO",
-      "texto": "¡Has nacido para esto, PROTA!"
+      "texto": "¡Has nacido para esto, PROTA!",
+      "siguiente": "perro_exito_02"
     },
     {
-      "id": "libreta_cierre_01",
+      "id": "perro_exito_02",
       "personaje": "PROTA",
-      "texto": "No. De DUEÑA. No recuerdo su cara."
+      "texto": "Es bastante fácil en verdad…",
+      "siguiente": "perro_exito_03"
     },
     {
-      "id": "libreta_cierre_02",
+      "id": "perro_exito_03",
       "personaje": "PERRO",
-      "texto": "Seguro que alguien sabrá algo de su cara. ¿Por qué no vas a preguntar a los demás?",
-      "accion": "activar_mision_hogar"
+      "texto": "Intenta dibujar a DUEÑA, seguro que le hace mucha ilusión.",
+      "siguiente": "perro_exito_04"
+    },
+    {
+      "id": "perro_exito_04",
+      "personaje": "PROTA",
+      "texto": "¡De acuerdo!"
+    },
+
+    {
+      "id": "perro_no_recuerda_01",
+      "personaje": "PROTA",
+      "texto": "…",
+      "siguiente": "perro_no_recuerda_02"
+    },
+    {
+      "id": "perro_no_recuerda_02",
+      "personaje": "PERRO",
+      "texto": "¿Pasa algo?",
+      "siguiente": "perro_no_recuerda_03"
+    },
+    {
+      "id": "perro_no_recuerda_03",
+      "personaje": "PROTA",
+      "texto": "No me acuerdo.",
+      "siguiente": "perro_no_recuerda_04"
+    },
+    {
+      "id": "perro_no_recuerda_04",
+      "personaje": "PERRO",
+      "texto": "¿De si te pasa algo? Yo creo que es bastante sencillo en real-",
+      "siguiente": "perro_no_recuerda_05"
+    },
+    {
+      "id": "perro_no_recuerda_05",
+      "personaje": "PROTA",
+      "texto": "No. De DUEÑA. No recuerdo su cara. Y ya sabes como es, no se toma fotos, así que…",
+      "siguiente": "perro_no_recuerda_06"
+    },
+    {
+      "id": "perro_no_recuerda_06",
+      "personaje": "PERRO",
+      "texto": "Tranquilo PROTA. Seguro que alguien sabrá algo de su cara, ¿por qué no vas a preguntar a los demás? Así te calmas.",
+      "siguiente": "perro_no_recuerda_07"
+    },
+    {
+      "id": "perro_no_recuerda_07",
+      "personaje": "PROTA",
+      "texto": "Supongo…",
+      "accion": "activar_mision_buscar_cara"
     }
   ]
 }
+

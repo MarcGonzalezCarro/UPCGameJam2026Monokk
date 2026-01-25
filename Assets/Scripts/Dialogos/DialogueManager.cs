@@ -6,13 +6,15 @@ public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance;
 
-    private Dictionary<string, DialogueLine> dialogues =
-        new Dictionary<string, DialogueLine>();
+    private Dictionary<string, DialogueLine> dialogos = new();
+    private Dictionary<string, Conversacion> conversaciones = new();
 
     void Awake()
     {
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
     }
 
     public void LoadDialogueFile(string fileName)
@@ -32,17 +34,34 @@ public class DialogueManager : MonoBehaviour
         string json = File.ReadAllText(path);
         DialogueData data = JsonUtility.FromJson<DialogueData>(json);
 
-        dialogues.Clear();
-        foreach (var line in data.dialogos)
-        {
-            dialogues[line.id] = line;
-        }
+        dialogos.Clear();
+        conversaciones.Clear();
 
-        Debug.Log("Diálogos cargados: " + dialogues.Count);
+        foreach (var d in data.dialogos)
+            dialogos[d.id] = d;
+
+        foreach (var c in data.conversaciones)
+            conversaciones[c.id] = c;
+
+        //Debug.Log("Diálogos: " + dialogos.Count);
+        //Debug.Log("Conversaciones: " + conversaciones.Count);
     }
 
     public DialogueLine GetLine(string id)
     {
-        return dialogues.ContainsKey(id) ? dialogues[id] : null;
+        return dialogos.ContainsKey(id) ? dialogos[id] : null;
+    }
+
+    public string GetInicioConversacion(string conversacionId, DialogueController controller)
+    {
+        if (!conversaciones.ContainsKey(conversacionId))
+            return null;
+
+        Conversacion conv = conversaciones[conversacionId];
+
+        if (!controller.CheckCondition(conv.condicion))
+            return null;
+
+        return conv.inicio;
     }
 }

@@ -1,41 +1,64 @@
 {
-  "escena": "casa_inicio",
+  "escena": "casa_protagonista",
+  "conversaciones": [
+    {
+      "id": "conv_inicio",
+      "inicio": "casa_libreta_01"
+    },
+    {
+      "id": "conv_sin_libreta",
+      "inicio": "casa_puerta_sin_libreta",
+      "condicion": "tiene_libreta == false"
+    },
+    {
+      "id": "conv_salida",
+      "inicio": "casa_salida_01",
+      "condicion": "tiene_libreta == true"
+    }
+  ],
   "dialogos": [
     {
-      "id": "libreta_01",
+      "id": "casa_libreta_01",
       "personaje": "PROTA",
       "texto": "¡Oh…!",
-      "siguiente": "libreta_02"
+      "siguiente": "casa_libreta_02"
     },
     {
-      "id": "libreta_02",
+      "id": "casa_libreta_02",
       "personaje": "PROTA",
       "texto": "Parece importante.",
-      "siguiente": "libreta_03"
+      "siguiente": "casa_libreta_03"
     },
     {
-      "id": "libreta_03",
+      "id": "casa_libreta_03",
       "personaje": "PROTA",
       "texto": "No creo que le moleste.",
       "accion": "coger_libreta"
     },
+
     {
-      "id": "stand_puzzle_01",
+      "id": "casa_stand_puzzle_01",
       "personaje": "PROTA",
       "texto": "…",
-      "condicion": "tiene_libreta == true",
-      "siguiente": "stand_puzzle_02"
+      "siguiente": "casa_stand_puzzle_02"
     },
     {
-      "id": "stand_puzzle_02",
+      "id": "casa_stand_puzzle_02",
       "personaje": "PROTA",
       "texto": "No acabo de entender qué es."
     },
+
     {
-      "id": "puerta_sin_libreta",
+      "id": "casa_puerta_sin_libreta",
       "personaje": "PROTA",
-      "texto": "Aún no puedo salir.",
-      "condicion": "tiene_libreta == false"
+      "texto": "Aún no puedo salir."
+    },
+
+    {
+      "id": "casa_salida_01",
+      "personaje": "PROTA",
+      "texto": "…",
+      "accion": "salir_casa_primera_vez"
     }
   ]
 }
