@@ -29,13 +29,17 @@ public class DialogueController : MonoBehaviour
     public bool firstTimeKoko;
     public bool carasKokoOk;
     public int carasKoko = 0;
-    public int puzzleStatus;
+    public int puzzleKokoStatus;
 
     //Mision muñecas
-    public bool firstTimeZari;
+    public bool firstTimeZari = true;
+    public bool muñecasEntregadas = false;
+    public bool partesEntregadas = false;
     public int muñecas = 0;
     public int partesMuñeca = 0;
     public bool carasZariOk;
+
+    private string conversacion= "";
     void Update()
     {
         if (currentLine != null && Input.GetKeyDown(KeyCode.Space))
@@ -58,7 +62,7 @@ public class DialogueController : MonoBehaviour
 
         CheckConversation();
 
-        string inicio = DialogueManager.Instance.GetInicioConversacion(conversacionId, this);
+        string inicio = DialogueManager.Instance.GetInicioConversacion(conversacion, this);
 
         if (inicio != null)
         {
@@ -80,7 +84,7 @@ public class DialogueController : MonoBehaviour
         personajeText.text = line.personaje;
         dialogoText.text = line.texto;
 
-        Debug.Log(line.texto);
+        //Debug.Log(line.texto);
         ExecuteAction(line.accion);
     }
 
@@ -113,6 +117,9 @@ public class DialogueController : MonoBehaviour
                 break;
             case "mision_ladron_kokopilis.json":
                 firstTimeKoko = false;
+                break;
+            case "mision_munecas.json":
+                firstTimeZari = false;
                 break;
         }
         //Mirar si se lanza el minijuego
@@ -210,15 +217,15 @@ public class DialogueController : MonoBehaviour
                     }
                     else if (carasKoko < 1)
                     {
-                        if (puzzleStatus == 0)
+                        if (puzzleKokoStatus == 0)
                         {
                             npcActual.conversacionActual = "conv_fallo_puzle";
                         }
-                        else if (puzzleStatus == 1)
+                        else if (puzzleKokoStatus == 1)
                         {
                             npcActual.conversacionActual = "conv_acierto_parcial";
                         }
-                        else if (puzzleStatus == 2)
+                        else if (puzzleKokoStatus == 2)
                         {
                             npcActual.conversacionActual = "conv_acierto_total";
                         }
@@ -236,32 +243,87 @@ public class DialogueController : MonoBehaviour
                 }
                 break;
             case "mision_munecas.json":
+
                 if (!firstTimeZari)
                 {
-                    if (npcActual.conversacionActual == "conv_1_inicio" && muñecas < 3)
+                    if (muñecas < 3)
                     {
-                        npcActual.conversacionActual = "conv_sin_munecas";
+                        Debug.Log("muñecas < 3 pero en realidad son " + muñecas);
+                        conversacion = "conv_sin_munecas";
+                        return;
                     }
-                    if (muñecas >= 3 && npcActual.conversacionActual != "conv_con_munecas") {
-                        npcActual.conversacionActual = "conv_con_munecas";
-                    }
-                    if (npcActual.conversacionActual == "conv_con_munecas" && partesMuñeca < 4) {
-                        npcActual.conversacionActual = "conv_sin_partes";
-                    }
-                    if (npcActual.conversacionActual == "conv_con_munecas" && partesMuñeca >= 4)
+
+
+                    if (muñecas >= 3 && !muñecasEntregadas)
                     {
-                        npcActual.conversacionActual = "conv_con_partes";
+                        Debug.Log("Tienes las muñecas");
+                        muñecasEntregadas = true;
+                        conversacion = "conv_con_munecas";
+                        return;
                     }
-                    if (npcActual.conversacionActual == "conv_con_partes" || npcActual.conversacionActual == "conv_caras_mal") {
-                        if (carasZariOk)
-                        {
-                            npcActual.conversacionActual = "conv_caras_bien";
-                        }
-                        else {
-                            npcActual.conversacionActual = "conv_caras_mal";
-                        }
+
+
+                    if (partesMuñeca < 4)
+                    {
+                        conversacion = "conv_sin_partes";
+                        return;
                     }
+
+
+                    if (!partesEntregadas)
+                    {
+                        conversacion = "conv_con_partes";
+                        partesEntregadas = true;
+                        return;
+                    }
+
+
+                    if (!carasZariOk)
+                    {
+                        conversacion = "conv_caras_mal";
+                        return;
+                    }
+
+
+                    conversacion = "conv_caras_bien";
                 }
+                else {
+                    conversacion = "conv_1_inicio";
+                }
+                break;
+        }
+    }
+
+    public void AddCaras(string mision)
+    {
+        switch (mision)
+        {
+            case "mision_cual_es_mi_hogar.json":
+                carasHogar++;
+                break;
+            case "mision_como_pez_fuera_del_agua.json":
+                carasPez++;
+                break;
+            case "mision_ladron_kokopilis.json":
+                carasKoko++;
+                break;
+            case "mision_munecas.json":
+                muñecas++;
+                break;
+        }
+    }
+
+    public void AddParte()
+    {
+        partesMuñeca++;
+    }
+
+    public void ChangePuzzleStatus(string name, int status)
+    {
+        switch (name)
+        {
+            case "Koko":
+                puzzleKokoStatus = status;
                 break;
         }
     }

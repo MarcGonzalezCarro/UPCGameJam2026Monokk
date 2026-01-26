@@ -193,12 +193,14 @@
     {
       "id": "zari_sin_munecas",
       "personaje": "ZARI1",
-      "texto": "Mamiiiiii, quiero mi muñeca."
+      "texto": "Mamiiiiii, quiero mi muñeca.",
+      "siguiente": "zari_sin_munecas_02"
     },
     {
       "id": "zari_sin_munecas_02",
       "personaje": "ZARI2",
-      "texto": "Tengo hambre"
+      "texto": "Tengo hambre",
+      "siguiente": "zari_sin_munecas_03"
     },
     {
       "id": "zari_sin_munecas_03",
@@ -270,12 +272,14 @@
     {
       "id": "zari_sin_partes",
       "personaje": "ZARI1",
-      "texto": "Mamiiiiii, ¿donde está su cara?"
+      "texto": "Mamiiiiii, ¿donde está su cara?",
+      "siguiente": "zari_sin_partes_02"
     },
     {
       "id": "zari_sin_partes_02",
       "personaje": "ZARI2",
-      "texto": "Tengo sed."
+      "texto": "Tengo sed.",
+      "siguiente": "zari_sin_munecas_03"
     },
     {
       "id": "zari_sin_partes_03",
