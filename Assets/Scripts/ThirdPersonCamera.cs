@@ -26,6 +26,19 @@ public class ThirdPersonCamera : MonoBehaviour
 
         rotationY += mouseX;
         //rotationX -= mouseY;
+        if(rotationY<-5f || rotationY > 5f)
+        {
+
+           if(rotationY>0f)
+           {
+                rotationY = 5; ;
+           }
+           else
+           {
+            rotationY =- 5f;
+            }
+
+        }
         rotationX = Mathf.Clamp(rotationX, minY, maxY);
 
         Quaternion rotation = Quaternion.Euler(rotationX, rotationY, 0);
