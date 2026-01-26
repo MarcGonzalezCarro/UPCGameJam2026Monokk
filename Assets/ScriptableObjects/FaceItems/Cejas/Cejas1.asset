@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: cejas1
   partType: 3
-  sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: -5959829739726908654, guid: fd446a68537157443a8e81e43fd7b694, type: 3}
+  icon: {fileID: -5959829739726908654, guid: fd446a68537157443a8e81e43fd7b694, type: 3}

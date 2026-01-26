@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: ojos3
   partType: 0
-  sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: 295656942512381775, guid: c5c4b58e78a95eb44a9ea169a3c003bf, type: 3}
+  icon: {fileID: 295656942512381775, guid: c5c4b58e78a95eb44a9ea169a3c003bf, type: 3}

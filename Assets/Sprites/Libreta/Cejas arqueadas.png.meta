@@ -106,9 +106,9 @@ TextureImporter:
       name: Cejas arqueadas_0
       rect:
         serializedVersion: 2
-        x: 167
+        x: 181
         y: 975
-        width: 1732
+        width: 1695
         height: 358
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

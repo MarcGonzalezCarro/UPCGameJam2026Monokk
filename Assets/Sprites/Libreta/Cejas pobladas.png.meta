@@ -106,10 +106,10 @@ TextureImporter:
       name: Cejas pobladas_0
       rect:
         serializedVersion: 2
-        x: 159
-        y: 1032
-        width: 1788
-        height: 258
+        x: 178
+        y: 933
+        width: 1772
+        height: 518
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

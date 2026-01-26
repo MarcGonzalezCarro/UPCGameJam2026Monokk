@@ -112,9 +112,9 @@ TextureImporter:
       name: "Ojos asi\xE1ticos_0"
       rect:
         serializedVersion: 2
-        x: 134
+        x: 0
         y: 1009
-        width: 1795
+        width: 2048
         height: 398
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

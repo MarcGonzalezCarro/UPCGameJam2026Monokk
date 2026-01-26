@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: nariz3
   partType: 1
-  sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: -4602207211123877577, guid: 5a7fe8743a9ab974a8260ca04cb99ee5, type: 3}
+  icon: {fileID: -4602207211123877577, guid: 5a7fe8743a9ab974a8260ca04cb99ee5, type: 3}

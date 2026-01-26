@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: boca4
   partType: 2
-  sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: -3608132990939984160, guid: fa90a7bc1cd7c8e479907a51a1d512d5, type: 3}
+  icon: {fileID: -3608132990939984160, guid: fa90a7bc1cd7c8e479907a51a1d512d5, type: 3}
