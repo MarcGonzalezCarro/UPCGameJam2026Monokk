@@ -13,6 +13,7 @@ public class ThirdPersonCamera : MonoBehaviour
     private float rotationX = 0f;
     private float rotationY = 0f;
 
+    public bool canMove = true;
     void Start()
     {
         //Cursor.lockState = CursorLockMode.Locked;
@@ -21,32 +22,34 @@ public class ThirdPersonCamera : MonoBehaviour
 
     void LateUpdate()
     {
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        //float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        if (canMove) {
+            float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+            //float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
-        rotationY += mouseX;
-        //rotationX -= mouseY;
-        if(rotationY<-5f || rotationY > 5f)
-        {
+            rotationY += mouseX;
+            //rotationX -= mouseY;
+            if (rotationY < -5f || rotationY > 5f)
+            {
 
-           if(rotationY>0f)
-           {
-                rotationY = 5; ;
-           }
-           else
-           {
-            rotationY =- 5f;
+                if (rotationY > 0f)
+                {
+                    rotationY = 5; ;
+                }
+                else
+                {
+                    rotationY = -5f;
+                }
+
             }
+            rotationX = Mathf.Clamp(rotationX, minY, maxY);
 
+            Quaternion rotation = Quaternion.Euler(rotationX, rotationY, 0);
+
+            Vector3 offset = rotation * new Vector3(0, height, -distance);
+            transform.position = player.position + offset;
+
+            transform.LookAt(player.position + Vector3.up * height);
         }
-        rotationX = Mathf.Clamp(rotationX, minY, maxY);
-
-        Quaternion rotation = Quaternion.Euler(rotationX, rotationY, 0);
-
-        Vector3 offset = rotation * new Vector3(0, height, -distance);
-        transform.position = player.position + offset;
-
-        transform.LookAt(player.position + Vector3.up * height);
     }
     public void UnlockCursor()
     {
