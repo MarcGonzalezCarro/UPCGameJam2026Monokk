@@ -347,7 +347,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 165
+        value: 35
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -356,7 +356,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: 165
+        value: 35
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -367,7 +367,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.x
-    path: Nombre
+    path: FondoDialogoDer
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -377,7 +377,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -436
+        value: -798.00006
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -386,7 +386,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: -66
+        value: 39.999977
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -397,7 +397,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.y
-    path: Nombre
+    path: FondoDialogoDer
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -407,7 +407,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0
+        value: 35
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -416,7 +416,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: 0
+        value: 35
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -427,7 +427,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.x
-    path: Dialogo
+    path: FondoDialogoIzq
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -437,7 +437,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -604
+        value: -798
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -446,7 +446,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: -234
+        value: 40
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -457,70 +457,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.y
-    path: Dialogo
+    path: FondoDialogoIzq
     classID: 224
     script: {fileID: 0}
     flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.5
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: Dialogo
-    classID: 1
-    script: {fileID: 0}
-    flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.5
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: Nombre
-    classID: 1
-    script: {fileID: 0}
-    flags: 16
   m_PPtrCurves: []
   m_SampleRate: 60
   m_WrapMode: 0
@@ -575,7 +515,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1027380240
+      path: 2933340456
       attribute: 538195251
       script: {fileID: 0}
       typeID: 224
@@ -584,29 +524,11 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1665911668
+      path: 4066178399
       attribute: 538195251
       script: {fileID: 0}
       typeID: 224
       customType: 28
-      isPPtrCurve: 0
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-    - serializedVersion: 2
-      path: 1665911668
-      attribute: 2086281974
-      script: {fileID: 0}
-      typeID: 1
-      customType: 0
-      isPPtrCurve: 0
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-    - serializedVersion: 2
-      path: 1027380240
-      attribute: 2086281974
-      script: {fileID: 0}
-      typeID: 1
-      customType: 0
       isPPtrCurve: 0
       isIntCurve: 0
       isSerializeReferenceCurve: 0
@@ -674,7 +596,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1027380240
+      path: 2933340456
       attribute: 1460864421
       script: {fileID: 0}
       typeID: 224
@@ -683,7 +605,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1665911668
+      path: 4066178399
       attribute: 1460864421
       script: {fileID: 0}
       typeID: 224
@@ -1043,7 +965,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 165
+        value: 35
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1052,7 +974,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: 165
+        value: 35
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1063,7 +985,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.x
-    path: Nombre
+    path: FondoDialogoDer
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -1073,7 +995,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -436
+        value: -798.00006
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1082,7 +1004,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: -66
+        value: 39.999977
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1093,7 +1015,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.y
-    path: Nombre
+    path: FondoDialogoDer
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -1103,7 +1025,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0
+        value: 35
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1112,7 +1034,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: 0
+        value: 35
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1123,7 +1045,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.x
-    path: Dialogo
+    path: FondoDialogoIzq
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -1133,7 +1055,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -604
+        value: -798
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1142,7 +1064,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: -234
+        value: 40
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1153,70 +1075,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.y
-    path: Dialogo
+    path: FondoDialogoIzq
     classID: 224
     script: {fileID: 0}
     flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.5
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: Dialogo
-    classID: 1
-    script: {fileID: 0}
-    flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.5
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: Nombre
-    classID: 1
-    script: {fileID: 0}
-    flags: 16
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0

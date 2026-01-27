@@ -5,10 +5,16 @@ using TMPro;
 public class DialogueController : MonoBehaviour
 {
     [Header("UI")]
-    public TMP_Text personajeText;
-    public TMP_Text dialogoText;
+    public TMP_Text personajeTextDer;
+    public TMP_Text dialogoTextDer;
+    public TMP_Text personajeTextIzq;
+    public TMP_Text dialogoTextIzq;
 
     public Animator animator;
+
+    public GameObject fondoDer;
+    public GameObject fondoIzq;
+
     private DialogueLine currentLine;
     private NPCDialogue npcActual;
 
@@ -40,6 +46,8 @@ public class DialogueController : MonoBehaviour
     public bool carasZariOk;
 
     private string conversacion= "";
+    private bool minigame;
+    private bool minigameResult;
     void Update()
     {
         if (currentLine != null && Input.GetKeyDown(KeyCode.Space))
@@ -81,8 +89,20 @@ public class DialogueController : MonoBehaviour
 
         currentLine = line;
 
-        personajeText.text = line.personaje;
-        dialogoText.text = line.texto;
+
+        personajeTextDer.text = line.personaje;
+        personajeTextIzq.text = line.personaje;
+        GetComponent<TypewriterEffect>().ShowText(line.texto);
+
+        if (line.personaje == "PROTA")
+        {
+            fondoDer.SetActive(true);
+            fondoIzq.SetActive(false);
+        }
+        else {
+            fondoDer.SetActive(false);
+            fondoIzq.SetActive(true);
+        }
 
         //Debug.Log(line.texto);
         ExecuteAction(line.accion);
@@ -100,8 +120,10 @@ public class DialogueController : MonoBehaviour
 
     void EndDialogue()
     {
-        personajeText.text = "";
-        dialogoText.text = "";
+        personajeTextDer.text = "";
+        dialogoTextDer.text = "";
+        personajeTextIzq.text = "";
+        dialogoTextIzq.text = "";
         currentLine = null;
 
         animator.ResetTrigger("StartConversation");
@@ -122,7 +144,11 @@ public class DialogueController : MonoBehaviour
                 firstTimeZari = false;
                 break;
         }
-        //Mirar si se lanza el minijuego
+        //Lanza el minijuego
+        if (minigame) { 
+            //minigameResult = LanzaMinijuego();
+
+        }
     }
 
     // =========================
@@ -167,77 +193,92 @@ public class DialogueController : MonoBehaviour
 
     public void CheckConversation() {
 
+        minigame = false;
+
         switch (npcActual.archivoDialogo)
         {
             case "mision_cual_es_mi_hogar.json":
-                if (!firstTimeHogar) {
-                    if (npcActual.conversacionActual != "conv_cara_bien") {
-                        if (carasHogar < 3)
-                        {
-                            npcActual.conversacionActual = "conv_falta_caras";
-                        }
-                        else if (carasHogarOk)
-                        {
-                            npcActual.conversacionActual = "conv_cara_bien";
-                        }
-                        else
-                        {
-                            npcActual.conversacionActual = "conv_cara_mal";
-                        }
-                    } 
+                if (!firstTimeHogar)
+                {
+                    if (carasHogar < 3)
+                    {
+                        npcActual.conversacionActual = "conv_falta_caras";
+                        return;
+                    }
+
+                    if (carasHogarOk)
+                    {
+                        npcActual.conversacionActual = "conv_cara_bien";
+                        return;
+                    }
+
+                    // Si no tiene todas las caras pero tampoco ok
+                    npcActual.conversacionActual = "conv_cara_mal";
+                    return;
                 }
                 break;
+                
             case "mision_como_pez_fuera_del_agua.json":
-                if (!firstTimePez)
+                if (!firstTimePez && npcActual.nombre == "Macarena")
                 {
-                    if (npcActual.nombre == "Macarena")
+                    if (carasPez != 3)
                     {
-                        if (carasPez != 3)
-                        {
-                            npcActual.conversacionActual = "conv_sin_dibujos";
-                        }
-                        else if (carasPezOk)
-                        {
-                            npcActual.conversacionActual = "conv_dibujos_bien";
-                        }
-                        else
-                        {
-                            npcActual.conversacionActual = "conv_dibujos_mal";
-                        }
+                        npcActual.conversacionActual = "conv_sin_dibujos";
+                        return;
                     }
+
+                    if (carasPezOk)
+                    {
+                        npcActual.conversacionActual = "conv_dibujos_bien";
+                        return;
+                    }
+
+                    // Si tiene 3 caras pero no están correctas
+                    npcActual.conversacionActual = "conv_dibujos_mal";
+                    return;
                 }
                 break;
             case "mision_ladron_kokopilis.json":
                 if (!firstTimeKoko)
                 {
+                    // Primera conversación
                     if (npcActual.conversacionActual == "conv_1_inicio")
                     {
                         npcActual.conversacionActual = "conv_ayuda";
-                        //Lanzar minijuego en el EndDialogue
+                        minigame = true;
+                        // Minijuego se lanzará en EndDialogue
+                        return;
                     }
-                    else if (carasKoko < 1)
+
+                    // Si todavía no ha completado el puzzle
+                    if (carasKoko < 1)
                     {
-                        if (puzzleKokoStatus == 0)
+                        switch (puzzleKokoStatus)
                         {
-                            npcActual.conversacionActual = "conv_fallo_puzle";
-                        }
-                        else if (puzzleKokoStatus == 1)
-                        {
-                            npcActual.conversacionActual = "conv_acierto_parcial";
-                        }
-                        else if (puzzleKokoStatus == 2)
-                        {
-                            npcActual.conversacionActual = "conv_acierto_total";
+                            case 0:
+                                npcActual.conversacionActual = "conv_fallo_puzle";
+                                return;
+                            case 1:
+                                npcActual.conversacionActual = "conv_acierto_parcial";
+                                return;
+                            case 2:
+                                npcActual.conversacionActual = "conv_acierto_total";
+                                return;
                         }
                     }
-                    else if(npcActual.conversacionActual != "conv_ayuda")
+
+                    // Si ya no es la conversación de ayuda
+                    if (npcActual.conversacionActual != "conv_ayuda")
                     {
                         if (carasKokoOk)
                         {
                             npcActual.conversacionActual = "conv_cara_bien";
+                            return;
                         }
-                        else {
+                        else
+                        {
                             npcActual.conversacionActual = "conv_cara_mal";
+                            return;
                         }
                     }
                 }
@@ -278,7 +319,7 @@ public class DialogueController : MonoBehaviour
                     }
 
 
-                    if (!carasZariOk)
+                    if (!FindFirstObjectByType<GameManager>().CheckFaceByName("Muñeca1") || !FindFirstObjectByType<GameManager>().CheckFaceByName("Muñeca2") || !FindFirstObjectByType<GameManager>().CheckFaceByName("Muñeca3"))
                     {
                         conversacion = "conv_caras_mal";
                         return;
