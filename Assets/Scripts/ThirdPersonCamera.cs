@@ -28,16 +28,16 @@ public class ThirdPersonCamera : MonoBehaviour
 
             rotationY += mouseX;
             //rotationX -= mouseY;
-            if (rotationY < -5f || rotationY > 5f)
+            if (rotationY < -15f || rotationY > 15f)
             {
 
                 if (rotationY > 0f)
                 {
-                    rotationY = 5; ;
+                    rotationY = 15; ;
                 }
                 else
                 {
-                    rotationY = -5f;
+                    rotationY = -15f;
                 }
 
             }
