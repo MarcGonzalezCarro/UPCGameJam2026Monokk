@@ -36,4 +36,22 @@ public class FacePreviewController : MonoBehaviour
         slot.sprite = sprite;
         slot.enabled = sprite != null;
     }
+    public FaceState GetCurrentState()
+    {
+        return new FaceState
+        {
+            ojos = eyesSlot.sprite,
+            nariz = noseSlot.sprite,
+            boca = mouthSlot.sprite,
+            cejas = eyeBrowSlot.sprite
+        };
+    }
+
+    public void ApplyState(FaceState state)
+    {
+        SetSlot(eyesSlot, state.ojos);
+        SetSlot(noseSlot, state.nariz);
+        SetSlot(mouthSlot, state.boca);
+        SetSlot(eyeBrowSlot, state.cejas);
+    }
 }
