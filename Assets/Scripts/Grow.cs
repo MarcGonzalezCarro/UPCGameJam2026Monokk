@@ -38,7 +38,7 @@ public class Grow : MonoBehaviour
         GameObject[] gos = GameObject.FindGameObjectsWithTag("multiply");
         foreach (GameObject go in gos)
 
-            go.transform.localScale += new Vector3(0.1F, .1f, .1f) * growRate * Time.deltaTime;
+            go.transform.localScale += new Vector3(.1F, .1f, .1f) * growRate * Time.deltaTime;
        activeGos = gos.Length;
     }
 }

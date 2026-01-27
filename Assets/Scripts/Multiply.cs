@@ -51,11 +51,11 @@ public class Multiply : MonoBehaviour
             );
 
 
-            // Instantiate UNDER the canvas
+          
             GameObject button = Instantiate(prefab, canvas.transform);
 
 
-            // Position using RectTransform
+          
             RectTransform buttonRect = button.GetComponent<RectTransform>();
             buttonRect.anchoredPosition = new Vector2(x, y);
 
