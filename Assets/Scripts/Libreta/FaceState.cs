@@ -15,9 +15,16 @@ public class FacePage
     public string pageName;
     public FaceState faceState;
 
+    public string noteA;
+    public string noteB;
+    public string noteC;
+
     public FacePage(string name)
     {
         pageName = name;
         faceState = new FaceState();
+        noteA = "";
+        noteB = "";
+        noteC = "";
     }
 }

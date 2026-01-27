@@ -1,6 +1,5 @@
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using System.Collections.Generic;
 using TMPro;
 
 public class FacePagesManager : MonoBehaviour
@@ -8,16 +7,20 @@ public class FacePagesManager : MonoBehaviour
     [Header("Referencias")]
     public FacePreviewController preview;
     public TMP_Text pageNameText;
-    // TMP_Text si usas TextMeshPro
+
+    [Header("Post-its (Textos)")]
+    public TMP_Text noteAText;
+    public TMP_Text noteBText;
+    public TMP_Text noteCText;
 
     [Header("Páginas")]
     public List<FacePage> pages = new List<FacePage>();
 
     private int currentPageIndex = 0;
+    private bool hasLoadedFirstPage = false;
 
     void Start()
     {
-        // Crear páginas si no hay ninguna
         if (pages.Count == 0)
         {
             pages.Add(new FacePage("Cara 1"));
@@ -27,23 +30,34 @@ public class FacePagesManager : MonoBehaviour
         LoadPage(0);
     }
 
+    void SaveCurrentPage()
+    {
+        pages[currentPageIndex].faceState = preview.GetCurrentState();
+
+        pages[currentPageIndex].noteA = noteAText.text;
+        pages[currentPageIndex].noteB = noteBText.text;
+        pages[currentPageIndex].noteC = noteCText.text;
+    }
+
     void LoadPage(int index)
     {
         index = Mathf.Clamp(index, 0, pages.Count - 1);
 
-        // Guardar estado actual
-        if (pages[currentPageIndex].faceState != null)
+        if (hasLoadedFirstPage)
         {
-            pages[currentPageIndex].faceState = preview.GetCurrentState();
+            SaveCurrentPage();
         }
+
+        hasLoadedFirstPage = true;
 
         currentPageIndex = index;
 
-        // Cargar nueva página
         preview.ApplyState(pages[currentPageIndex].faceState);
-
-        // Actualizar texto
         pageNameText.text = pages[currentPageIndex].pageName;
+
+        noteAText.text = pages[currentPageIndex].noteA;
+        noteBText.text = pages[currentPageIndex].noteB;
+        noteCText.text = pages[currentPageIndex].noteC;
     }
 
     public void NextPage()
