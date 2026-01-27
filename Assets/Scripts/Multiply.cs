@@ -14,23 +14,24 @@ public class Multiply : MonoBehaviour
 
     void Start()
     {
-        startTime = Time.time;
-        time = Time.time;
+        //startTime = Time.time;
+        //time = Time.time;
     }
 
 
     void Update()
     {
-      
-        if(Time.time - startTime >= finalTime)
-        {
-            isActive = false;
-            return;
-        }
+
         if (!isActive)
         {
             return;
         }
+        if (Time.time - startTime >= finalTime)
+        {
+            isActive = false;
+            return;
+        }
+        
         float timeNow = Time.time;
 
         if (timeNow - time >= interval && isActive)
@@ -67,5 +68,11 @@ public class Multiply : MonoBehaviour
             time = Time.time;
         }
 
+    }
+    public void StartGame()
+    {
+        startTime = Time.time;
+        time = Time.time;
+        isActive = true;
     }
 }

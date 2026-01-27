@@ -1,7 +1,21 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections.Generic;
 
+[System.Serializable]
+public class NPCMinigameDialogue
+{
+    public string npcId;
+
+    [Header("IDs de conversación")]
+    public string fallo = "conv_fallo_puzle";
+    public string parcial = "conv_acierto_parcial";
+    public string total = "conv_acierto_total";
+
+    [Header("Máx. victorias")]
+    public int maxWins = 3;
+}
 public class DialogueController : MonoBehaviour
 {
     [Header("UI")]
@@ -48,6 +62,12 @@ public class DialogueController : MonoBehaviour
     private string conversacion= "";
     private bool minigame;
     private bool minigameResult;
+
+    [Header("Minijuegos")]
+    public List<NPCMinigameDialogue> minigameDialogues = new();
+    public List<NPCMinigameProgress> minigameProgress = new();
+    public FacePagesManager facePages;
+
     void Update()
     {
         if (currentLine != null && Input.GetKeyDown(KeyCode.Space))
@@ -70,15 +90,14 @@ public class DialogueController : MonoBehaviour
 
         CheckConversation();
 
-        string inicio = DialogueManager.Instance.GetInicioConversacion(conversacion, this);
+        string inicio = DialogueManager.Instance.GetInicioConversacion(npc.conversacionActual, this);
 
         if (inicio != null)
         {
             ShowLine(inicio);
             animator.ResetTrigger("EndConversation");
             animator.SetTrigger("StartConversation");
-        }
-            
+        }            
     }
 
     public void ShowLine(string id)
@@ -145,9 +164,9 @@ public class DialogueController : MonoBehaviour
                 break;
         }
         //Lanza el minijuego
-        if (minigame) { 
+        if (minigame) {
             //minigameResult = LanzaMinijuego();
-
+            MiniGameManager.Instance.StartMiniGame(OnMinigameFinished);
         }
     }
 
@@ -241,46 +260,27 @@ public class DialogueController : MonoBehaviour
             case "mision_ladron_kokopilis.json":
                 if (!firstTimeKoko)
                 {
-                    // Primera conversación
-                    if (npcActual.conversacionActual == "conv_1_inicio")
+                    var progress = GetProgress(npcActual.nombre);
+                    var config = GetMinigameDialogue(npcActual.nombre);
+
+                    if (progress.wins < config.maxWins)
                     {
-                        npcActual.conversacionActual = "conv_ayuda";
-                        minigame = true;
-                        // Minijuego se lanzará en EndDialogue
+                        // Todavía está en el minijuego
+                        ResolveMinigameConversation();
                         return;
                     }
 
-                    // Si todavía no ha completado el puzzle
-                    if (carasKoko < 1)
+                    // FASE 2: COMPARAR CARAS
+                    if (FindFirstObjectByType<GameManager>().CheckFaceByName("Ladrón"))
                     {
-                        switch (puzzleKokoStatus)
-                        {
-                            case 0:
-                                npcActual.conversacionActual = "conv_fallo_puzle";
-                                return;
-                            case 1:
-                                npcActual.conversacionActual = "conv_acierto_parcial";
-                                return;
-                            case 2:
-                                npcActual.conversacionActual = "conv_acierto_total";
-                                return;
-                        }
+                        npcActual.conversacionActual = "conv_cara_bien";
+                    }
+                    else
+                    {
+                        npcActual.conversacionActual = "conv_cara_mal";
                     }
 
-                    // Si ya no es la conversación de ayuda
-                    if (npcActual.conversacionActual != "conv_ayuda")
-                    {
-                        if (carasKokoOk)
-                        {
-                            npcActual.conversacionActual = "conv_cara_bien";
-                            return;
-                        }
-                        else
-                        {
-                            npcActual.conversacionActual = "conv_cara_mal";
-                            return;
-                        }
-                    }
+                    return;
                 }
                 break;
             case "mision_munecas.json":
@@ -367,6 +367,79 @@ public class DialogueController : MonoBehaviour
                 puzzleKokoStatus = status;
                 break;
         }
+    }
+
+    void OnMinigameFinished(bool won)
+    {
+        string npcId = npcActual.nombre;
+        var progress = GetProgress(npcId);
+        var config = GetMinigameDialogue(npcId);
+
+        if (!won || progress.wins >= config.maxWins)
+            return;
+
+        progress.wins++;
+
+        facePages.UnlockNote(
+            npcId,
+            progress.wins - 1
+        );
+
+       
+        if (progress.wins == config.maxWins)
+        {
+            Debug.Log("Minijuego completado para " + npcId);
+            
+        }
+    }
+
+
+    NPCMinigameProgress GetProgress(string npcId)
+    {
+        var progress = minigameProgress.Find(p => p.npcId == npcId);
+        if (progress == null)
+        {
+            progress = new NPCMinigameProgress
+            {
+                npcId = npcId,
+                wins = 0
+            };
+            minigameProgress.Add(progress);
+        }
+        return progress;
+    }
+    NPCMinigameDialogue GetMinigameDialogue(string npcId)
+    {
+        return minigameDialogues.Find(d => d.npcId == npcId);
+    }
+
+    void ResolveMinigameConversation()
+    {
+        string npcId = npcActual.nombre;
+
+        var config = GetMinigameDialogue(npcId);
+        if (config == null)
+        {
+            Debug.LogWarning("NPC sin configuración de minijuego: " + npcId);
+            return;
+        }
+
+        var progress = GetProgress(npcId);
+
+        if (progress.wins == 0)
+        {
+            npcActual.conversacionActual = config.fallo;
+        }
+        else if (progress.wins < config.maxWins)
+        {
+            npcActual.conversacionActual = config.parcial;
+        }
+        else
+        {
+            npcActual.conversacionActual = config.total;
+        }
+
+        minigame = progress.wins < config.maxWins;
     }
 }
 

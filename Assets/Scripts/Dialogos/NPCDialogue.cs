@@ -14,8 +14,8 @@ public class NPCDialogue : MonoBehaviour
         {
             interactUI.SetActive(true);
         }
-        else if(!jugadorCerca){
-
+        else if(!jugadorCerca && interactUI.activeInHierarchy == true)
+        {
             interactUI.SetActive(false);
         }
         if (jugadorCerca && Input.GetKeyDown(KeyCode.E))
