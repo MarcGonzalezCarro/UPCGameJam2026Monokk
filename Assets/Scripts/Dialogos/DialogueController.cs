@@ -47,9 +47,10 @@ public class DialogueController : MonoBehaviour
 
     //Mision ladron de kokopilis
     public bool firstTimeKoko;
-    public bool carasKokoOk;
-    public int carasKoko = 0;
-    public int puzzleKokoStatus;
+    public enum KokoState { PrimerDialogo, Ayuda, Minijuego, CheckCara }
+    public KokoState kokoState = KokoState.PrimerDialogo;
+    public int kokoWins = 0; // cuántas veces has ganado el minijuego
+    public int kokoMaxWins = 3;
 
     //Mision muñecas
     public bool firstTimeZari = true;
@@ -164,9 +165,12 @@ public class DialogueController : MonoBehaviour
                 break;
         }
         //Lanza el minijuego
-        if (minigame) {
-            //minigameResult = LanzaMinijuego();
-            MiniGameManager.Instance.StartMiniGame(OnMinigameFinished);
+        if (minigame)
+        {
+            if (MiniGameManager.Instance != null)
+                MiniGameManager.Instance.StartMiniGame(OnMinigameFinished);
+            else
+                Debug.LogError("MiniGameManager no encontrado");
         }
     }
 
@@ -258,29 +262,33 @@ public class DialogueController : MonoBehaviour
                 }
                 break;
             case "mision_ladron_kokopilis.json":
-                if (!firstTimeKoko)
+                switch (kokoState)
                 {
-                    var progress = GetProgress(npcActual.nombre);
-                    var config = GetMinigameDialogue(npcActual.nombre);
+                    case KokoState.PrimerDialogo:
+                        npcActual.conversacionActual = "conv_1_inicio";
+                        kokoState = KokoState.Ayuda; // siguiente vez que hables irá a conv_ayuda
+                        minigame = false;
+                        break;
 
-                    if (progress.wins < config.maxWins)
-                    {
-                        // Todavía está en el minijuego
-                        ResolveMinigameConversation();
-                        return;
-                    }
+                    case KokoState.Ayuda:
+                        npcActual.conversacionActual = "conv_ayuda";
+                        minigame = true; // al terminar este diálogo se lanzará el minijuego
+                        break;
 
-                    // FASE 2: COMPARAR CARAS
-                    if (FindFirstObjectByType<GameManager>().CheckFaceByName("Ladrón"))
-                    {
-                        npcActual.conversacionActual = "conv_cara_bien";
-                    }
-                    else
-                    {
-                        npcActual.conversacionActual = "conv_cara_mal";
-                    }
+                    case KokoState.Minijuego:
+                        // Mientras no se hayan conseguido las 3 notas, sigue lanzando el minijuego
+                        npcActual.conversacionActual = "conv_ayuda";
+                        minigame = true;
+                        break;
 
-                    return;
+                    case KokoState.CheckCara:
+                        if (FindFirstObjectByType<GameManager>().CheckFaceByName("Ladrón"))
+                            npcActual.conversacionActual = "conv_cara_bien";
+                        else
+                            npcActual.conversacionActual = "conv_cara_mal";
+
+                        minigame = false;
+                        break;
                 }
                 break;
             case "mision_munecas.json":
@@ -346,7 +354,7 @@ public class DialogueController : MonoBehaviour
                 carasPez++;
                 break;
             case "mision_ladron_kokopilis.json":
-                carasKoko++;
+                //carasKoko++;
                 break;
             case "mision_munecas.json":
                 muñecas++;
@@ -359,38 +367,29 @@ public class DialogueController : MonoBehaviour
         partesMuñeca++;
     }
 
-    public void ChangePuzzleStatus(string name, int status)
+    public void OnMinigameFinished(bool won)
     {
-        switch (name)
-        {
-            case "Koko":
-                puzzleKokoStatus = status;
-                break;
-        }
-    }
-
-    void OnMinigameFinished(bool won)
-    {
-        string npcId = npcActual.nombre;
-        var progress = GetProgress(npcId);
-        var config = GetMinigameDialogue(npcId);
-
-        if (!won || progress.wins >= config.maxWins)
+        if (npcActual.archivoDialogo != "mision_ladron_kokopilis.json")
             return;
 
-        progress.wins++;
-
-        facePages.UnlockNote(
-            npcId,
-            progress.wins - 1
-        );
-
-       
-        if (progress.wins == config.maxWins)
+        if (won)
         {
-            Debug.Log("Minijuego completado para " + npcId);
-            
+            kokoWins++;
+            facePages.UnlockNote("Koko", kokoWins - 1);
+            npcActual.conversacionActual = "conv_acierto_parcial";
         }
+        else
+        {
+            npcActual.conversacionActual = "conv_fallo_puzle";
+        }
+
+        // Si ya consiguió las 3 notas
+        if (kokoWins >= kokoMaxWins)
+            kokoState = KokoState.CheckCara;
+        else
+            kokoState = KokoState.Minijuego;
+
+        minigame = false;
     }
 
 
