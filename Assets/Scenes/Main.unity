@@ -6519,7 +6519,7 @@ MonoBehaviour:
   nombre: Gato
   conversacionActual: conv_1_inicio
   interactUI: {fileID: 469652306}
-  checkConversation: 0
+  checkConversation: 1
 --- !u!114 &130817152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10305,7 +10305,7 @@ MonoBehaviour:
   nombre: Coco
   conversacionActual: conv_1_inicio
   interactUI: {fileID: 469652306}
-  checkConversation: 0
+  checkConversation: 1
 --- !u!136 &223154195
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11676,6 +11676,7 @@ RectTransform:
   - {fileID: 469652307}
   - {fileID: 871727702}
   - {fileID: 1309347093}
+  - {fileID: 965223847}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -29605,7 +29606,7 @@ MonoBehaviour:
   nombre: Macarena
   conversacionActual: conv_1_inicio
   interactUI: {fileID: 469652306}
-  checkConversation: 0
+  checkConversation: 1
 --- !u!136 &729823392
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -35725,7 +35726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickablePrefab: {fileID: 1957987321269867517, guid: 7ef561f4dc48e314a98d720f60a47a19, type: 3}
-  spawnArea: {fileID: 0}
+  spawnArea: {fileID: 965223847}
   clicksToWin: 15
   duration: 10
   spawnInterval: 0.3
@@ -40197,6 +40198,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &965223846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 965223847}
+  m_Layer: 5
+  m_Name: Minigame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &965223847
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965223846}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 260394600}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0.00015259}
+  m_SizeDelta: {x: 1280, y: 720.72}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &965568976
 GameObject:
   m_ObjectHideFlags: 0
@@ -56317,8 +56353,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: -0.0010986}
+  m_SizeDelta: {x: 100, y: 121.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1309347094
 MonoBehaviour:
@@ -65771,7 +65807,7 @@ MonoBehaviour:
   nombre: Zari
   conversacionActual: conv_1_inicio
   interactUI: {fileID: 469652306}
-  checkConversation: 0
+  checkConversation: 1
 --- !u!136 &1485225751
 CapsuleCollider:
   m_ObjectHideFlags: 0
