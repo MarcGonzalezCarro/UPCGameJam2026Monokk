@@ -14512,6 +14512,7 @@ GameObject:
   - component: {fileID: 353788146}
   - component: {fileID: 353788145}
   - component: {fileID: 353788148}
+  - component: {fileID: 353788149}
   m_Layer: 0
   m_Name: "Ilustracio\u0301n_sin_ti\u0301tulo (2)_0"
   m_TagString: Untagged
@@ -14644,6 +14645,20 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 17.5
   m_Center: {x: 0.0000034570694, y: -0.0000038146973, z: 0.000015258789}
+--- !u!114 &353788149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353788143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8292e4bc2cb61bd4792ea3c9843d4b37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetoMapa: {fileID: 1309347092}
+  pausarAlAbrir: 1
 --- !u!1 &355019956
 GameObject:
   m_ObjectHideFlags: 0
@@ -36179,6 +36194,7 @@ GameObject:
   - component: {fileID: 882167519}
   - component: {fileID: 882167518}
   - component: {fileID: 882167521}
+  - component: {fileID: 882167522}
   m_Layer: 0
   m_Name: "Ilustracio\u0301n_sin_ti\u0301tulo (2)_0"
   m_TagString: Untagged
@@ -36311,6 +36327,20 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 17.5
   m_Center: {x: 0, y: 0.0000076293945, z: 0.000061035156}
+--- !u!114 &882167522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882167516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8292e4bc2cb61bd4792ea3c9843d4b37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetoMapa: {fileID: 1309347092}
+  pausarAlAbrir: 1
 --- !u!1 &886323991
 GameObject:
   m_ObjectHideFlags: 0
@@ -80569,6 +80599,7 @@ GameObject:
   - component: {fileID: 1749182005}
   - component: {fileID: 1749182004}
   - component: {fileID: 1749182007}
+  - component: {fileID: 1749182008}
   m_Layer: 0
   m_Name: "Ilustracio\u0301n_sin_ti\u0301tulo (2)_0"
   m_TagString: Untagged
@@ -80701,6 +80732,20 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 17.5
   m_Center: {x: 0.000015258789, y: -0.000005722046, z: 0.000030517578}
+--- !u!114 &1749182008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749182002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8292e4bc2cb61bd4792ea3c9843d4b37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetoMapa: {fileID: 1309347092}
+  pausarAlAbrir: 1
 --- !u!1 &1753921708
 GameObject:
   m_ObjectHideFlags: 0
@@ -97301,6 +97346,7 @@ GameObject:
   - component: {fileID: 2070064985}
   - component: {fileID: 2070064984}
   - component: {fileID: 2070064987}
+  - component: {fileID: 2070064988}
   m_Layer: 0
   m_Name: "Ilustracio\u0301n_sin_ti\u0301tulo (2)_0"
   m_TagString: Untagged
@@ -97433,6 +97479,20 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 17.5
   m_Center: {x: 0, y: -0.000005722046, z: 0}
+--- !u!114 &2070064988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070064982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8292e4bc2cb61bd4792ea3c9843d4b37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetoMapa: {fileID: 1309347092}
+  pausarAlAbrir: 1
 --- !u!1 &2076683817
 GameObject:
   m_ObjectHideFlags: 0
