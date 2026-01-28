@@ -30,13 +30,10 @@ public class FacePagesManager : MonoBehaviour
         LoadPage(0);
     }
 
-    void SaveCurrentPage()
+    public void SaveCurrentPage()
     {
         pages[currentPageIndex].faceState = preview.GetCurrentState();
 
-        pages[currentPageIndex].noteA = noteAText.text;
-        pages[currentPageIndex].noteB = noteBText.text;
-        pages[currentPageIndex].noteC = noteCText.text;
     }
 
     void LoadPage(int index)

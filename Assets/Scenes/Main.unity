@@ -7928,7 +7928,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: F
+  m_text: L
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f35864a980a248b439f220ad200b72d3, type: 2}
   m_sharedMaterial: {fileID: 3990729607599591969, guid: f35864a980a248b439f220ad200b72d3, type: 2}
@@ -10917,8 +10917,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1032712228}
-  - {fileID: 1655016109}
   - {fileID: 1687055489}
+  - {fileID: 1655016109}
   - {fileID: 469652307}
   - {fileID: 871727702}
   - {fileID: 13435512}
@@ -30786,17 +30786,17 @@ MonoBehaviour:
   fondoIzq: {fileID: 1780818659}
   tieneLibreta: 0
   minijuegoTutorialDone: 0
-  firstTimeHogar: 0
+  hogarState: 0
   carasHogar: 0
   carasHogarOk: 0
-  firstTimePez: 1
+  pezState: 0
+  dibujosConseguidos: 0
   carasPez: 0
   carasPezOk: 0
-  firstTimeKoko: 1
   kokoState: 0
   kokoWins: 0
   kokoMaxWins: 3
-  firstTimeZari: 1
+  zariState: 0
   "mu\xF1ecasEntregadas": 0
   partesEntregadas: 0
   "mu\xF1ecas": 0
@@ -35678,7 +35678,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1032712228
 RectTransform:
   m_ObjectHideFlags: 0
@@ -43135,15 +43135,15 @@ MonoBehaviour:
   noteBText: {fileID: 543543906}
   noteCText: {fileID: 1944528114}
   pages:
-  - pageName: Coco
+  - pageName: Ladrona
     faceState:
       ojos: {fileID: 0}
       nariz: {fileID: 0}
       boca: {fileID: 0}
       cejas: {fileID: 0}
-    noteA: Tiene ojos
-    noteB: Tiene nariz
-    noteC: Le falta boca
+    noteA: "No ten\xEDa arco de cupido"
+    noteB: Toda su cara mira hacia arriba
+    noteC: Tiene un agujero en la nariz
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -46614,6 +46614,14 @@ MonoBehaviour:
   - {fileID: 1228697442}
   - {fileID: 845297657}
   - {fileID: 798710953}
+  - {fileID: 798710953}
+  - {fileID: 798710953}
+  - {fileID: 798710953}
+  - {fileID: 798710953}
+  - {fileID: 798710953}
+  - {fileID: 798710953}
+  - {fileID: 798710953}
+  - {fileID: 798710953}
   dollPrefab: {fileID: 7696733868493493445, guid: 33069944e6f063e468e405e91fe8bd57, type: 3}
   dollPartPrefab: {fileID: 7696733868493493445, guid: 33069944e6f063e468e405e91fe8bd57, type: 3}
   dollSprites:
@@ -46624,6 +46632,14 @@ MonoBehaviour:
   - {fileID: -4602207211123877577, guid: 5a7fe8743a9ab974a8260ca04cb99ee5, type: 3}
   - {fileID: -2003589802770490089, guid: f85388cd1d0c5c945902876d1d48bd81, type: 3}
   - {fileID: 2656266657295591022, guid: 19d1b6654f6fc864296ef631b7506292, type: 3}
+  - {fileID: -1145341953750539158, guid: 9bb84dcd08290d443a431fd10d9e9997, type: 3}
+  - {fileID: -1145341953750539158, guid: 9bb84dcd08290d443a431fd10d9e9997, type: 3}
+  - {fileID: -1145341953750539158, guid: 9bb84dcd08290d443a431fd10d9e9997, type: 3}
+  - {fileID: -1145341953750539158, guid: 9bb84dcd08290d443a431fd10d9e9997, type: 3}
+  - {fileID: -1145341953750539158, guid: 9bb84dcd08290d443a431fd10d9e9997, type: 3}
+  - {fileID: -1145341953750539158, guid: 9bb84dcd08290d443a431fd10d9e9997, type: 3}
+  - {fileID: -1145341953750539158, guid: 9bb84dcd08290d443a431fd10d9e9997, type: 3}
+  - {fileID: -1145341953750539158, guid: 9bb84dcd08290d443a431fd10d9e9997, type: 3}
   - {fileID: -1145341953750539158, guid: 9bb84dcd08290d443a431fd10d9e9997, type: 3}
   interactionUI: {fileID: 469652306}
   interactionUIText: {fileID: 1916544862}
@@ -46641,7 +46657,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   libreta: {fileID: 1655016108}
-  hardcodedFaces: []
+  hardcodedFaces:
+  - faceName: Ladrona
+    ojos: {fileID: 5576718590357491089, guid: 3b60fad6b7a73ed4bbaf8a832cbaa6ca, type: 3}
+    nariz: {fileID: 2656266657295591022, guid: 19d1b6654f6fc864296ef631b7506292, type: 3}
+    boca: {fileID: -3608132990939984160, guid: fa90a7bc1cd7c8e479907a51a1d512d5, type: 3}
+    cejas: {fileID: 686242527331214040, guid: 2ae112a8d6effa84790b58b87c3f2e11, type: 3}
 --- !u!1 &1342246840
 GameObject:
   m_ObjectHideFlags: 0

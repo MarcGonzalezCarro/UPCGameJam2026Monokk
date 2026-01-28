@@ -345,7 +345,7 @@ public class DialogueController : MonoBehaviour
                         break;
 
                     case KokoState.CheckCara:
-                        if (FindFirstObjectByType<GameManager>().CheckFaceByName("Ladrón"))
+                        if (FindFirstObjectByType<GameManager>().CheckFaceByName("Ladrona"))
                             npcActual.conversacionActual = "conv_cara_bien";
                         else
                             npcActual.conversacionActual = "conv_cara_mal";
@@ -374,7 +374,7 @@ public class DialogueController : MonoBehaviour
                         break;
 
                     case ZariState.BuscandoPartes:
-                        if (partesMuñeca < 4)
+                        if (partesMuñeca < 12)
                             npcActual.conversacionActual = "conv_sin_partes";
                         else
                         {
@@ -431,7 +431,7 @@ public class DialogueController : MonoBehaviour
         if (won)
         {
             kokoWins++;
-            facePages.UnlockNote("Koko", kokoWins - 1);
+            facePages.UnlockNote("Ladrona", kokoWins - 1);
             if (kokoWins < 3)
             {
                 StartDialogueNow("mision_ladron_kokopilis.json", "conv_acierto_parcial", npcActual);
