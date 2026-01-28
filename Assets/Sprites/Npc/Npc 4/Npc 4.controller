@@ -9,28 +9,28 @@ BlendTree:
   m_Name: Idle
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 8db5401e0d7b8504ab9850b3e9198304, type: 2}
-    m_Threshold: 0
-    m_Position: {x: 1, y: 0}
+    m_Motion: {fileID: 7400000, guid: c6fd01b43a8a1b94988586596c809345, type: 2}
+    m_Threshold: -1
+    m_Position: {x: -1, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: c6fd01b43a8a1b94988586596c809345, type: 2}
+    m_Motion: {fileID: 7400000, guid: 8db5401e0d7b8504ab9850b3e9198304, type: 2}
     m_Threshold: 1
-    m_Position: {x: -1, y: 0}
+    m_Position: {x: 1, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   m_BlendParameter: Horizontal
   m_BlendParameterY: Vertical
-  m_MinThreshold: 0
+  m_MinThreshold: -1
   m_MaxThreshold: 1
-  m_UseAutomaticThresholds: 1
+  m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
-  m_BlendType: 1
+  m_BlendType: 0
 --- !u!1107 &-1075747816331803742
 AnimatorStateMachine:
   serializedVersion: 6
@@ -62,7 +62,7 @@ AnimatorController:
   m_Name: Npc 4
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Blend
+  - m_Name: Horizontal
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0

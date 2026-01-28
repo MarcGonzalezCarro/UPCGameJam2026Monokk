@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: e9786b06cef471241915f73f21bc7e8a
+guid: 9b1f4aa403ce04549a4f8f8e0ec4320b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8850603868071760861
-    second: sprite sheet gato pez_0
+      213: -8339373382105099985
+    second: "Ilustracio\u0301n_sin_ti\u0301tulo (2)_0"
   - first:
-      213: -7077418028852774990
-    second: sprite sheet gato pez_1
+      213: -2532366981717590794
+    second: "Ilustracio\u0301n_sin_ti\u0301tulo (2)_1"
   - first:
-      213: -4342100473675018704
-    second: sprite sheet gato pez_2
+      213: -221743526161234695
+    second: "Ilustracio\u0301n_sin_ti\u0301tulo (2)_2"
   - first:
-      213: 7152355255909836875
-    second: sprite sheet gato pez_3
+      213: -3112803537178728404
+    second: "Ilustracio\u0301n_sin_ti\u0301tulo (2)_3"
   - first:
-      213: -4474372298587645735
-    second: sprite sheet gato pez_4
+      213: 1780414500912846593
+    second: "Ilustracio\u0301n_sin_ti\u0301tulo (2)_4"
   - first:
-      213: 5663615050774298217
-    second: sprite sheet gato pez_5
+      213: -8239844295444363174
+    second: "Ilustracio\u0301n_sin_ti\u0301tulo (2)_5"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -90,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,133 +115,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite sheet gato pez_0
+      name: "Ilustracio\u0301n_sin_ti\u0301tulo (2)_0"
       rect:
         serializedVersion: 2
-        x: 71
-        y: 1062
-        width: 1156
-        height: 1016
+        x: 120
+        y: 1349
+        width: 985
+        height: 1109
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dd39d145359a3da70800000000000000
-      internalID: 8850603868071760861
+      spriteID: f211746c718944c80800000000000000
+      internalID: -8339373382105099985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite sheet gato pez_1
+      name: "Ilustracio\u0301n_sin_ti\u0301tulo (2)_1"
       rect:
         serializedVersion: 2
-        x: 1615
-        y: 1051
-        width: 1144
-        height: 1002
+        x: 1221
+        y: 1351
+        width: 985
+        height: 1107
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2b7f84fecc5f7cd90800000000000000
-      internalID: -7077418028852774990
+      spriteID: 6fc7bcda5a93bdcd0800000000000000
+      internalID: -2532366981717590794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite sheet gato pez_2
+      name: "Ilustracio\u0301n_sin_ti\u0301tulo (2)_2"
       rect:
         serializedVersion: 2
-        x: 3135
-        y: 1051
-        width: 1154
-        height: 1023
+        x: 2398
+        y: 1349
+        width: 985
+        height: 1109
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 03e8b87ef92cdb3c0800000000000000
-      internalID: -4342100473675018704
+      spriteID: 9f4cae310753cecf0800000000000000
+      internalID: -221743526161234695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite sheet gato pez_3
+      name: "Ilustracio\u0301n_sin_ti\u0301tulo (2)_3"
       rect:
         serializedVersion: 2
-        x: 28
-        y: 21
-        width: 1154
-        height: 1023
+        x: 138
+        y: 118
+        width: 985
+        height: 1109
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b4867efd535424360800000000000000
-      internalID: 7152355255909836875
+      spriteID: c28e1eedca91dc4d0800000000000000
+      internalID: -3112803537178728404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite sheet gato pez_4
+      name: "Ilustracio\u0301n_sin_ti\u0301tulo (2)_4"
       rect:
         serializedVersion: 2
-        x: 1558
-        y: 21
-        width: 1144
-        height: 1002
+        x: 1315
+        y: 120
+        width: 985
+        height: 1107
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d8d5d5c916d7e1c0800000000000000
-      internalID: -4474372298587645735
+      spriteID: 1075dd73e8d45b810800000000000000
+      internalID: 1780414500912846593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite sheet gato pez_5
+      name: "Ilustracio\u0301n_sin_ti\u0301tulo (2)_5"
       rect:
         serializedVersion: 2
-        x: 3090
-        y: 32
-        width: 1156
-        height: 1016
+        x: 2416
+        y: 118
+        width: 985
+        height: 1109
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 96e35fda1e3399e40800000000000000
-      internalID: 5663615050774298217
+      spriteID: a588285154136ad80800000000000000
+      internalID: -8239844295444363174
       vertices: []
       indices: 
       edges: []
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: cbdbc29e2a4e26f4d84d933e3686dacf
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sprite sheet gato pez_0: 8850603868071760861
-      sprite sheet gato pez_1: -7077418028852774990
-      sprite sheet gato pez_2: -4342100473675018704
-      sprite sheet gato pez_3: 7152355255909836875
-      sprite sheet gato pez_4: -4474372298587645735
-      sprite sheet gato pez_5: 5663615050774298217
+      "Ilustracio\u0301n_sin_ti\u0301tulo (2)_0": -8339373382105099985
+      "Ilustracio\u0301n_sin_ti\u0301tulo (2)_1": -2532366981717590794
+      "Ilustracio\u0301n_sin_ti\u0301tulo (2)_2": -221743526161234695
+      "Ilustracio\u0301n_sin_ti\u0301tulo (2)_3": -3112803537178728404
+      "Ilustracio\u0301n_sin_ti\u0301tulo (2)_4": 1780414500912846593
+      "Ilustracio\u0301n_sin_ti\u0301tulo (2)_5": -8239844295444363174
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
