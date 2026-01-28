@@ -51972,7 +51972,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 5.0000024
+  m_Radius: 3.69
   m_Center: {x: -0.0000009536743, y: -0.0000019073486, z: 0.000002861023}
 --- !u!1 &1198997571
 GameObject:
@@ -52806,7 +52806,7 @@ MonoBehaviour:
     noteA: "Los mismos ojos que mu\xF1eca 3"
     noteB: "Fue hecha a la vez de mu\xF1eca 2"
     noteC: Nariz respingona
-    noteD: TEst1
+    noteD: Las tres tienen los mismos labios
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -52820,7 +52820,7 @@ MonoBehaviour:
     noteA: "Es asi\xE1tica"
     noteB: "Nariz igual que la mu\xF1eca 3"
     noteC: Tiene los labios finos
-    noteD: Test2
+    noteD: 'Fue hecha en el 2002 '
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -52833,8 +52833,8 @@ MonoBehaviour:
       cejas: {fileID: 0}
     noteA: Tiene ojos grandes
     noteB: Cejas gruesas
-    noteC: Tiene arco de tupido
-    noteD: Test3
+    noteC: Tiene arco de cupido
+    noteD: Hecha en Roma
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -52845,10 +52845,10 @@ MonoBehaviour:
       nariz: {fileID: 0}
       boca: {fileID: 0}
       cejas: {fileID: 0}
-    noteA: TestMarron1
-    noteB: TestMarron2
-    noteC: 3
-    noteD: TestMarron4
+    noteA: 'Ojos tristes '
+    noteB: 'Viaja mucho a Roma '
+    noteC: "Siempre est\xE1 enfadada"
+    noteD: Tiene los labios gruesos
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -52859,10 +52859,10 @@ MonoBehaviour:
       nariz: {fileID: 0}
       boca: {fileID: 0}
       cejas: {fileID: 0}
-    noteA: TestRosa1
-    noteB: TestRosa2
-    noteC: TestRosa3
-    noteD: TestRosa4
+    noteA: "Es una se\xF1ora mayor "
+    noteB: Tiene un bulto en la nariz
+    noteC: 'Tiene la boca triste '
+    noteD: No se depila las cejas
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -52873,10 +52873,10 @@ MonoBehaviour:
       nariz: {fileID: 0}
       boca: {fileID: 0}
       cejas: {fileID: 0}
-    noteA: TestAzul1
-    noteB: TestAzul2
-    noteC: TestAzul3
-    noteD: TestAzul4
+    noteA: 'Su tic nervioso es arrancarse las cejas '
+    noteB: 'Es bastante moderno '
+    noteC: 'Le gustan mucho las almendras '
+    noteD: Tiene el arco muy pronunciado
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -52887,10 +52887,10 @@ MonoBehaviour:
       nariz: {fileID: 0}
       boca: {fileID: 0}
       cejas: {fileID: 0}
-    noteA: 
-    noteB: 
-    noteC: 
-    noteD: 
+    noteA: "Naci\xF3 en Jap\xF3n "
+    noteB: ' Lleva un piercing '
+    noteC: 'Esta en camino de quedarse sin cejas '
+    noteD: Parece una actriz
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -52901,10 +52901,10 @@ MonoBehaviour:
       nariz: {fileID: 0}
       boca: {fileID: 0}
       cejas: {fileID: 0}
-    noteA: 
-    noteB: 
-    noteC: 
-    noteD: 
+    noteA: "Es amiga de la infancia de la due\xF1a de la casa rosa "
+    noteB: 'Las cejas poco pobladas '
+    noteC: 'La nariz hacia abajo '
+    noteD: Los labios redondos
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -52915,10 +52915,10 @@ MonoBehaviour:
       nariz: {fileID: 0}
       boca: {fileID: 0}
       cejas: {fileID: 0}
-    noteA: 
-    noteB: 
-    noteC: 
-    noteD: 
+    noteA: "Ten\xEDa los ojos hundidos "
+    noteB: "Escuch\xE9 que acababa de perder una apuesta "
+    noteC: "Ten\xEDa la nariz de cerdito "
+    noteD: "Ten\xEDa los labios ni gruesos ni finos"
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -52929,10 +52929,10 @@ MonoBehaviour:
       nariz: {fileID: 0}
       boca: {fileID: 0}
       cejas: {fileID: 0}
-    noteA: 
-    noteB: 
-    noteC: 
-    noteD: 
+    noteA: 'Fui un regalo de su nieta '
+    noteB: "Ten\xEDa los labios gruesos "
+    noteC: "La nariz era peque\xF1a "
+    noteD: "Hace ya que dej\xF3 de  preocuparse por lo que digan"
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -58668,11 +58668,36 @@ MonoBehaviour:
     nariz: {fileID: 2656266657295591022, guid: 19d1b6654f6fc864296ef631b7506292, type: 3}
     boca: {fileID: -3608132990939984160, guid: fa90a7bc1cd7c8e479907a51a1d512d5, type: 3}
     cejas: {fileID: 686242527331214040, guid: 2ae112a8d6effa84790b58b87c3f2e11, type: 3}
-  - faceName: "Casa Marr\xF3n"
+  - faceName: Casa Rosa
     ojos: {fileID: 5576718590357491089, guid: 3b60fad6b7a73ed4bbaf8a832cbaa6ca, type: 3}
     nariz: {fileID: -4602207211123877577, guid: 5a7fe8743a9ab974a8260ca04cb99ee5, type: 3}
     boca: {fileID: -1604965462662269471, guid: da61a2485b0aff24798150f72d3cd0da, type: 3}
     cejas: {fileID: -5959829739726908654, guid: fd446a68537157443a8e81e43fd7b694, type: 3}
+  - faceName: Entrevista 2
+    ojos: {fileID: -3323397969109949031, guid: 728e3023f7067a54598470cf06592a21, type: 3}
+    nariz: {fileID: -2003589802770490089, guid: f85388cd1d0c5c945902876d1d48bd81, type: 3}
+    boca: {fileID: 2743326830905882742, guid: 575fd687f10342542acb09ad51eb4208, type: 3}
+    cejas: {fileID: -5959829739726908654, guid: fd446a68537157443a8e81e43fd7b694, type: 3}
+  - faceName: "Mu\xF1eca1"
+    ojos: {fileID: 295656942512381775, guid: c5c4b58e78a95eb44a9ea169a3c003bf, type: 3}
+    nariz: {fileID: 2656266657295591022, guid: 19d1b6654f6fc864296ef631b7506292, type: 3}
+    boca: {fileID: -661054482764891523, guid: f629441fe8b65fe4ebcacac3cf7e6162, type: 3}
+    cejas: {fileID: -7929651252093330423, guid: 2c334b506ba8db54da713d5d14d8297c, type: 3}
+  - faceName: "Mu\xF1eca2"
+    ojos: {fileID: 4810835412360481271, guid: aa851b08541238e41b22db6663a71f3f, type: 3}
+    nariz: {fileID: -1145341953750539158, guid: 9bb84dcd08290d443a431fd10d9e9997, type: 3}
+    boca: {fileID: -661054482764891523, guid: f629441fe8b65fe4ebcacac3cf7e6162, type: 3}
+    cejas: {fileID: -7929651252093330423, guid: 2c334b506ba8db54da713d5d14d8297c, type: 3}
+  - faceName: "Mu\xF1eca3"
+    ojos: {fileID: 5576718590357491089, guid: 3b60fad6b7a73ed4bbaf8a832cbaa6ca, type: 3}
+    nariz: {fileID: -1145341953750539158, guid: 9bb84dcd08290d443a431fd10d9e9997, type: 3}
+    boca: {fileID: -661054482764891523, guid: f629441fe8b65fe4ebcacac3cf7e6162, type: 3}
+    cejas: {fileID: 8805368606174928796, guid: d13230154a7d2d24faa07acfa37f4eae, type: 3}
+  - faceName: "Due\xF1a"
+    ojos: {fileID: -3323397969109949031, guid: 728e3023f7067a54598470cf06592a21, type: 3}
+    nariz: {fileID: 2656266657295591022, guid: 19d1b6654f6fc864296ef631b7506292, type: 3}
+    boca: {fileID: 2743326830905882742, guid: 575fd687f10342542acb09ad51eb4208, type: 3}
+    cejas: {fileID: 8805368606174928796, guid: d13230154a7d2d24faa07acfa37f4eae, type: 3}
 --- !u!114 &1336765465
 MonoBehaviour:
   m_ObjectHideFlags: 0
