@@ -507,5 +507,9 @@ public class DialogueController : MonoBehaviour
 
         minigame = progress.wins < config.maxWins;
     }
+
+    public void ItemUnlockNote(string pageName, int noteIndex) {
+        facePages.UnlockNote(pageName, noteIndex);
+    }
 }
 

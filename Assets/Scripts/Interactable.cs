@@ -13,6 +13,8 @@ public class Interactable : MonoBehaviour
     public TMP_Text interactionUIText;
 
     [Header("Acción")]
+    public string pageName;
+    public int noteIndex;
     public UnityEngine.Events.UnityEvent onInteract;
 
     private bool playerNearby = false;
@@ -36,6 +38,7 @@ public class Interactable : MonoBehaviour
     void Interact()
     {
         onInteract.Invoke();
+        FindFirstObjectByType<DialogueController>().ItemUnlockNote(pageName, noteIndex);
         Destroy(gameObject);
     }
 

@@ -18,10 +18,12 @@ public class FacePage
     public string noteA;
     public string noteB;
     public string noteC;
+    public string noteD;
 
     public bool noteAUnlocked;
     public bool noteBUnlocked;
     public bool noteCUnlocked;
+    public bool noteDUnlocked;
 
     public FacePage(string name)
     {
@@ -31,10 +33,12 @@ public class FacePage
         noteA = "";
         noteB = "";
         noteC = "";
+        noteD = "";
 
         noteAUnlocked = false;
         noteBUnlocked = false;
         noteCUnlocked = false;
+        noteDUnlocked = false;
     }
 }
 

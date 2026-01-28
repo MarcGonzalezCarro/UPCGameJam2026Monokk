@@ -2840,6 +2840,7 @@ RectTransform:
   - {fileID: 1541257325}
   - {fileID: 543543908}
   - {fileID: 1944528116}
+  - {fileID: 558798215}
   m_Father: {fileID: 1655016109}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5398,7 +5399,7 @@ Transform:
   m_GameObject: {fileID: 113178774}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 143.19998, y: 0, z: 146.1}
+  m_LocalPosition: {x: 132.5, y: 0, z: 146.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21592,6 +21593,142 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &558798214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 558798215}
+  - component: {fileID: 558798217}
+  - component: {fileID: 558798216}
+  m_Layer: 5
+  m_Name: Text (TMP) (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &558798215
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558798214}
+  m_LocalRotation: {x: -0, y: -0, z: -0.023558179, w: 0.9997225}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 57065560}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.7}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 6, y: -168.7}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &558798216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558798214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 4
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 38.797203, w: -1.5631752}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &558798217
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558798214}
+  m_CullTransparentMesh: 1
 --- !u!1 &562668354
 GameObject:
   m_ObjectHideFlags: 0
@@ -51160,6 +51297,7 @@ MonoBehaviour:
   noteAText: {fileID: 1541257323}
   noteBText: {fileID: 543543906}
   noteCText: {fileID: 1944528114}
+  noteDText: {fileID: 558798216}
   pages:
   - pageName: Ladrona
     faceState:
@@ -51170,9 +51308,11 @@ MonoBehaviour:
     noteA: "No ten\xEDa arco de cupido"
     noteB: Toda su cara mira hacia arriba
     noteC: Tiene un agujero en la nariz
+    noteD: 
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
+    noteDUnlocked: 0
   - pageName: "Mu\xF1eca1"
     faceState:
       ojos: {fileID: 0}
@@ -51182,9 +51322,11 @@ MonoBehaviour:
     noteA: "Los mismos ojos que mu\xF1eca 3"
     noteB: "Fue hecha a la vez de mu\xF1eca 2"
     noteC: Nariz respingona
+    noteD: 
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
+    noteDUnlocked: 0
   - pageName: "Mu\xF1eca2"
     faceState:
       ojos: {fileID: 0}
@@ -51194,9 +51336,11 @@ MonoBehaviour:
     noteA: "Es asi\xE1tica"
     noteB: "Nariz igual que la mu\xF1eca 3"
     noteC: Tiene los labios finos
+    noteD: 
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
+    noteDUnlocked: 0
   - pageName: "Mu\xF1eca3"
     faceState:
       ojos: {fileID: 0}
@@ -51206,45 +51350,53 @@ MonoBehaviour:
     noteA: Tiene ojos grandes
     noteB: Cejas gruesas
     noteC: Tiene arco de tupido
+    noteD: 
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
+    noteDUnlocked: 0
   - pageName: "Casa Marr\xF3n"
     faceState:
       ojos: {fileID: 0}
       nariz: {fileID: 0}
       boca: {fileID: 0}
       cejas: {fileID: 0}
-    noteA: 
-    noteB: 
-    noteC: 
+    noteA: TestMarron1
+    noteB: TestMarron2
+    noteC: 3
+    noteD: TestMarron4
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
+    noteDUnlocked: 0
   - pageName: Casa Rosa
     faceState:
       ojos: {fileID: 0}
       nariz: {fileID: 0}
       boca: {fileID: 0}
       cejas: {fileID: 0}
-    noteA: 
-    noteB: 
-    noteC: 
+    noteA: TestRosa1
+    noteB: TestRosa2
+    noteC: TestRosa3
+    noteD: TestRosa4
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
+    noteDUnlocked: 0
   - pageName: Casa azul
     faceState:
       ojos: {fileID: 0}
       nariz: {fileID: 0}
       boca: {fileID: 0}
       cejas: {fileID: 0}
-    noteA: 
-    noteB: 
-    noteC: 
+    noteA: TestAzul1
+    noteB: TestAzul2
+    noteC: TestAzul3
+    noteD: TestAzul4
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
+    noteDUnlocked: 0
   - pageName: Entrevista1
     faceState:
       ojos: {fileID: 0}
@@ -51254,9 +51406,11 @@ MonoBehaviour:
     noteA: 
     noteB: 
     noteC: 
+    noteD: 
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
+    noteDUnlocked: 0
   - pageName: Entrevista2
     faceState:
       ojos: {fileID: 0}
@@ -51266,9 +51420,11 @@ MonoBehaviour:
     noteA: 
     noteB: 
     noteC: 
+    noteD: 
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
+    noteDUnlocked: 0
   - pageName: Entrevista3
     faceState:
       ojos: {fileID: 0}
@@ -51278,9 +51434,11 @@ MonoBehaviour:
     noteA: 
     noteB: 
     noteC: 
+    noteD: 
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
+    noteDUnlocked: 0
   - pageName: "Due\xF1a"
     faceState:
       ojos: {fileID: 0}
@@ -51290,9 +51448,11 @@ MonoBehaviour:
     noteA: 
     noteB: 
     noteC: 
+    noteD: 
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
+    noteDUnlocked: 0
 --- !u!1 &1227466236
 GameObject:
   m_ObjectHideFlags: 0
@@ -56262,6 +56422,20 @@ MonoBehaviour:
   - {fileID: -1386683391063219287, guid: a658dbcc15dbbe644a11cfc56a3373ae, type: 3}
   - {fileID: -1386683391063219287, guid: a658dbcc15dbbe644a11cfc56a3373ae, type: 3}
   - {fileID: -1386683391063219287, guid: a658dbcc15dbbe644a11cfc56a3373ae, type: 3}
+  pageName:
+  - Casa Rosa
+  - Casa Rosa
+  - Casa Rosa
+  - Casa Rosa
+  - "Casa Marr\xF3n"
+  - "Casa Marr\xF3n"
+  - "Casa Marr\xF3n"
+  - "Casa Marr\xF3n"
+  - Casa azul
+  - Casa azul
+  - Casa azul
+  - Casa azul
+  noteIndex: 010000000200000003000000040000000100000002000000030000000400000001000000020000000300000004000000
   interactionUI: {fileID: 469652306}
   interactionUIText: {fileID: 1916544862}
   interactionKey: 101
@@ -64348,7 +64522,7 @@ Transform:
   m_GameObject: {fileID: 1507307433}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 143.19998, y: 0, z: 124.880005}
+  m_LocalPosition: {x: 132, y: 0, z: 124.880005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -87027,7 +87201,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 38.797203, w: -78.265366}
+  m_margin: {x: 0, y: 0, z: 38.797203, w: -1.5631752}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

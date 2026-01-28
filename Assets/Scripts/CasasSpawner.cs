@@ -12,6 +12,10 @@ public class CasasSpawner : MonoBehaviour
     [Header("Sprites")]
     public Sprite[] ItemSprites;
 
+    [Header("Notas")]
+    public string[] pageName;
+    public int[] noteIndex;
+
     [Header("Interactable Settings")]
     public GameObject interactionUI;
     public TMP_Text interactionUIText;
@@ -36,6 +40,7 @@ public class CasasSpawner : MonoBehaviour
                 );
 
                 SetupSprite(item, ItemSprites[i]);
+                SetupAction(item, pageName[i], noteIndex[i]);
                 SetupInteractable(
                     item,
                     "Recoger Item"
@@ -52,6 +57,11 @@ public class CasasSpawner : MonoBehaviour
         if (sr != null)
             sr.sprite = sprite;
     }
+    void SetupAction(GameObject obj, string pageName, int noteIndex)
+    {
+        obj.GetComponent<Interactable>().pageName = pageName;
+        obj.GetComponent<Interactable>().noteIndex = noteIndex - 1;
+    }
 
     void SetupInteractable(GameObject obj, string interactionText)
     {
@@ -63,6 +73,7 @@ public class CasasSpawner : MonoBehaviour
         interactable.interactionText = interactionText;
         interactable.interactionUI = interactionUI;
         interactable.interactionUIText = interactionUIText;
+
 
         // Evento limpio
         interactable.onInteract.RemoveAllListeners();
