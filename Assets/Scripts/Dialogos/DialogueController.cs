@@ -280,7 +280,7 @@ public class DialogueController : MonoBehaviour
                         break;
 
                     case HogarState.CheckCara:
-                        if (FindFirstObjectByType<GameManager>().CheckFaceByName("Gato"))
+                        if (FindFirstObjectByType<GameManager>().CheckFaceByName("Casa Marrón"))
                         {
                             npcActual.conversacionActual = "conv_cara_bien";
                             hogarState = HogarState.Completada;
