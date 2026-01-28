@@ -35,7 +35,6 @@ public class DialogueController : MonoBehaviour
     [Header("Variables de juego")]
     public bool tieneLibreta;
     public bool minijuegoTutorialDone = false;
-
     public enum HogarState
     {
         PrimerDialogo,
@@ -59,18 +58,21 @@ public class DialogueController : MonoBehaviour
 
     public PezState pezState = PezState.PrimerDialogo;
     //Mision como pez fuera del agua
-
+    public int npc1Wins;
+    public int npc2Wins;
+    public int npc3Wins;
     public int dibujosConseguidos;
     public int carasPez;
     public bool carasPezOk;
 
     //Mision ladron de kokopilis
 
-    public enum KokoState { 
-        PrimerDialogo, 
-        Ayuda, 
-        Minijuego, 
-        CheckCara 
+    public enum KokoState
+    {
+        PrimerDialogo,
+        Ayuda,
+        Minijuego,
+        CheckCara
     }
     public KokoState kokoState = KokoState.PrimerDialogo;
     public int kokoWins = 0; // cuántas veces has ganado el minijuego
@@ -86,7 +88,7 @@ public class DialogueController : MonoBehaviour
         Completada
     }
     public ZariState zariState = ZariState.PrimerDialogo;
-    
+
 
     public bool muñecasEntregadas = false;
     public bool partesEntregadas = false;
@@ -94,8 +96,8 @@ public class DialogueController : MonoBehaviour
     public int partesMuñeca = 0;
     public bool carasZariOk;
 
-    private string conversacion= "";
-    private bool minigame;
+    private string conversacion = "";
+    public bool minigame;
     private bool minigameResult;
 
     [Header("Minijuegos")]
@@ -111,7 +113,7 @@ public class DialogueController : MonoBehaviour
 
     private void Start()
     {
-        
+
     }
     public void StartDialogue(
         string jsonFile,
@@ -132,15 +134,20 @@ public class DialogueController : MonoBehaviour
             ShowLine(inicio);
             animator.ResetTrigger("EndConversation");
             animator.SetTrigger("StartConversation");
-        }            
+        }
     }
     public void StartDialogueNow(
         string jsonFile,
         string conversacionId,
-        NPCDialogue npc
+        NPCDialogue npc, int tipo
     )
     {
         npcActual = npc;
+
+        if (tipo == 1)
+        {
+            minigame = true;
+        }
 
         DialogueManager.Instance.LoadDialogueFile(jsonFile);
 
@@ -171,7 +178,8 @@ public class DialogueController : MonoBehaviour
             fondoDer.SetActive(true);
             fondoIzq.SetActive(false);
         }
-        else {
+        else
+        {
             fondoDer.SetActive(false);
             fondoIzq.SetActive(true);
         }
@@ -209,7 +217,7 @@ public class DialogueController : MonoBehaviour
             else
                 Debug.LogError("MiniGameManager no encontrado");
         }
-        
+
     }
 
     // =========================
@@ -252,7 +260,8 @@ public class DialogueController : MonoBehaviour
         }
     }
 
-    public void CheckConversation() {
+    public void CheckConversation()
+    {
 
         minigame = false;
 
@@ -291,8 +300,8 @@ public class DialogueController : MonoBehaviour
                         }
                         break;
                 }
-            break;
-                
+                break;
+
             case "mision_como_pez_fuera_del_agua.json":
                 switch (pezState)
                 {
@@ -429,37 +438,127 @@ public class DialogueController : MonoBehaviour
 
     public void OnMinigameFinished(bool won)
     {
-        if (npcActual.archivoDialogo != "mision_ladron_kokopilis.json")
-            return;
 
-        if (won)
+        switch (npcActual.nombre)
         {
-            kokoWins++;
-            facePages.UnlockNote("Ladrona", kokoWins - 1);
-            if (kokoWins < 3)
-            {
-                StartDialogueNow("mision_ladron_kokopilis.json", "conv_acierto_parcial", npcActual);
-            }
-            else {
-                StartDialogueNow("mision_ladron_kokopilis.json", "conv_acierto_total", npcActual);
-            }
-            
-        }
-        else
-        {
-            npcActual.conversacionActual = "conv_fallo_puzle";
+            case "NPC1":
+                Debug.Log(npcActual.nombre);
+                if (won)
+                {
+                    Debug.Log("Ganaste");
+                    npc1Wins++;
+                    facePages.UnlockNote("Entrevista1", npc1Wins - 1);
+                    if (npc1Wins < 3)
+                    {
+                        Debug.Log("TEst");
+                        StartDialogueNow("mision_como_pez_fuera_del_agua.json", "conv_acierto_parcial", npcActual, -1);
+                    }
+                    else
+                    {
+                        Debug.Log("TEst4");
+                        StartDialogueNow("mision_como_pez_fuera_del_agua.json", "conv_acierto_total", npcActual, -1);
+                    }
+
+                }
+                else
+                {
+                    npcActual.conversacionActual = "conv_fallo_puzle";
+                }
+                minigame = false;
+
+                break;
+            case "NPC2":
+                if (won)
+                {
+                    npc2Wins++;
+                    facePages.UnlockNote("Entrevista2", npc2Wins - 1);
+                    if (npc2Wins < 3)
+                    {
+                        StartDialogueNow("mision_ladron_kokopilis.json", "conv_acierto_parcial", npcActual, -1);
+                    }
+                    else
+                    {
+                        StartDialogueNow("mision_ladron_kokopilis.json", "conv_acierto_total", npcActual, -1);
+                    }
+
+                }
+                else
+                {
+                    npcActual.conversacionActual = "conv_fallo_puzle";
+                }
+                minigame = false;
+
+                break;
+            case "NPC3":
+                if (won)
+                {
+                    npc3Wins++;
+                    facePages.UnlockNote("Entrevista3", npc3Wins - 1);
+                    if (npc3Wins < 3)
+                    {
+                        StartDialogueNow("mision_ladron_kokopilis.json", "conv_acierto_parcial", npcActual, -1);
+                    }
+                    else
+                    {
+                        StartDialogueNow("mision_ladron_kokopilis.json", "conv_acierto_total", npcActual, -1);
+                    }
+
+                }
+                else
+                {
+                    npcActual.conversacionActual = "conv_fallo_puzle";
+                }
+                minigame = false;
+
+                break;
+            case "Coco":
+                if (won)
+                {
+                    kokoWins++;
+                    facePages.UnlockNote("Ladrona", kokoWins - 1);
+                    if (kokoWins < 3)
+                    {
+                        StartDialogueNow("mision_ladron_kokopilis.json", "conv_acierto_parcial", npcActual, -1);
+                    }
+                    else
+                    {
+                        StartDialogueNow("mision_ladron_kokopilis.json", "conv_acierto_total", npcActual, -1);
+                    }
+
+                }
+                else
+                {
+                    npcActual.conversacionActual = "conv_fallo_puzle";
+                }
+
+                // Si ya consiguió las 3 notas
+                if (kokoWins >= kokoMaxWins)
+                    kokoState = KokoState.CheckCara;
+                else
+                    kokoState = KokoState.Minijuego;
+
+                minigame = false;
+
+                break;
+
         }
 
-        // Si ya consiguió las 3 notas
-        if (kokoWins >= kokoMaxWins)
-            kokoState = KokoState.CheckCara;
-        else
-            kokoState = KokoState.Minijuego;
 
-        minigame = false;
     }
 
+    public void OnMinigameFinishedNPC1(bool won)
+    {
+        Debug.Log("sjfsijfo");
 
+    }
+    public void OnMinigameFinishedNPC2(bool won)
+    {
+
+    }
+    public void OnMinigameFinishedNPC3(bool won)
+    {
+
+    }
     NPCMinigameProgress GetProgress(string npcId)
     {
         var progress = minigameProgress.Find(p => p.npcId == npcId);
@@ -508,8 +607,10 @@ public class DialogueController : MonoBehaviour
         minigame = progress.wins < config.maxWins;
     }
 
-    public void ItemUnlockNote(string pageName, int noteIndex) {
+    public void ItemUnlockNote(string pageName, int noteIndex)
+    {
         facePages.UnlockNote(pageName, noteIndex);
     }
-}
 
+
+}

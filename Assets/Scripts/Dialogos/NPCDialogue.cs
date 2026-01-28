@@ -4,9 +4,10 @@ public class NPCDialogue : MonoBehaviour
 {
     public string archivoDialogo;
     public string nombre;
-    public string conversacionActual = "conv_1";
+    public string conversacionActual;
     public GameObject interactUI;
     private bool jugadorCerca;
+    public bool checkConversation;
 
     void Update()
     {
@@ -14,7 +15,7 @@ public class NPCDialogue : MonoBehaviour
         {
             interactUI.SetActive(true);
         }
-        else if(!jugadorCerca && interactUI.activeInHierarchy == true)
+        else if (!jugadorCerca && interactUI.activeInHierarchy == true)
         {
             interactUI.SetActive(false);
         }
@@ -28,12 +29,44 @@ public class NPCDialogue : MonoBehaviour
     {
         DialogueController controller =
             FindFirstObjectByType<DialogueController>();
+        if (checkConversation)
+        {
+            controller.StartDialogue(
+                archivoDialogo,
+                conversacionActual,
+                this
+            );
+        }
+        else
+        {
 
-        controller.StartDialogue(
-            archivoDialogo,
-            conversacionActual,
-            this
-        );
+            switch (nombre)
+            {
+                case "NPC1":
+                    controller.StartDialogueNow(
+                    archivoDialogo,
+                    conversacionActual,
+                    this, 1
+                );
+                    break;
+                case "NPC2":
+                    controller.StartDialogueNow(
+                    archivoDialogo,
+                    conversacionActual,
+                    this, 2
+                );
+                    break;
+                case "NPC3":
+                    controller.StartDialogueNow(
+                    archivoDialogo,
+                    conversacionActual,
+                    this, 3
+                );
+                    break;
+
+            }
+
+        }
     }
 
     void OnTriggerEnter(Collider other)
