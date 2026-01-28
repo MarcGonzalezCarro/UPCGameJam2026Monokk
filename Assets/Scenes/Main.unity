@@ -4364,7 +4364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8292e4bc2cb61bd4792ea3c9843d4b37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetoMapa: {fileID: 0}
+  objetoMapa: {fileID: 1309347092}
   pausarAlAbrir: 1
 --- !u!1 &91185914
 GameObject:
@@ -6519,6 +6519,7 @@ MonoBehaviour:
   nombre: Gato
   conversacionActual: conv_1_inicio
   interactUI: {fileID: 469652306}
+  checkConversation: 0
 --- !u!114 &130817152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10304,6 +10305,7 @@ MonoBehaviour:
   nombre: Coco
   conversacionActual: conv_1_inicio
   interactUI: {fileID: 469652306}
+  checkConversation: 0
 --- !u!136 &223154195
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -29498,6 +29500,7 @@ MonoBehaviour:
   nombre: Macarena
   conversacionActual: conv_1_inicio
   interactUI: {fileID: 469652306}
+  checkConversation: 0
 --- !u!136 &729823392
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -35478,6 +35481,9 @@ MonoBehaviour:
   objetosCasas: 0
   carasHogarOk: 0
   pezState: 0
+  npc1Wins: 0
+  npc2Wins: 0
+  npc3Wins: 0
   dibujosConseguidos: 0
   carasPez: 0
   carasPezOk: 0
@@ -35490,6 +35496,7 @@ MonoBehaviour:
   "mu\xF1ecas": 0
   "partesMu\xF1eca": 0
   carasZariOk: 0
+  minigame: 0
   minigameDialogues:
   - npcId: Coco
     fallo: conv_fallo_puzle
@@ -55907,12 +55914,12 @@ GameObject:
   - component: {fileID: 1309347095}
   - component: {fileID: 1309347094}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Minimapa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1309347093
 RectTransform:
   m_ObjectHideFlags: 0
@@ -65383,6 +65390,7 @@ MonoBehaviour:
   nombre: Zari
   conversacionActual: conv_1_inicio
   interactUI: {fileID: 469652306}
+  checkConversation: 0
 --- !u!136 &1485225751
 CapsuleCollider:
   m_ObjectHideFlags: 0
