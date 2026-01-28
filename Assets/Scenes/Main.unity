@@ -17401,7 +17401,7 @@ Transform:
   m_GameObject: {fileID: 459955437}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.510002, y: 0, z: 0}
+  m_LocalPosition: {x: -18.510002, y: 0, z: 8.119999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22275,7 +22275,7 @@ Transform:
   m_GameObject: {fileID: 582093585}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.110001, y: 0, z: 0}
+  m_LocalPosition: {x: -14.110001, y: 0, z: 8.119999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29335,7 +29335,7 @@ Transform:
   m_GameObject: {fileID: 738869900}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.449997, y: 0, z: 0}
+  m_LocalPosition: {x: -6.449997, y: 0, z: -9.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30912,7 +30912,7 @@ Transform:
   m_GameObject: {fileID: 783612729}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.110001, y: 0, z: 0}
+  m_LocalPosition: {x: -14.110001, y: 0, z: 8.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -37123,7 +37123,7 @@ Transform:
   m_GameObject: {fileID: 928327674}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -9.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46949,7 +46949,7 @@ Transform:
   m_GameObject: {fileID: 1125250233}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -13.2, y: 0, z: -18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -51322,7 +51322,7 @@ MonoBehaviour:
     noteA: "Los mismos ojos que mu\xF1eca 3"
     noteB: "Fue hecha a la vez de mu\xF1eca 2"
     noteC: Nariz respingona
-    noteD: 
+    noteD: TEst1
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -51336,7 +51336,7 @@ MonoBehaviour:
     noteA: "Es asi\xE1tica"
     noteB: "Nariz igual que la mu\xF1eca 3"
     noteC: Tiene los labios finos
-    noteD: 
+    noteD: Test2
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -51350,7 +51350,7 @@ MonoBehaviour:
     noteA: Tiene ojos grandes
     noteB: Cejas gruesas
     noteC: Tiene arco de tupido
-    noteD: 
+    noteD: Test3
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -52676,7 +52676,7 @@ Transform:
   m_GameObject: {fileID: 1250097871}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -36.1, y: 0, z: 24.913029}
+  m_LocalPosition: {x: -22.87, y: 0, z: 24.913029}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -56359,6 +56359,20 @@ MonoBehaviour:
   - {fileID: -1145341953750539158, guid: 9bb84dcd08290d443a431fd10d9e9997, type: 3}
   - {fileID: -1145341953750539158, guid: 9bb84dcd08290d443a431fd10d9e9997, type: 3}
   - {fileID: -1145341953750539158, guid: 9bb84dcd08290d443a431fd10d9e9997, type: 3}
+  pageName:
+  - "Mu\xF1eca1"
+  - "Mu\xF1eca1"
+  - "Mu\xF1eca1"
+  - "Mu\xF1eca1"
+  - "Mu\xF1eca2"
+  - "Mu\xF1eca2"
+  - "Mu\xF1eca2"
+  - "Mu\xF1eca2"
+  - "Mu\xF1eca3"
+  - "Mu\xF1eca3"
+  - "Mu\xF1eca3"
+  - "Mu\xF1eca3"
+  noteIndex: 010000000200000003000000040000000100000002000000030000000400000001000000020000000300000004000000
   interactionUI: {fileID: 469652306}
   interactionUIText: {fileID: 1916544862}
   interactionKey: 101
@@ -70577,7 +70591,7 @@ Transform:
   m_GameObject: {fileID: 1626326740}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -30.199999, y: 0, z: 5.4130297}
+  m_LocalPosition: {x: -36.1, y: 0, z: 5.4130297}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -75237,7 +75251,7 @@ Transform:
   m_GameObject: {fileID: 1703574770}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.449997, y: 0, z: 0}
+  m_LocalPosition: {x: -6.449997, y: 0, z: 8.119999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -93367,7 +93381,7 @@ Transform:
   m_GameObject: {fileID: 2080308864}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -9.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -94169,7 +94183,7 @@ Transform:
   m_GameObject: {fileID: 2101908772}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.510002, y: 0, z: 0}
+  m_LocalPosition: {x: -18.510002, y: 0, z: -9.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -17,6 +17,9 @@ public class DollSpawner : MonoBehaviour
     public Sprite[] dollSprites;
     public Sprite[] dollPartSprites;
 
+    public string[] pageName;
+    public int[] noteIndex;
+
     [Header("Interactable Settings")]
     public GameObject interactionUI;
     public TMP_Text interactionUIText;
@@ -62,6 +65,7 @@ public class DollSpawner : MonoBehaviour
                 );
 
                 SetupSprite(part, dollPartSprites[i]);
+                SetupAction(part, pageName[i], noteIndex[i]);
                 SetupInteractable(
                     part,
                     "Recoger parte de muñeca", false
@@ -108,5 +112,10 @@ public class DollSpawner : MonoBehaviour
     void OnParteInteracted()
     {
         FindFirstObjectByType<DialogueController>().AddParte();
+    }
+    void SetupAction(GameObject obj, string pageName, int noteIndex)
+    {
+        obj.GetComponent<Interactable>().pageName = pageName;
+        obj.GetComponent<Interactable>().noteIndex = noteIndex - 1;
     }
 }
