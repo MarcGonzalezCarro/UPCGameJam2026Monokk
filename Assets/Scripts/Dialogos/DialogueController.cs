@@ -35,25 +35,59 @@ public class DialogueController : MonoBehaviour
     [Header("Variables de juego")]
     public bool tieneLibreta;
     public bool minijuegoTutorialDone = false;
+
+    public enum HogarState
+    {
+        PrimerDialogo,
+        BuscandoCaras,
+        CheckCara,
+        Completada
+    }
+
+    public HogarState hogarState = HogarState.PrimerDialogo;
     //Mision cual es mi hogar
-    public bool firstTimeHogar;
     public int carasHogar;
     public bool carasHogarOk;
 
+    public enum PezState
+    {
+        PrimerDialogo,
+        EsperandoDibujos,
+        CheckCaras,
+        Completada
+    }
+
+    public PezState pezState = PezState.PrimerDialogo;
     //Mision como pez fuera del agua
-    public bool firstTimePez;
+
+    public int dibujosConseguidos;
     public int carasPez;
     public bool carasPezOk;
 
     //Mision ladron de kokopilis
-    public bool firstTimeKoko;
-    public enum KokoState { PrimerDialogo, Ayuda, Minijuego, CheckCara }
+
+    public enum KokoState { 
+        PrimerDialogo, 
+        Ayuda, 
+        Minijuego, 
+        CheckCara 
+    }
     public KokoState kokoState = KokoState.PrimerDialogo;
     public int kokoWins = 0; // cuántas veces has ganado el minijuego
     public int kokoMaxWins = 3;
 
     //Mision muñecas
-    public bool firstTimeZari = true;
+    public enum ZariState
+    {
+        PrimerDialogo,
+        BuscandoMuñecas,
+        BuscandoPartes,
+        CheckCaras,
+        Completada
+    }
+    public ZariState zariState = ZariState.PrimerDialogo;
+    
+
     public bool muñecasEntregadas = false;
     public bool partesEntregadas = false;
     public int muñecas = 0;
@@ -167,21 +201,6 @@ public class DialogueController : MonoBehaviour
         animator.ResetTrigger("StartConversation");
         animator.SetTrigger("EndConversation");
 
-        switch (npcActual.archivoDialogo)
-        {
-            case "mision_cual_es_mi_hogar.json":
-                firstTimeHogar = false;
-                break;
-            case "mision_como_pez_fuera_del_agua.json":
-                firstTimePez = false;
-                break;
-            case "mision_ladron_kokopilis.json":
-                firstTimeKoko = false;
-                break;
-            case "mision_munecas.json":
-                firstTimeZari = false;
-                break;
-        }
         //Lanza el minijuego
         if (minigame)
         {
@@ -239,44 +258,70 @@ public class DialogueController : MonoBehaviour
         switch (npcActual.archivoDialogo)
         {
             case "mision_cual_es_mi_hogar.json":
-                if (!firstTimeHogar)
+                switch (hogarState)
                 {
-                    if (carasHogar < 3)
-                    {
-                        npcActual.conversacionActual = "conv_falta_caras";
-                        return;
-                    }
+                    case HogarState.PrimerDialogo:
+                        npcActual.conversacionActual = "conv_1_inicio";
+                        hogarState = HogarState.BuscandoCaras;
+                        break;
 
-                    if (carasHogarOk)
-                    {
-                        npcActual.conversacionActual = "conv_cara_bien";
-                        return;
-                    }
+                    case HogarState.BuscandoCaras:
+                        if (carasHogar < 3)
+                        {
+                            npcActual.conversacionActual = "conv_falta_caras";
+                        }
+                        else
+                        {
+                            hogarState = HogarState.CheckCara;
+                            CheckConversation();
+                        }
+                        break;
 
-                    // Si no tiene todas las caras pero tampoco ok
-                    npcActual.conversacionActual = "conv_cara_mal";
-                    return;
+                    case HogarState.CheckCara:
+                        if (FindFirstObjectByType<GameManager>().CheckFaceByName("Gato"))
+                        {
+                            npcActual.conversacionActual = "conv_cara_bien";
+                            hogarState = HogarState.Completada;
+                        }
+                        else
+                        {
+                            npcActual.conversacionActual = "conv_cara_mal";
+                        }
+                        break;
                 }
-                break;
+            break;
                 
             case "mision_como_pez_fuera_del_agua.json":
-                if (!firstTimePez && npcActual.nombre == "Macarena")
+                switch (pezState)
                 {
-                    if (carasPez != 3)
-                    {
-                        npcActual.conversacionActual = "conv_sin_dibujos";
-                        return;
-                    }
+                    case PezState.PrimerDialogo:
+                        npcActual.conversacionActual = "conv_1_inicio";
+                        pezState = PezState.EsperandoDibujos;
+                        break;
 
-                    if (carasPezOk)
-                    {
-                        npcActual.conversacionActual = "conv_dibujos_bien";
-                        return;
-                    }
+                    case PezState.EsperandoDibujos:
+                        if (dibujosConseguidos < 3)
+                        {
+                            npcActual.conversacionActual = "conv_sin_dibujos";
+                        }
+                        else
+                        {
+                            pezState = PezState.CheckCaras;
+                            CheckConversation();
+                        }
+                        break;
 
-                    // Si tiene 3 caras pero no están correctas
-                    npcActual.conversacionActual = "conv_dibujos_mal";
-                    return;
+                    case PezState.CheckCaras:
+                        if (FindFirstObjectByType<GameManager>().CheckFaceByName("Macarena"))
+                        {
+                            npcActual.conversacionActual = "conv_dibujos_bien";
+                            pezState = PezState.Completada;
+                        }
+                        else
+                        {
+                            npcActual.conversacionActual = "conv_dibujos_mal";
+                        }
+                        break;
                 }
                 break;
             case "mision_ladron_kokopilis.json":
@@ -311,51 +356,44 @@ public class DialogueController : MonoBehaviour
                 break;
             case "mision_munecas.json":
 
-                if (!firstTimeZari)
+                switch (zariState)
                 {
-                    if (muñecas < 3)
-                    {
-                        Debug.Log("muñecas < 3 pero en realidad son " + muñecas);
-                        conversacion = "conv_sin_munecas";
-                        return;
-                    }
+                    case ZariState.PrimerDialogo:
+                        npcActual.conversacionActual = "conv_1_inicio";
+                        zariState = ZariState.BuscandoMuñecas;
+                        break;
 
+                    case ZariState.BuscandoMuñecas:
+                        if (muñecas < 3)
+                            npcActual.conversacionActual = "conv_sin_munecas";
+                        else
+                        {
+                            npcActual.conversacionActual = "conv_con_munecas";
+                            zariState = ZariState.BuscandoPartes;
+                        }
+                        break;
 
-                    if (muñecas >= 3 && !muñecasEntregadas)
-                    {
-                        Debug.Log("Tienes las muñecas");
-                        muñecasEntregadas = true;
-                        conversacion = "conv_con_munecas";
-                        return;
-                    }
+                    case ZariState.BuscandoPartes:
+                        if (partesMuñeca < 4)
+                            npcActual.conversacionActual = "conv_sin_partes";
+                        else
+                        {
+                            npcActual.conversacionActual = "conv_con_partes";
+                            zariState = ZariState.CheckCaras;
+                        }
+                        break;
 
-
-                    if (partesMuñeca < 4)
-                    {
-                        conversacion = "conv_sin_partes";
-                        return;
-                    }
-
-
-                    if (!partesEntregadas)
-                    {
-                        conversacion = "conv_con_partes";
-                        partesEntregadas = true;
-                        return;
-                    }
-
-
-                    if (!FindFirstObjectByType<GameManager>().CheckFaceByName("Muñeca1") || !FindFirstObjectByType<GameManager>().CheckFaceByName("Muñeca2") || !FindFirstObjectByType<GameManager>().CheckFaceByName("Muñeca3"))
-                    {
-                        conversacion = "conv_caras_mal";
-                        return;
-                    }
-
-
-                    conversacion = "conv_caras_bien";
-                }
-                else {
-                    conversacion = "conv_1_inicio";
+                    case ZariState.CheckCaras:
+                        if (true)
+                        {
+                            npcActual.conversacionActual = "conv_caras_bien";
+                            zariState = ZariState.Completada;
+                        }
+                        else
+                        {
+                            npcActual.conversacionActual = "conv_caras_mal";
+                        }
+                        break;
                 }
                 break;
         }

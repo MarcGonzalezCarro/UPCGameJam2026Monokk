@@ -155,10 +155,6 @@
       "personaje": "PROTA",
       "texto": "Eh, estoy en ello."
     },
-
-    // =========================
-    // ENTREVISTA 1
-    // =========================
     {
       "id": "entrevista_1_01",
       "personaje": "PROTA",
@@ -169,10 +165,6 @@
       "personaje": "PERSONA",
       "texto": "Eh, no. Perdón."
     },
-
-    // =========================
-    // ENTREVISTA 2
-    // =========================
     {
       "id": "entrevista_2_01",
       "personaje": "PROTA",
@@ -198,10 +190,6 @@
       "personaje": "PROTA",
       "texto": "No creo que esté por la labor."
     },
-
-    // =========================
-    // ENTREVISTA 3
-    // =========================
     {
       "id": "entrevista_3_01",
       "personaje": "PROTA",
@@ -222,10 +210,6 @@
       "personaje": "PERSONA",
       "texto": "¿Eh? No tengo ningún tónico. Bueno, adiós."
     },
-
-    // =========================
-    // ENTREVISTA 4 (PUZLE)
-    // =========================
     {
       "id": "entrevista_4_01",
       "personaje": "PROTA",
@@ -266,10 +250,6 @@
       "personaje": "PERSONA",
       "texto": "¿Lo tienes todo? Esta persona fue a la playa, si mal no recuerdo."
     },
-
-    // =========================
-    // ENTREVISTA 5 (PUZLE)
-    // =========================
     {
       "id": "entrevista_5_01",
       "personaje": "PROTA",
@@ -310,10 +290,6 @@
       "personaje": "PERSONA",
       "texto": "Diría que ya está. Fue hacia la plaza."
     },
-
-    // =========================
-    // ENTREVISTA 6 (PUZLE)
-    // =========================
     {
       "id": "entrevista_6_01",
       "personaje": "PROTA",
@@ -354,10 +330,6 @@
       "personaje": "PERSONA",
       "texto": "Vale, ya estaría, ¿no? Fue hacia el parque. Tengo que irme."
     },
-
-    // =========================
-    // FINAL CON MACA
-    // =========================
     {
       "id": "maca_dibujos_mal",
       "personaje": "MACA",
