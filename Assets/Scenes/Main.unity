@@ -43830,6 +43830,8 @@ GameObject:
   - component: {fileID: 1051856804}
   - component: {fileID: 1051856803}
   - component: {fileID: 1051856802}
+  - component: {fileID: 1051856806}
+  - component: {fileID: 1051856807}
   m_Layer: 0
   m_Name: NPC_H_3
   m_TagString: Untagged
@@ -43941,6 +43943,44 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1263270795}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1051856806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051856801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328254c93dc73614a8d9e4a63154ed15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  archivoDialogo: mision_como_pez_fuera_del_agua.json
+  nombre: NPC3
+  conversacionActual: conv_entrevista_4
+  interactUI: {fileID: 469652306}
+  checkConversation: 0
+--- !u!135 &1051856807
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051856801}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 6.705
+  m_Center: {x: 0, y: 0.0000038146973, z: -0.000030517578}
 --- !u!1 &1052362519
 GameObject:
   m_ObjectHideFlags: 0
@@ -46376,6 +46416,8 @@ GameObject:
   - component: {fileID: 1091991439}
   - component: {fileID: 1091991438}
   - component: {fileID: 1091991437}
+  - component: {fileID: 1091991440}
+  - component: {fileID: 1091991441}
   m_Layer: 0
   m_Name: NPC_H_1
   m_TagString: Untagged
@@ -46487,6 +46529,44 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1091991440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091991435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328254c93dc73614a8d9e4a63154ed15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  archivoDialogo: mision_como_pez_fuera_del_agua.json
+  nombre: NPC1
+  conversacionActual: conv_entrevista_4
+  interactUI: {fileID: 469652306}
+  checkConversation: 0
+--- !u!135 &1091991441
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091991435}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 6.725
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1094426019
 GameObject:
   m_ObjectHideFlags: 0
@@ -79564,6 +79644,8 @@ GameObject:
   - component: {fileID: 1719143339}
   - component: {fileID: 1719143338}
   - component: {fileID: 1719143337}
+  - component: {fileID: 1719143341}
+  - component: {fileID: 1719143342}
   m_Layer: 0
   m_Name: NPC_H_2
   m_TagString: Untagged
@@ -79675,6 +79757,44 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1263270795}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1719143341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719143336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328254c93dc73614a8d9e4a63154ed15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  archivoDialogo: mision_como_pez_fuera_del_agua.json
+  nombre: NPC2
+  conversacionActual: conv_entrevista_4
+  interactUI: {fileID: 469652306}
+  checkConversation: 0
+--- !u!135 &1719143342
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719143336}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 6.485
+  m_Center: {x: 0.0000076293945, y: 0, z: 0.000030517578}
 --- !u!1 &1720609868
 GameObject:
   m_ObjectHideFlags: 0
