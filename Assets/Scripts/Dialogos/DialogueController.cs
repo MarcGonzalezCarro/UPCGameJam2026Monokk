@@ -46,7 +46,7 @@ public class DialogueController : MonoBehaviour
 
     public HogarState hogarState = HogarState.PrimerDialogo;
     //Mision cual es mi hogar
-    public int carasHogar;
+    public int objetosCasas;
     public bool carasHogarOk;
 
     public enum PezState
@@ -224,10 +224,10 @@ public class DialogueController : MonoBehaviour
             return tieneLibreta;
 
         if (condition == "caras_dueños < 3")
-            return carasHogar < 3;
+            return objetosCasas < 3;
 
         if (condition == "caras_dueños >= 3")
-            return carasHogar >= 3;
+            return objetosCasas >= 3;
 
         return true;
     }
@@ -264,10 +264,11 @@ public class DialogueController : MonoBehaviour
                     case HogarState.PrimerDialogo:
                         npcActual.conversacionActual = "conv_1_inicio";
                         hogarState = HogarState.BuscandoCaras;
+                        FindFirstObjectByType<CasasSpawner>().SpawnItems();
                         break;
 
                     case HogarState.BuscandoCaras:
-                        if (carasHogar < 3)
+                        if (objetosCasas < 12)
                         {
                             npcActual.conversacionActual = "conv_falta_caras";
                         }
@@ -407,7 +408,7 @@ public class DialogueController : MonoBehaviour
         switch (mision)
         {
             case "mision_cual_es_mi_hogar.json":
-                carasHogar++;
+                objetosCasas++;
                 break;
             case "mision_como_pez_fuera_del_agua.json":
                 carasPez++;
