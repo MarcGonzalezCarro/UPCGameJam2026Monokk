@@ -1,40 +1,44 @@
 using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
 
 public class ClickablePrefab : MonoBehaviour
 {
-    public float expandScale = 1.2f; // cuánto crece al aparecer
-    public float expandDuration = 0.2f; // duración de la animación
+    public float expandScale = 1.2f;
+    public float expandDuration = 0.2f;
 
-    private Vector3 originalScale;
+    private RectTransform rectTransform;
+
+    void Awake()
+    {
+        rectTransform = GetComponent<RectTransform>();
+    }
 
     void Start()
     {
-        originalScale = transform.localScale;
         StartCoroutine(ExpandAnimation());
+        GetComponent<Button>().onClick.AddListener(OnClicked);
     }
 
-    System.Collections.IEnumerator ExpandAnimation()
+    IEnumerator ExpandAnimation()
     {
-        float timer = 0f;
+        Vector3 originalScale = rectTransform.localScale;
         Vector3 targetScale = originalScale * expandScale;
+        float timer = 0f;
 
         while (timer < expandDuration)
         {
-            transform.localScale = Vector3.Lerp(originalScale, targetScale, timer / expandDuration);
+            rectTransform.localScale = Vector3.Lerp(originalScale, targetScale, timer / expandDuration);
             timer += Time.deltaTime;
             yield return null;
         }
 
-        transform.localScale = targetScale;
+        rectTransform.localScale = targetScale;
     }
 
-    private void OnMouseDown()
+    void OnClicked()
     {
-        // Destruye al hacer click
+        MiniGameUIManager.Instance.RegisterClick();
         Destroy(gameObject);
-
-        // Avisamos al manager
-        MiniGameManager.Instance.RegisterClick();
     }
 }
-

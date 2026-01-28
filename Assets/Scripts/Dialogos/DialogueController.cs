@@ -100,7 +100,25 @@ public class DialogueController : MonoBehaviour
             animator.SetTrigger("StartConversation");
         }            
     }
+    public void StartDialogueNow(
+        string jsonFile,
+        string conversacionId,
+        NPCDialogue npc
+    )
+    {
+        npcActual = npc;
 
+        DialogueManager.Instance.LoadDialogueFile(jsonFile);
+
+        string inicio = DialogueManager.Instance.GetInicioConversacion(conversacionId, this);
+
+        if (inicio != null)
+        {
+            ShowLine(inicio);
+            animator.ResetTrigger("EndConversation");
+            animator.SetTrigger("StartConversation");
+        }
+    }
     public void ShowLine(string id)
     {
         DialogueLine line = DialogueManager.Instance.GetLine(id);
@@ -167,8 +185,8 @@ public class DialogueController : MonoBehaviour
         //Lanza el minijuego
         if (minigame)
         {
-            if (MiniGameManager.Instance != null)
-                MiniGameManager.Instance.StartMiniGame(OnMinigameFinished);
+            if (MiniGameUIManager.Instance != null)
+                MiniGameUIManager.Instance.StartMiniGame(OnMinigameFinished);
             else
                 Debug.LogError("MiniGameManager no encontrado");
         }
@@ -376,7 +394,14 @@ public class DialogueController : MonoBehaviour
         {
             kokoWins++;
             facePages.UnlockNote("Koko", kokoWins - 1);
-            npcActual.conversacionActual = "conv_acierto_parcial";
+            if (kokoWins < 3)
+            {
+                StartDialogueNow("mision_ladron_kokopilis.json", "conv_acierto_parcial", npcActual);
+            }
+            else {
+                StartDialogueNow("mision_ladron_kokopilis.json", "conv_acierto_total", npcActual);
+            }
+            
         }
         else
         {
