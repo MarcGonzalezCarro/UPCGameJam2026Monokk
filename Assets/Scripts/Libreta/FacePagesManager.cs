@@ -12,6 +12,7 @@ public class FacePagesManager : MonoBehaviour
     public TMP_Text noteAText;
     public TMP_Text noteBText;
     public TMP_Text noteCText;
+    public TMP_Text noteDText;
 
     [Header("Páginas")]
     public List<FacePage> pages = new List<FacePage>();
@@ -74,10 +75,12 @@ public class FacePagesManager : MonoBehaviour
         noteAText.gameObject.SetActive(page.noteAUnlocked);
         noteBText.gameObject.SetActive(page.noteBUnlocked);
         noteCText.gameObject.SetActive(page.noteCUnlocked);
+        noteDText.gameObject.SetActive(page.noteDUnlocked);
 
         if (page.noteAUnlocked) noteAText.text = page.noteA;
         if (page.noteBUnlocked) noteBText.text = page.noteB;
         if (page.noteCUnlocked) noteCText.text = page.noteC;
+        if (page.noteDUnlocked) noteDText.text = page.noteD;
     }
 
     public void UnlockNote(string pageName, int noteIndex, string text = "")
@@ -106,7 +109,10 @@ public class FacePagesManager : MonoBehaviour
                 page.noteCUnlocked = true;
                 if (!string.IsNullOrEmpty(text)) page.noteC = text;
                 break;
-
+            case 3:
+                page.noteDUnlocked = true;
+                if (!string.IsNullOrEmpty(text)) page.noteD = text;
+                break;
             default:
                 Debug.LogWarning("Índice de nota inválido");
                 return;
