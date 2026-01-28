@@ -21,46 +21,53 @@ public class DollSpawner : MonoBehaviour
     public GameObject interactionUI;
     public TMP_Text interactionUIText;
     public KeyCode interactionKey = KeyCode.E;
+    public bool dollsSpawned = false;
+    public bool dollPartSpawned = false;
 
     void Start()
     {
-        SpawnDolls();
-        SpawnDollParts();
+        
     }
 
     public void SpawnDolls()
     {
-        for (int i = 0; i < dollSlots.Length && i < dollSprites.Length; i++)
-        {
-            GameObject doll = Instantiate(
-                dollPrefab,
-                dollSlots[i].position,
-                dollSlots[i].rotation
-            );
+        if (!dollsSpawned) {
+            for (int i = 0; i < dollSlots.Length && i < dollSprites.Length; i++)
+            {
+                GameObject doll = Instantiate(
+                    dollPrefab,
+                    dollSlots[i].position,
+                    dollSlots[i].rotation
+                );
 
-            SetupSprite(doll, dollSprites[i]);
-            SetupInteractable(
-                doll,
-                "Recoger muñeca",true
-            );
+                SetupSprite(doll, dollSprites[i]);
+                SetupInteractable(
+                    doll,
+                    "Recoger muñeca", true
+                );
+            }
+            dollsSpawned = true;
         }
     }
 
     public void SpawnDollParts()
     {
-        for (int i = 0; i < dollPartSlots.Length && i < dollPartSprites.Length; i++)
-        {
-            GameObject part = Instantiate(
-                dollPartPrefab,
-                dollPartSlots[i].position,
-                dollPartSlots[i].rotation
-            );
+        if (!dollPartSpawned) {
+            for (int i = 0; i < dollPartSlots.Length && i < dollPartSprites.Length; i++)
+            {
+                GameObject part = Instantiate(
+                    dollPartPrefab,
+                    dollPartSlots[i].position,
+                    dollPartSlots[i].rotation
+                );
 
-            SetupSprite(part, dollPartSprites[i]);
-            SetupInteractable(
-                part,
-                "Recoger parte de muñeca", false
-            );
+                SetupSprite(part, dollPartSprites[i]);
+                SetupInteractable(
+                    part,
+                    "Recoger parte de muñeca", false
+                );
+            }
+            dollPartSpawned = true;
         }
     }
 

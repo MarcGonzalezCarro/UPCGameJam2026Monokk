@@ -209,6 +209,7 @@ public class DialogueController : MonoBehaviour
             else
                 Debug.LogError("MiniGameManager no encontrado");
         }
+        
     }
 
     // =========================
@@ -361,6 +362,7 @@ public class DialogueController : MonoBehaviour
                     case ZariState.PrimerDialogo:
                         npcActual.conversacionActual = "conv_1_inicio";
                         zariState = ZariState.BuscandoMuñecas;
+                        FindFirstObjectByType<GameManager>().GetComponent<DollSpawner>().SpawnDolls();
                         break;
 
                     case ZariState.BuscandoMuñecas:
@@ -370,6 +372,7 @@ public class DialogueController : MonoBehaviour
                         {
                             npcActual.conversacionActual = "conv_con_munecas";
                             zariState = ZariState.BuscandoPartes;
+                            FindFirstObjectByType<GameManager>().GetComponent<DollSpawner>().SpawnDollParts();
                         }
                         break;
 
@@ -384,7 +387,7 @@ public class DialogueController : MonoBehaviour
                         break;
 
                     case ZariState.CheckCaras:
-                        if (true)
+                        if (FindFirstObjectByType<GameManager>().CheckFaceByName("Muñeca1") && FindFirstObjectByType<GameManager>().CheckFaceByName("Muñeca2") && FindFirstObjectByType<GameManager>().CheckFaceByName("Muñeca3"))
                         {
                             npcActual.conversacionActual = "conv_caras_bien";
                             zariState = ZariState.Completada;
