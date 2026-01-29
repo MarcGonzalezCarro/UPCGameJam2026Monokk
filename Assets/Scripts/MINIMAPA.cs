@@ -10,14 +10,22 @@ public class ControladorMapa : MonoBehaviour
     public bool pausarAlAbrir = true;
 
     private bool jugadorCerca = false;
-
+    public GameObject text;
+    bool touched;
+    private void Start()
+    {
+        text.SetActive(false);
+    }
     void Update()
     {
         // Detectamos si el jugador está en el área y presiona la tecla M
         if (jugadorCerca && Input.GetKeyDown(KeyCode.M))
         {
             ToggleMapa();
+
         }
+
+       
     }
 
     private void ToggleMapa()
@@ -48,6 +56,7 @@ public class ControladorMapa : MonoBehaviour
             jugadorCerca = true;
             Debug.Log("Jugador detectado: Presiona M para abrir el mapa.");
         }
+        text.SetActive(true);
     }
 
     // Se activa cuando el jugador sale del Sphere Collider
@@ -64,5 +73,6 @@ public class ControladorMapa : MonoBehaviour
                 Time.timeScale = 1f;
             }
         }
+        text.SetActive(false);
     }
 }
