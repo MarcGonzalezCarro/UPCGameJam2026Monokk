@@ -37,6 +37,15 @@ public class DialogueController : MonoBehaviour
     [Header("Variables de juego")]
     public bool tieneLibreta;
     public bool minijuegoTutorialDone = false;
+
+    [ContextMenu("Reset Misiones PlayerPrefs")]
+    public void ResetMisiones()
+    {
+        PlayerPrefs.DeleteKey("MisionesDone");
+        PlayerPrefs.Save();
+        misionesDone = 0;
+        Debug.Log("PlayerPrefs 'MisionesDone' reseteado!");
+    }
     public enum HogarState
     {
         PrimerDialogo,
@@ -154,7 +163,6 @@ public class DialogueController : MonoBehaviour
 
         if (tipo == 1 || tipo == 2 || tipo == 3)
         {
-            Debug.Log("DJFJFSJFJFSF");
             minigame = true;
         }
 
@@ -284,6 +292,9 @@ public class DialogueController : MonoBehaviour
                         npcActual.conversacionActual = "conv_1_inicio";
                         hogarState = HogarState.BuscandoCaras;
                         FindFirstObjectByType<CasasSpawner>().SpawnItems();
+                        facePages.RenamePage("Cara5", "Casa Marrón");
+                        facePages.RenamePage("Cara6", "Casa Rosa");
+                        facePages.RenamePage("Cara7", "Casa azul");
                         break;
 
                     case HogarState.BuscandoCaras:
@@ -320,6 +331,9 @@ public class DialogueController : MonoBehaviour
                 {
                     case PezState.PrimerDialogo:
                         npcActual.conversacionActual = "conv_1_inicio";
+                        facePages.RenamePage("Cara8", "Entrevista1");
+                        facePages.RenamePage("Cara9", "Entrevista2");
+                        facePages.RenamePage("Cara10", "Entrevista3");
                         pezState = PezState.EsperandoDibujos;
                         break;
 
@@ -357,6 +371,7 @@ public class DialogueController : MonoBehaviour
                     case KokoState.PrimerDialogo:
                         npcActual.conversacionActual = "conv_1_inicio";
                         kokoState = KokoState.Ayuda; // siguiente vez que hables irá a conv_ayuda
+                        facePages.RenamePage("Cara1", "Ladrona");
                         minigame = false;
                         break;
 
@@ -403,6 +418,9 @@ public class DialogueController : MonoBehaviour
                         {
                             npcActual.conversacionActual = "conv_con_munecas";
                             zariState = ZariState.BuscandoPartes;
+                            facePages.RenamePage("Cara2", "Muñeca1");
+                            facePages.RenamePage("Cara3", "Muñeca2");
+                            facePages.RenamePage("Cara4", "Muñeca3");
                             FindFirstObjectByType<GameManager>().GetComponent<DollSpawner>().SpawnDollParts();
                         }
                         break;

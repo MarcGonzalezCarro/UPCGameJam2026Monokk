@@ -122,4 +122,26 @@ public class FacePagesManager : MonoBehaviour
         if (pages[currentPageIndex] == page)
             ApplyNoteVisibility(page);
     }
+    public void RenamePage(string currentPageName, string newPageName)
+    {
+        FacePage page = pages.Find(p =>
+            p.pageName.Equals(currentPageName, System.StringComparison.OrdinalIgnoreCase)
+        );
+
+        if (page == null)
+        {
+            Debug.LogWarning("No se encontró la página: " + currentPageName);
+            return;
+        }
+
+        page.pageName = newPageName;
+
+        Debug.Log($"Página renombrada: {currentPageName} ? {newPageName}");
+
+        // Si es la página actual, refrescamos el texto
+        if (pages[currentPageIndex] == page)
+        {
+            pageNameText.text = newPageName;
+        }
+    }
 }
