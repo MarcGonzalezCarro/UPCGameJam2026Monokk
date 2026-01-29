@@ -45,353 +45,97 @@
   "dialogos": [
     {
       "id": "maca_01",
-      "personaje": "MACA",
-      "texto": "Mmmm…",
+      "personaje": "Maca",
+      "texto": "¡Hey tú! ¡Sí, tú!",
       "siguiente": "maca_02"
     },
     {
       "id": "maca_02",
-      "personaje": "PROTA",
-      "texto": "MACA, ¿qué tal estás?",
+      "personaje": "Pochi",
+      "texto": "¿Yo?",
       "siguiente": "maca_03"
     },
     {
       "id": "maca_03",
-      "personaje": "MACA",
-      "texto": "Ay, hola PROTA. Podría estar mejor, ¿tú?",
+      "personaje": "Maca",
+      "texto": "Estoy buscando a Ruben. ¿Lo has visto?",
       "siguiente": "maca_04"
     },
     {
       "id": "maca_04",
-      "personaje": "PROTA",
-      "texto": "Un poco mal, necesito ayuda describiendo el rostro de DUEÑA, ¿tú te acuerdas de como es?",
+      "personaje": "Pochi",
+      "texto": "¿Ruben? No, no me suena. Yo busco a Kara.",
       "siguiente": "maca_05"
     },
     {
       "id": "maca_05",
-      "personaje": "MACA",
-      "texto": "Sí, me acuerdo de que PERRO la describió alguna que otra vez. Yo estoy en las mismas. Sé que llevaba una camiseta azul, y que si lo veo lo reconoceré, pero no sé donde está DUEÑO.",
+      "personaje": "Maca",
+      "texto": "Vaya par estamos hechos. Mira, ayúdame a encontrar a Ruben y te diré si veo a Kara.",
       "siguiente": "maca_06"
     },
     {
       "id": "maca_06",
-      "personaje": "PROTA",
-      "texto": "¿Te ha dejado aquí sola?",
+      "personaje": "Pochi",
+      "texto": "¿Cómo te ayudo?",
       "siguiente": "maca_07"
     },
     {
       "id": "maca_07",
-      "personaje": "MACA",
-      "texto": "Sí, ya sabes, como soy un pez me trae muchas veces al lago para que disfrute de mi hábitat.",
-      "siguiente": "maca_08"
+      "personaje": "Maca",
+      "texto": "Pregunta a la gente del lago. Haz retratos de lo que te digan. ¡Necesito pistas!",
+      "accion": "desbloquear_entrevistas"
     },
-    {
-      "id": "maca_08",
-      "personaje": "PROTA",
-      "texto": "Un-",
-      "siguiente": "maca_09"
-    },
-    {
-      "id": "maca_09",
-      "personaje": "MACA",
-      "texto": "Pero ha tenido una urgencia y me ha dejado aquí solita.",
-      "siguiente": "maca_10"
-    },
-    {
-      "id": "maca_10",
-      "personaje": "PROTA",
-      "texto": "Qué mal. Pero, ¿me puedes ayudar?",
-      "siguiente": "maca_11"
-    },
-    {
-      "id": "maca_11",
-      "personaje": "MACA",
-      "texto": "Supongo… ¡¿Es esa la libreta de dueña?!",
-      "siguiente": "maca_12"
-    },
-    {
-      "id": "maca_12",
-      "personaje": "PROTA",
-      "texto": "Sí-",
-      "siguiente": "maca_13"
-    },
-    {
-      "id": "maca_13",
-      "personaje": "MACA",
-      "texto": "PROTA, yo te diré todo lo que sé de DUEÑA, pero a cambio, te lo ruego, encuentra a DUEÑO.",
-      "siguiente": "maca_14"
-    },
-    {
-      "id": "maca_14",
-      "personaje": "PROTA",
-      "texto": "¿Cómo quieres que-?",
-      "siguiente": "maca_15"
-    },
-    {
-      "id": "maca_15",
-      "personaje": "MACA",
-      "texto": "Pregúntale a los humanos que te describan a alguien con camiseta azul, y cuando lo tengas, tráemelo ¡gracias por adelantado!",
-      "accion": "activar_mision_dueno",
-      "siguiente": "maca_16"
-    },
-    {
-      "id": "maca_16",
-      "personaje": "PROTA",
-      "texto": "Pero…"
-    },
-    {
-      "id": "maca_17",
-      "personaje": "PROTA",
-      "texto": "No parece que quiera ayudarme."
-    },
-
     {
       "id": "maca_sin_dibujos",
-      "personaje": "MACA",
-      "texto": "¿No los tienes? Quiero volver a mi pecera…"
-    },
-    {
-      "id": "maca_sin_dibujos_02",
-      "personaje": "PROTA",
-      "texto": "Eh, estoy en ello."
-    },
-    {
-      "id": "entrevista_1_01",
-      "personaje": "PROTA",
-      "texto": "Perdone señor@, ¿ha visto a una persona con camiseta azul?"
-    },
-    {
-      "id": "entrevista_1_02",
-      "personaje": "PERSONA",
-      "texto": "Eh, no. Perdón."
-    },
-    {
-      "id": "entrevista_2_01",
-      "personaje": "PROTA",
-      "texto": "Perdone señor@, ¿ha visto a una persona con camiseta azul?"
-    },
-    {
-      "id": "entrevista_2_02",
-      "personaje": "PERSONA",
-      "texto": "¡Un perro que habla!"
-    },
-    {
-      "id": "entrevista_2_03",
-      "personaje": "PROTA",
-      "texto": "Perdona-"
-    },
-    {
-      "id": "entrevista_2_04",
-      "personaje": "PERSONA",
-      "texto": "¡Aaaaah!"
-    },
-    {
-      "id": "entrevista_2_05",
-      "personaje": "PROTA",
-      "texto": "No creo que esté por la labor."
-    },
-    {
-      "id": "entrevista_3_01",
-      "personaje": "PROTA",
-      "texto": "Perdone señor@, ¿ha visto a una persona con camiseta azul?"
-    },
-    {
-      "id": "entrevista_3_02",
-      "personaje": "PERSONA",
-      "texto": "Uy, yo soy disléxico de colores, no te sabría decir."
-    },
-    {
-      "id": "entrevista_3_03",
-      "personaje": "PROTA",
-      "texto": "¿Daltónico?"
-    },
-    {
-      "id": "entrevista_3_04",
-      "personaje": "PERSONA",
-      "texto": "¿Eh? No tengo ningún tónico. Bueno, adiós."
-    },
-    {
-      "id": "entrevista_4_01",
-      "personaje": "PROTA",
-      "texto": "Perdone señor@, ¿ha visto a una persona con camiseta azul?"
-    },
-    {
-      "id": "entrevista_4_02",
-      "personaje": "PERSONA",
-      "texto": "Sí, ¿por?"
-    },
-    {
-      "id": "entrevista_4_03",
-      "personaje": "PROTA",
-      "texto": "¡Qué bien! ¿Cree que me la podria describir?"
-    },
-    {
-      "id": "entrevista_4_04",
-      "personaje": "PERSONA",
-      "texto": "Supongo, pero tendrás que ayudarme, peludín."
-    },
-    {
-      "id": "entrevista_4_fallo",
-      "personaje": "PERSONA",
-      "texto": "No, no me acuerdo…"
-    },
-    {
-      "id": "entrevista_4_fallo_02",
-      "personaje": "PROTA",
-      "texto": "Ostras, tendré que volverlo a intentar más tarde."
-    },
-    {
-      "id": "entrevista_4_acierto_1",
-      "personaje": "PERSONA",
-      "texto": "Mira, ahora puedo recordar este detalle… apúntalo"
-    },
-    {
-      "id": "entrevista_4_acierto_3",
-      "personaje": "PERSONA",
-      "texto": "¿Lo tienes todo? Esta persona fue a la playa, si mal no recuerdo."
-    },
-    {
-      "id": "entrevista_5_01",
-      "personaje": "PROTA",
-      "texto": "Perdone señor@, ¿ha visto a una persona con camiseta azul?"
-    },
-    {
-      "id": "entrevista_5_02",
-      "personaje": "PERSONA",
-      "texto": "No, no tengo… Ah, eres tú, PROTA. Sí, ¿necesitas algo?"
-    },
-    {
-      "id": "entrevista_5_03",
-      "personaje": "PROTA",
-      "texto": "¿Lo podrías describir y decirme hacia donde ha ido?"
-    },
-    {
-      "id": "entrevista_5_04",
-      "personaje": "PERSONA",
-      "texto": "Claro, pero tendrás que ayudarme a recordar."
-    },
-    {
-      "id": "entrevista_5_fallo",
-      "personaje": "PERSONA",
-      "texto": "Mmm… Así no era."
-    },
-    {
-      "id": "entrevista_5_fallo_02",
-      "personaje": "PROTA",
-      "texto": "Ostras, tendré que volverlo a intentar más tarde."
-    },
-    {
-      "id": "entrevista_5_acierto_1",
-      "personaje": "PERSONA",
-      "texto": "Un poco así era.."
-    },
-    {
-      "id": "entrevista_5_acierto_3",
-      "personaje": "PERSONA",
-      "texto": "Diría que ya está. Fue hacia la plaza."
-    },
-    {
-      "id": "entrevista_6_01",
-      "personaje": "PROTA",
-      "texto": "Perdone señor@, ¿ha visto a una persona con camiseta azul?"
-    },
-    {
-      "id": "entrevista_6_02",
-      "personaje": "PERSONA",
-      "texto": "Tengo prisa, pero sí."
-    },
-    {
-      "id": "entrevista_6_03",
-      "personaje": "PROTA",
-      "texto": "¿Lo podría describir? Es importante…"
-    },
-    {
-      "id": "entrevista_6_04",
-      "personaje": "PERSONA",
-      "texto": "Ugh, de acuerdo, pero rápido. Necesitaré ayuda describiéndolo."
-    },
-    {
-      "id": "entrevista_6_fallo",
-      "personaje": "PERSONA",
-      "texto": "¿Qué? No… Así no era."
-    },
-    {
-      "id": "entrevista_6_fallo_02",
-      "personaje": "PROTA",
-      "texto": "Ostras, tendré que volverlo a intentar más tarde."
-    },
-    {
-      "id": "entrevista_6_acierto_1",
-      "personaje": "PERSONA",
-      "texto": "Algo así, sí…"
-    },
-    {
-      "id": "entrevista_6_acierto_3",
-      "personaje": "PERSONA",
-      "texto": "Vale, ya estaría, ¿no? Fue hacia el parque. Tengo que irme."
+      "personaje": "Maca",
+      "texto": "¿Aún nada? ¡Mueve esas aletas!"
     },
     {
       "id": "maca_dibujos_mal",
-      "personaje": "MACA",
-      "texto": "No reconozco a nadie, sigue intentándolo…"
+      "personaje": "Maca",
+      "texto": "Eso no se parece a nada que haya visto antes. Inténtalo de nuevo."
     },
     {
       "id": "maca_dibujos_bien_01",
-      "personaje": "MACA",
-      "texto": "¡DUEÑO! Es el, ¡es DUEÑO!",
+      "personaje": "Maca",
+      "texto": "¡Ruben! Es él, ¡es Ruben!",
       "siguiente": "maca_dibujos_bien_02"
     },
     {
       "id": "maca_dibujos_bien_02",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Me alegro…",
       "siguiente": "maca_dibujos_bien_03"
     },
     {
       "id": "maca_dibujos_bien_03",
-      "personaje": "MACA",
+      "personaje": "Maca",
       "texto": "¿Hacia dónde has dicho que se ha ido?",
       "siguiente": "maca_dibujos_bien_04"
     },
     {
       "id": "maca_dibujos_bien_04",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Hacia el parque…",
       "siguiente": "maca_dibujos_bien_05"
     },
     {
       "id": "maca_dibujos_bien_05",
-      "personaje": "MACA",
-      "texto": "¡Okay! ¡Hacia allà voy!",
+      "personaje": "Maca",
+      "texto": "¡Okay! ¡Hacia allá voy!",
       "siguiente": "maca_dibujos_bien_06"
     },
     {
       "id": "maca_dibujos_bien_06",
-      "personaje": "PROTA",
-      "texto": "Espera. ¿Qué recuerdas de DUEÑA?"
+      "personaje": "Pochi",
+      "texto": "¡Espera! ¿Y Kara?",
+      "siguiente": "maca_dibujos_bien_07"
     },
     {
       "id": "maca_dibujos_bien_07",
-      "personaje": "MACA",
-      "texto": "Mmm.. La boca, la tenía… ¡Me voy!",
-      "accion": "cerrar_mision_maca"
-    },
-
-    {
-      "id": "sin_cara_maca_01",
-      "personaje": "PROTA",
-      "texto": "Espera-"
-    },
-    {
-      "id": "sin_cara_maca_02",
-      "personaje": "PROTA",
-      "texto": "Al menos ahora sé cómo era la boca de DUEÑA."
-    },
-
-    {
-      "id": "con_cara_maca_01",
-      "personaje": "PROTA",
-      "texto": "¡Es la última pieza que me faltaba! ¡Por fin!"
+      "personaje": "Maca",
+      "texto": "¡Ah, sí! Tenía la boca... muy sonriente. ¡Chao!",
+      "accion": "completar_mision_maca"
     }
   ]
 }
