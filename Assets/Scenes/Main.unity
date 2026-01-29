@@ -10599,12 +10599,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 328254c93dc73614a8d9e4a63154ed15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  archivoDialogo: mision_ladron_kokopilis.json
-  nombre: Coco
+  archivoDialogo: mision_como_pez_fuera_del_agua.json
+  nombre: Macarena
   conversacionActual: conv_1_inicio
   interactUI: {fileID: 469652306}
   checkConversation: 1
-  sprite: {fileID: 223154191}
+  sprite: {fileID: -3669962737387545738, guid: d10b8b014afde9b4cab27eec188b39c0, type: 3}
 --- !u!136 &223154195
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -31281,12 +31281,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 328254c93dc73614a8d9e4a63154ed15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  archivoDialogo: mision_como_pez_fuera_del_agua.json
-  nombre: Macarena
+  archivoDialogo: mision_ladron_kokopilis.json
+  nombre: Coco
   conversacionActual: conv_1_inicio
   interactUI: {fileID: 469652306}
   checkConversation: 1
-  sprite: {fileID: 729823389}
+  sprite: {fileID: -399800886992671439, guid: 5d1f2e51eb4c88543b9382988889744e, type: 3}
 --- !u!136 &729823392
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -45907,7 +45907,7 @@ MonoBehaviour:
   conversacionActual: conv_entrevista_4
   interactUI: {fileID: 469652306}
   checkConversation: 0
-  sprite: {fileID: 1051856804}
+  sprite: {fileID: 4844386914901623132, guid: 911788968d1da0144b1395650a89cb95, type: 3}
 --- !u!135 &1051856807
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -48609,7 +48609,7 @@ MonoBehaviour:
   conversacionActual: conv_entrevista_4
   interactUI: {fileID: 469652306}
   checkConversation: 0
-  sprite: {fileID: 1091991439}
+  sprite: {fileID: -1205210569132926536, guid: ffcf68da026497a4e9843670e4c38663, type: 3}
 --- !u!135 &1091991441
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -68671,7 +68671,7 @@ MonoBehaviour:
   conversacionActual: conv_1_inicio
   interactUI: {fileID: 469652306}
   checkConversation: 1
-  sprite: {fileID: 1485225747}
+  sprite: {fileID: 4962116025102835577, guid: 1cd184d1345783146935bcdbff0a1fb8, type: 3}
 --- !u!136 &1485225751
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -82919,7 +82919,7 @@ MonoBehaviour:
   conversacionActual: conv_entrevista_4
   interactUI: {fileID: 469652306}
   checkConversation: 0
-  sprite: {fileID: 1719143339}
+  sprite: {fileID: -7048798811245644835, guid: 820dc84c12e7c3245929c17232502f8c, type: 3}
 --- !u!135 &1719143342
 SphereCollider:
   m_ObjectHideFlags: 0

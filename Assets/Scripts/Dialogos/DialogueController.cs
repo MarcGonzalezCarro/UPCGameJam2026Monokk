@@ -116,7 +116,8 @@ public class DialogueController : MonoBehaviour
 
     private void Start()
     {
-
+        misionesDone = PlayerPrefs.GetInt("MisionesDone", 0);
+        UnlockKaraNotesFromProgress();
     }
     public void StartDialogue(
         string jsonFile,
@@ -124,6 +125,7 @@ public class DialogueController : MonoBehaviour
         NPCDialogue npc
     )
     {
+        FindFirstObjectByType<ThirdPersonMovement>().canMove = false;
         npcActual = npc;
         sprite.sprite = npc.sprite;
 
@@ -146,11 +148,13 @@ public class DialogueController : MonoBehaviour
         NPCDialogue npc, int tipo
     )
     {
+        FindFirstObjectByType<ThirdPersonMovement>().canMove = false;
         npcActual = npc;
         sprite.sprite = npc.sprite;
 
-        if (tipo == 1)
+        if (tipo == 1 || tipo == 2 || tipo == 3)
         {
+            Debug.Log("DJFJFSJFJFSF");
             minigame = true;
         }
 
@@ -214,6 +218,7 @@ public class DialogueController : MonoBehaviour
         animator.ResetTrigger("StartConversation");
         animator.SetTrigger("EndConversation");
 
+        FindFirstObjectByType<ThirdPersonMovement>().canMove = true;
         //Lanza el minijuego
         if (minigame)
         {
@@ -298,7 +303,8 @@ public class DialogueController : MonoBehaviour
                         {
                             npcActual.conversacionActual = "conv_cara_bien";
                             misionesDone++;
-                            ItemUnlockNote("Dueña", misionesDone - 1);
+                            SaveMisiones();
+                            ItemUnlockNote("Kara", misionesDone - 1);
                             hogarState = HogarState.Completada;
                         }
                         else
@@ -334,7 +340,8 @@ public class DialogueController : MonoBehaviour
                         {
                             npcActual.conversacionActual = "conv_dibujos_bien";
                             misionesDone++;
-                            ItemUnlockNote("Dueña", misionesDone - 1);
+                            SaveMisiones();
+                            ItemUnlockNote("Kara", misionesDone - 1);
                             pezState = PezState.Completada;
                         }
                         else
@@ -369,7 +376,8 @@ public class DialogueController : MonoBehaviour
                         {
                             npcActual.conversacionActual = "conv_cara_bien";
                             misionesDone++;
-                            ItemUnlockNote("Dueña", misionesDone - 1);
+                            SaveMisiones();
+                            ItemUnlockNote("Kara", misionesDone - 1);
                         }
                         else
                             npcActual.conversacionActual = "conv_cara_mal";
@@ -414,7 +422,8 @@ public class DialogueController : MonoBehaviour
                         {
                             npcActual.conversacionActual = "conv_caras_bien";
                             misionesDone++;
-                            ItemUnlockNote("Dueña", misionesDone - 1);
+                            SaveMisiones();
+                            ItemUnlockNote("Kara", misionesDone - 1);
                             zariState = ZariState.Completada;
                         }
                         else
@@ -636,6 +645,22 @@ public class DialogueController : MonoBehaviour
     {
         facePages.UnlockNote(pageName, noteIndex);
     }
+    void SaveMisiones()
+    {
+        PlayerPrefs.SetInt("MisionesDone", misionesDone);
+        PlayerPrefs.Save();
+    }
+    void UnlockKaraNotesFromProgress()
+    {
+        if (facePages == null)
+        {
+            Debug.LogWarning("FacePagesManager no asignado");
+            return;
+        }
 
-
+        for (int i = 0; i < misionesDone; i++)
+        {
+            facePages.UnlockNote("Kara", i);
+        }
+    }
 }
