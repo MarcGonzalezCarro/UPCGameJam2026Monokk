@@ -269,20 +269,33 @@
     {
       "id": "sin_cara_koko_01",
       "personaje": "Pochi",
-      "texto": "Espero que encuentre al ladrón. Supongo que tendré que ir preguntando por el ladrón…"
+      "texto": "Espero que encuentre al ladrón. Supongo que tendré que ir preguntando por el ladrón…",
+ "siguiente": "sin_cara_koko_02"
+
     },
     {
       "id": "sin_cara_koko_02",
       "personaje": "Pochi",
       "texto": "¡Pero lo importante ahora es acordarme de Kara!"
+
     },
 
     {
       "id": "con_cara_koko_01",
       "personaje": "Pochi",
-      "texto": "¡Es la última pieza que me faltaba! ¡Por fin!"
+      "texto": "¡Es la última pieza que me faltaba! ¡Por fin!",
+ "siguiente": "con_cara_koko_02"
+
+    },
+{
+      "id": "con_cara_koko_02",
+      "personaje": "Pochi",
+      "texto": "¡Tengo que ir a casa y dibujarlo en la libreta especial de Kara!"
     }
+
   ]
 }
+
+
 
 

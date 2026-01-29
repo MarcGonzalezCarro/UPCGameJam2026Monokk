@@ -64,7 +64,7 @@
     {
       "id": "maca_04",
       "personaje": "Pochi",
-      "texto": "Un poco mal, necesito ayuda describiendo el rostro de DUEÑA, ¿tú te acuerdas de como es?",
+      "texto": "Un poco mal, necesito ayuda describiendo el rostro de Kara, ¿tú te acuerdas de como es?",
       "siguiente": "maca_05"
     },
     {
@@ -118,7 +118,7 @@
     {
       "id": "maca_13",
       "personaje": "Maca",
-      "texto": "Pochi, yo te diré todo lo que sé de DUEÑA, pero a cambio, te lo ruego, encuentra a Rubén.",
+      "texto": "Pochi, yo te diré todo lo que sé de Kara, pero a cambio, te lo ruego, encuentra a Rubén.",
       "siguiente": "maca_14"
     },
     {
@@ -138,6 +138,7 @@
       "id": "maca_16",
       "personaje": "Pochi",
       "texto": "Pero…"
+  "siguiente": "maca_17"
     },
     {
       "id": "maca_17",
@@ -149,6 +150,7 @@
       "id": "maca_sin_dibujos",
       "personaje": "Maca",
       "texto": "¿No los tienes? Quiero volver a mi pecera…"
+  "siguiente": ""maca_sin_dibujos_02"
     },
     {
       "id": "maca_sin_dibujos_02",
@@ -159,6 +161,8 @@
       "id": "entrevista_1_01",
       "personaje": "Pochi",
       "texto": "Perdone señor@, ¿ha visto a una persona con camiseta azul?"
+ "siguiente": ""entrevista_1_02"
+
     },
     {
       "id": "entrevista_1_02",
@@ -169,21 +173,29 @@
       "id": "entrevista_2_01",
       "personaje": "Pochi",
       "texto": "Perdone señor@, ¿ha visto a una persona con camiseta azul?"
+ "siguiente": "entrevista_2_02"
+
     },
     {
       "id": "entrevista_2_02",
       "personaje": "PERSONA",
       "texto": "¡Un perro que habla!"
+ "siguiente": "entrevista_2_03"
+
     },
     {
       "id": "entrevista_2_03",
       "personaje": "Pochi",
       "texto": "Perdona-"
+ "siguiente": "entrevista_2_04"
+
     },
     {
       "id": "entrevista_2_04",
       "personaje": "PERSONA",
       "texto": "¡Aaaaah!"
+ "siguiente": "entrevista_2_05"
+
     },
     {
       "id": "entrevista_2_05",
@@ -194,36 +206,44 @@
       "id": "entrevista_3_01",
       "personaje": "Pochi",
       "texto": "Perdone señor@, ¿ha visto a una persona con camiseta azul?"
+ "siguiente": "entrevista_3_02"
+
     },
     {
       "id": "entrevista_3_02",
       "personaje": "PERSONA",
       "texto": "Uy, yo soy disléxico de colores, no te sabría decir."
+ "siguiente": "entrevista_3_03"
     },
     {
       "id": "entrevista_3_03",
       "personaje": "Pochi",
       "texto": "¿Daltónico?"
+ "siguiente": "entrevista_3_04"
     },
     {
       "id": "entrevista_3_04",
       "personaje": "PERSONA",
       "texto": "¿Eh? No tengo ningún tónico. Bueno, adiós."
+
     },
     {
       "id": "entrevista_4_01",
       "personaje": "Pochi",
       "texto": "Perdone señor@, ¿ha visto a una persona con camiseta azul?"
+ "siguiente": "entrevista_4_02"
     },
     {
       "id": "entrevista_4_02",
       "personaje": "PERSONA",
       "texto": "Sí, ¿por?"
+ "siguiente": "entrevista_4_03"
     },
     {
       "id": "entrevista_4_03",
       "personaje": "Pochi",
       "texto": "¡Qué bien! ¿Cree que me la podria describir?"
+ "siguiente": "entrevista_4_04"
     },
     {
       "id": "entrevista_4_04",
@@ -234,6 +254,7 @@
       "id": "entrevista_4_fallo",
       "personaje": "PERSONA",
       "texto": "No, no me acuerdo…"
+ "siguiente": "entrevista_4_fallo_02"
     },
     {
       "id": "entrevista_4_fallo_02",
@@ -254,16 +275,20 @@
       "id": "entrevista_5_01",
       "personaje": "Pochi",
       "texto": "Perdone señor@, ¿ha visto a una persona con camiseta azul?"
+ "siguiente": "entrevista_5_02"
+
     },
     {
       "id": "entrevista_5_02",
       "personaje": "PERSONA",
       "texto": "No, no tengo… Ah, eres tú, Pochi. Sí, ¿necesitas algo?"
+"siguiente": "entrevista_5_03"
     },
     {
       "id": "entrevista_5_03",
       "personaje": "Pochi",
       "texto": "¿Lo podrías describir y decirme hacia donde ha ido?"
+"siguiente": "entrevista_5_04"
     },
     {
       "id": "entrevista_5_04",
@@ -274,6 +299,7 @@
       "id": "entrevista_5_fallo",
       "personaje": "PERSONA",
       "texto": "Mmm… Así no era."
+"siguiente":"entrevista_5_fallo_02"
     },
     {
       "id": "entrevista_5_fallo_02",
@@ -294,16 +320,21 @@
       "id": "entrevista_6_01",
       "personaje": "Pochi",
       "texto": "Perdone señor@, ¿ha visto a una persona con camiseta azul?"
+"siguiente":"entrevista_6_02"
     },
     {
       "id": "entrevista_6_02",
       "personaje": "PERSONA",
       "texto": "Tengo prisa, pero sí."
+"siguiente":"entrevista_6_03"
+
     },
     {
       "id": "entrevista_6_03",
       "personaje": "Pochi",
       "texto": "¿Lo podría describir? Es importante…"
+"siguiente":"entrevista_6_04"
+
     },
     {
       "id": "entrevista_6_04",
@@ -314,6 +345,8 @@
       "id": "entrevista_6_fallo",
       "personaje": "PERSONA",
       "texto": "¿Qué? No… Así no era."
+"siguiente":"entrevista_6_fallo_02"
+
     },
     {
       "id": "entrevista_6_fallo_02",
@@ -334,6 +367,8 @@
       "id": "maca_dibujos_mal",
       "personaje": "Maca",
       "texto": "No reconozco a nadie, sigue intentándolo…"
+"siguiente":"maca_dibujos_bien_01"
+
     },
     {
       "id": "maca_dibujos_bien_01",
@@ -368,7 +403,9 @@
     {
       "id": "maca_dibujos_bien_06",
       "personaje": "Pochi",
-      "texto": "Espera. ¿Qué recuerdas de DUEÑA?"
+      "texto": "Espera. ¿Qué recuerdas de Kara?"
+ "siguiente": "maca_dibujos_bien_07"
+
     },
     {
       "id": "maca_dibujos_bien_07",
@@ -380,19 +417,31 @@
     {
       "id": "sin_cara_maca_01",
       "personaje": "Pochi",
-      "texto": "Espera-"
+      "texto": "Espera-",
+"siguiente":"sin_cara_maca_02"
+
     },
     {
       "id": "sin_cara_maca_02",
       "personaje": "Pochi",
-      "texto": "Al menos ahora sé cómo era la boca de DUEÑA."
+      "texto": "Al menos ahora sé cómo era la boca de Kara."
     },
 
     {
       "id": "con_cara_maca_01",
       "personaje": "Pochi",
-      "texto": "¡Es la última pieza que me faltaba! ¡Por fin!"
+      "texto": "¡Es la última pieza que me faltaba! ¡Por fin!",
+"siguiente":"con_cara_maca_01"
+
+    },
+{
+      "id": "con_cara_maca_01",
+      "personaje": "Pochi",
+      "texto": "¡Tengo que ir a casa y dibujarlo en la libreta especial de Kara!"
     }
+
   ]
 }
+
+
 

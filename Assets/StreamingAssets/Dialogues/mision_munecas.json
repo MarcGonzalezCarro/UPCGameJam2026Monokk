@@ -424,7 +424,9 @@
     {
       "id": "sin_cara_zari_01",
       "personaje": "Pochi",
-      "texto": "Pobrecita…"
+      "texto": "Pobrecita…",
+ "siguiente": "sin_cara_zari_02"
+
     },
     {
       "id": "sin_cara_zari_02",
@@ -435,9 +437,17 @@
     {
       "id": "con_cara_zari_01",
       "personaje": "Pochi",
-      "texto": "¡Es la última pieza que me faltaba! ¡Por fin!"
+      "texto": "¡Es la última pieza que me faltaba! ¡Por fin!",
+ "siguiente": "con_cara_zari_02"
+    },
+{
+      "id": "con_cara_zari_02",
+      "personaje": "Pochi",
+      "texto": "¡Tengo que ir a casa y dibujarlo en la libreta especial de Kara!"
     }
+
   ]
 }
+
 
 

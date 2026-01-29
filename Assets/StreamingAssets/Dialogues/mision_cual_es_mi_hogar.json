@@ -1,4 +1,4 @@
-{
+ {
   "escena": "exterior_barrio",
   "conversaciones": [
     {
@@ -200,7 +200,8 @@
       "id": "gato_cara_bien_06",
       "personaje": "Holla",
       "texto": "Hasta pronto, Pochi.",
-      "accion": "cerrar_mision_hogar"
+      "accion": "cerrar_mision_hogar",
+"siguiente": "gato_cara_bien_07"
     },
     {
       "id": "gato_cara_bien_07",
@@ -211,7 +212,8 @@
     {
       "id": "sin_cara_01",
       "personaje": "Pochi",
-      "texto": "Jope, ¿ahora qué hago?"
+      "texto": "Jope, ¿ahora qué hago?",
+"siguiente": "sin_cara_02"
     },
     {
       "id": "sin_cara_02",
@@ -223,8 +225,17 @@
       "id": "con_cara_01",
       "personaje": "Pochi",
       "texto": "¡Es la última pieza que me faltaba! ¡Por fin!"
+"siguiente": "con_cara_02"
+    },
+{
+      "id": "con_cara_02",
+      "personaje": "Pochi",
+      "texto": "¡Tengo que ir a casa y dibujarlo en la libreta especial de Kara!"
     }
+
   ]
 }
+
+
 
 
