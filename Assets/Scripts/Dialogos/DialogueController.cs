@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class NPCMinigameDialogue
@@ -100,6 +101,7 @@ public class DialogueController : MonoBehaviour
     private string conversacion = "";
     public bool minigame;
     private bool minigameResult;
+    public int misionesDone;
 
     [Header("Minijuegos")]
     public List<NPCMinigameDialogue> minigameDialogues = new();
@@ -292,9 +294,11 @@ public class DialogueController : MonoBehaviour
                         break;
 
                     case HogarState.CheckCara:
-                        if (FindFirstObjectByType<GameManager>().CheckFaceByName("Rosa"))
+                        if (FindFirstObjectByType<GameManager>().CheckFaceByName("Casa Rosa"))
                         {
                             npcActual.conversacionActual = "conv_cara_bien";
+                            misionesDone++;
+                            ItemUnlockNote("Dueña", misionesDone - 1);
                             hogarState = HogarState.Completada;
                         }
                         else
@@ -329,6 +333,8 @@ public class DialogueController : MonoBehaviour
                         if (FindFirstObjectByType<GameManager>().CheckFaceByName("Macarena"))
                         {
                             npcActual.conversacionActual = "conv_dibujos_bien";
+                            misionesDone++;
+                            ItemUnlockNote("Dueña", misionesDone - 1);
                             pezState = PezState.Completada;
                         }
                         else
@@ -360,7 +366,11 @@ public class DialogueController : MonoBehaviour
 
                     case KokoState.CheckCara:
                         if (FindFirstObjectByType<GameManager>().CheckFaceByName("Ladrona"))
+                        {
                             npcActual.conversacionActual = "conv_cara_bien";
+                            misionesDone++;
+                            ItemUnlockNote("Dueña", misionesDone - 1);
+                        }
                         else
                             npcActual.conversacionActual = "conv_cara_mal";
 
@@ -403,6 +413,8 @@ public class DialogueController : MonoBehaviour
                         if (FindFirstObjectByType<GameManager>().CheckFaceByName("Muñeca1") && FindFirstObjectByType<GameManager>().CheckFaceByName("Muñeca2") && FindFirstObjectByType<GameManager>().CheckFaceByName("Muñeca3"))
                         {
                             npcActual.conversacionActual = "conv_caras_bien";
+                            misionesDone++;
+                            ItemUnlockNote("Dueña", misionesDone - 1);
                             zariState = ZariState.Completada;
                         }
                         else
@@ -411,6 +423,16 @@ public class DialogueController : MonoBehaviour
                         }
                         break;
                 }
+                break;
+            case "misionFinal.json":
+                if (FindFirstObjectByType<GameManager>().CheckFaceByName("Kara"))
+                {
+                    SceneManager.LoadSceneAsync("Ending");
+                }
+                else {
+                    npcActual.conversacionActual = "conv_dibujos_mal";
+                }
+
                 break;
         }
     }
