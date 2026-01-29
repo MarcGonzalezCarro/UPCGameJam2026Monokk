@@ -6,11 +6,13 @@ public class GrabBook : MonoBehaviour
     public GameObject book;
  
     public GameObject lol;
+    public GameObject text;
 
     bool touched;
     void Start()
     {
         book.SetActive(false);
+        text.SetActive(false);
     }
     private void Update()
     {
@@ -19,6 +21,7 @@ public class GrabBook : MonoBehaviour
 
             book.SetActive(true);
             lol.SetActive(false);
+            text.SetActive(false);
 
 
         }
@@ -27,9 +30,11 @@ public class GrabBook : MonoBehaviour
     private void OnTriggerEnter()
     {
         touched = true;
+        text.SetActive(true);
     }
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit()
     {
         touched = false;
+        text.SetActive(false);
     }
 }

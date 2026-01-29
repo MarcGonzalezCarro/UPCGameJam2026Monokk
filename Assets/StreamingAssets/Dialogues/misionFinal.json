@@ -1,0 +1,141 @@
+{
+  "escena": "lago",
+  "conversaciones": [
+    {
+      "id": "conv_1_inicio",
+      "inicio": "maca_01"
+    },
+    {
+      "id": "conv_sin_dibujos",
+      "inicio": "maca_sin_dibujos"
+    },
+    {
+      "id": "conv_entrevista_1",
+      "inicio": "entrevista_1_01"
+    },
+    {
+      "id": "conv_entrevista_2",
+      "inicio": "entrevista_2_01"
+    },
+    {
+      "id": "conv_entrevista_3",
+      "inicio": "entrevista_3_01"
+    },
+    {
+      "id": "conv_entrevista_4",
+      "inicio": "entrevista_4_01"
+    },
+    {
+      "id": "conv_entrevista_5",
+      "inicio": "entrevista_5_01"
+    },
+    {
+      "id": "conv_entrevista_6",
+      "inicio": "entrevista_6_01"
+    },
+    {
+      "id": "conv_dibujos_mal",
+      "inicio": "maca_dibujos_mal"
+    },
+    {
+      "id": "conv_dibujos_bien",
+      "inicio": "maca_dibujos_bien_01"
+    }
+  ],
+  "dialogos": [
+    {
+      "id": "maca_01",
+      "personaje": "Maca",
+      "texto": "¡Hey tú! ¡Sí, tú!",
+      "siguiente": "maca_02"
+    },
+    {
+      "id": "maca_02",
+      "personaje": "Pochi",
+      "texto": "¿Yo?",
+      "siguiente": "maca_03"
+    },
+    {
+      "id": "maca_03",
+      "personaje": "Maca",
+      "texto": "Estoy buscando a Ruben. ¿Lo has visto?",
+      "siguiente": "maca_04"
+    },
+    {
+      "id": "maca_04",
+      "personaje": "Pochi",
+      "texto": "¿Ruben? No, no me suena. Yo busco a Kara.",
+      "siguiente": "maca_05"
+    },
+    {
+      "id": "maca_05",
+      "personaje": "Maca",
+      "texto": "Vaya par estamos hechos. Mira, ayúdame a encontrar a Ruben y te diré si veo a Kara.",
+      "siguiente": "maca_06"
+    },
+    {
+      "id": "maca_06",
+      "personaje": "Pochi",
+      "texto": "¿Cómo te ayudo?",
+      "siguiente": "maca_07"
+    },
+    {
+      "id": "maca_07",
+      "personaje": "Maca",
+      "texto": "Pregunta a la gente del lago. Haz retratos de lo que te digan. ¡Necesito pistas!",
+      "accion": "desbloquear_entrevistas"
+    },
+    {
+      "id": "maca_sin_dibujos",
+      "personaje": "Maca",
+      "texto": "¿Aún nada? ¡Mueve esas aletas!"
+    },
+    {
+      "id": "maca_dibujos_mal",
+      "personaje": "",
+      "texto": "Así no era"
+    },
+    {
+      "id": "maca_dibujos_bien_01",
+      "personaje": "Maca",
+      "texto": "¡Ruben! Es él, ¡es Ruben!",
+      "siguiente": "maca_dibujos_bien_02"
+    },
+    {
+      "id": "maca_dibujos_bien_02",
+      "personaje": "Pochi",
+      "texto": "Me alegro…",
+      "siguiente": "maca_dibujos_bien_03"
+    },
+    {
+      "id": "maca_dibujos_bien_03",
+      "personaje": "Maca",
+      "texto": "¿Hacia dónde has dicho que se ha ido?",
+      "siguiente": "maca_dibujos_bien_04"
+    },
+    {
+      "id": "maca_dibujos_bien_04",
+      "personaje": "Pochi",
+      "texto": "Hacia el parque…",
+      "siguiente": "maca_dibujos_bien_05"
+    },
+    {
+      "id": "maca_dibujos_bien_05",
+      "personaje": "Maca",
+      "texto": "¡Okay! ¡Hacia allá voy!",
+      "siguiente": "maca_dibujos_bien_06"
+    },
+    {
+      "id": "maca_dibujos_bien_06",
+      "personaje": "Pochi",
+      "texto": "¡Espera! ¿Y Kara?",
+      "siguiente": "maca_dibujos_bien_07"
+    },
+    {
+      "id": "maca_dibujos_bien_07",
+      "personaje": "Maca",
+      "texto": "¡Ah, sí! Tenía la boca... muy sonriente. ¡Chao!",
+      "accion": "completar_mision_maca"
+    }
+  ]
+}
