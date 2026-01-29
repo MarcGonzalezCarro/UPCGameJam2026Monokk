@@ -786,8 +786,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "No es cierto, yo\u2026 Yo no\u2026"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cea943f4f8ec9f344bff9227d203590c, type: 2}
+  m_sharedMaterial: {fileID: 7894719665250419370, guid: cea943f4f8ec9f344bff9227d203590c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -922,8 +922,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Kara?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cea943f4f8ec9f344bff9227d203590c, type: 2}
+  m_sharedMaterial: {fileID: 7894719665250419370, guid: cea943f4f8ec9f344bff9227d203590c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1508,8 +1508,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xA1Esp\xE9rame!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cea943f4f8ec9f344bff9227d203590c, type: 2}
+  m_sharedMaterial: {fileID: 7894719665250419370, guid: cea943f4f8ec9f344bff9227d203590c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1753,8 +1753,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "S\xED. Para siempre."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cea943f4f8ec9f344bff9227d203590c, type: 2}
+  m_sharedMaterial: {fileID: 7894719665250419370, guid: cea943f4f8ec9f344bff9227d203590c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2098,8 +2098,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Que es ese ruido?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cea943f4f8ec9f344bff9227d203590c, type: 2}
+  m_sharedMaterial: {fileID: 7894719665250419370, guid: cea943f4f8ec9f344bff9227d203590c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2377,8 +2377,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xBFEstar\xE1s conmigo para siempre?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cea943f4f8ec9f344bff9227d203590c, type: 2}
+  m_sharedMaterial: {fileID: 7894719665250419370, guid: cea943f4f8ec9f344bff9227d203590c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3105,8 +3105,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xA1Kara!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cea943f4f8ec9f344bff9227d203590c, type: 2}
+  m_sharedMaterial: {fileID: 7894719665250419370, guid: cea943f4f8ec9f344bff9227d203590c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3550,8 +3550,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "No tiene sentido, no. \xA1NO!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cea943f4f8ec9f344bff9227d203590c, type: 2}
+  m_sharedMaterial: {fileID: 7894719665250419370, guid: cea943f4f8ec9f344bff9227d203590c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3920,8 +3920,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: ???
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cea943f4f8ec9f344bff9227d203590c, type: 2}
+  m_sharedMaterial: {fileID: 7894719665250419370, guid: cea943f4f8ec9f344bff9227d203590c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4916,8 +4916,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Creo que lo sabes Pochi.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cea943f4f8ec9f344bff9227d203590c, type: 2}
+  m_sharedMaterial: {fileID: 7894719665250419370, guid: cea943f4f8ec9f344bff9227d203590c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5235,8 +5235,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Chopi, \xBFqu\xE9 le pasa a Kara?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cea943f4f8ec9f344bff9227d203590c, type: 2}
+  m_sharedMaterial: {fileID: 7894719665250419370, guid: cea943f4f8ec9f344bff9227d203590c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
