@@ -13,6 +13,7 @@ public class DialogueCaca : MonoBehaviour
     bool started;
     public bool isAfterBook;
     int clickedL2;
+    public Animator animator;
     
     public void Start()
     {
@@ -63,6 +64,7 @@ public class DialogueCaca : MonoBehaviour
 
   public  void StartDialogue() {
 
+        animator.SetTrigger("StartConversation");
         sentences.Clear();
 
         foreach (string sentence in Dialogue.Dialogue.sentences) {
@@ -77,7 +79,7 @@ public class DialogueCaca : MonoBehaviour
 
         if (sentences.Count == 0) {
 
-            
+            animator.SetTrigger("EndConversation");
             return;
         
         }

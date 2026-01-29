@@ -23,6 +23,7 @@ public class DialogueController : MonoBehaviour
     public TMP_Text dialogoTextDer;
     public TMP_Text personajeTextIzq;
     public TMP_Text dialogoTextIzq;
+    public Image sprite;
 
     public Animator animator;
 
@@ -122,6 +123,7 @@ public class DialogueController : MonoBehaviour
     )
     {
         npcActual = npc;
+        sprite.sprite = npc.sprite;
 
         DialogueManager.Instance.LoadDialogueFile(jsonFile);
 
@@ -143,6 +145,7 @@ public class DialogueController : MonoBehaviour
     )
     {
         npcActual = npc;
+        sprite.sprite = npc.sprite;
 
         if (tipo == 1)
         {
@@ -289,7 +292,7 @@ public class DialogueController : MonoBehaviour
                         break;
 
                     case HogarState.CheckCara:
-                        if (FindFirstObjectByType<GameManager>().CheckFaceByName("Casa Rosa"))
+                        if (FindFirstObjectByType<GameManager>().CheckFaceByName("Rosa"))
                         {
                             npcActual.conversacionActual = "conv_cara_bien";
                             hogarState = HogarState.Completada;

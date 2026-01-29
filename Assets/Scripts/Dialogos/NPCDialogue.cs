@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NPCDialogue : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class NPCDialogue : MonoBehaviour
     public GameObject interactUI;
     private bool jugadorCerca;
     public bool checkConversation;
+    public Sprite sprite;
 
     void Update()
     {

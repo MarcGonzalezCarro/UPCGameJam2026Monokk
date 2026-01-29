@@ -6730,6 +6730,7 @@ MonoBehaviour:
   conversacionActual: conv_1_inicio
   interactUI: {fileID: 469652306}
   checkConversation: 1
+  sprite: {fileID: 1780414500912846593, guid: 9b1f4aa403ce04549a4f8f8e0ec4320b, type: 3}
 --- !u!114 &130817152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10603,6 +10604,7 @@ MonoBehaviour:
   conversacionActual: conv_1_inicio
   interactUI: {fileID: 469652306}
   checkConversation: 1
+  sprite: {fileID: 223154191}
 --- !u!136 &223154195
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -24844,7 +24846,7 @@ Transform:
   m_GameObject: {fileID: 603100544}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -647.94, y: 41.730873, z: -246.31}
+  m_LocalPosition: {x: 42.3, y: 41.730873, z: 42.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -31080,6 +31082,7 @@ MonoBehaviour:
   conversacionActual: conv_1_inicio
   interactUI: {fileID: 469652306}
   checkConversation: 1
+  sprite: {fileID: 729823389}
 --- !u!136 &729823392
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -37368,6 +37371,7 @@ MonoBehaviour:
   dialogoTextDer: {fileID: 1400347506}
   personajeTextIzq: {fileID: 824932764}
   dialogoTextIzq: {fileID: 48579690}
+  sprite: {fileID: 970528152}
   animator: {fileID: 1687055492}
   fondoDer: {fileID: 2095409910}
   fondoIzq: {fileID: 1780818659}
@@ -42624,7 +42628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 970528149}
   - component: {fileID: 970528151}
-  - component: {fileID: 970528150}
+  - component: {fileID: 970528152}
   m_Layer: 5
   m_Name: NPC
   m_TagString: Untagged
@@ -42651,7 +42655,15 @@ RectTransform:
   m_AnchoredPosition: {x: -454.1572, y: -488.71402}
   m_SizeDelta: {x: 289.687, y: 204.243}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &970528150
+--- !u!222 &970528151
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970528148}
+  m_CullTransparentMesh: 1
+--- !u!114 &970528152
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42660,7 +42672,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 970528148}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -42671,21 +42683,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &970528151
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970528148}
-  m_CullTransparentMesh: 1
+  m_Sprite: {fileID: 1780414500912846593, guid: 9b1f4aa403ce04549a4f8f8e0ec4320b, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &970598749
 GameObject:
   m_ObjectHideFlags: 0
@@ -45695,6 +45702,7 @@ MonoBehaviour:
   conversacionActual: conv_entrevista_4
   interactUI: {fileID: 469652306}
   checkConversation: 0
+  sprite: {fileID: 1051856804}
 --- !u!135 &1051856807
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -48396,6 +48404,7 @@ MonoBehaviour:
   conversacionActual: conv_entrevista_4
   interactUI: {fileID: 469652306}
   checkConversation: 0
+  sprite: {fileID: 1091991439}
 --- !u!135 &1091991441
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -68456,6 +68465,7 @@ MonoBehaviour:
   conversacionActual: conv_1_inicio
   interactUI: {fileID: 469652306}
   checkConversation: 1
+  sprite: {fileID: 1485225747}
 --- !u!136 &1485225751
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -80832,9 +80842,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1902178597}
   - {fileID: 970528149}
   - {fileID: 361410065}
-  - {fileID: 1902178597}
   - {fileID: 2097599792}
   - {fileID: 1193181768}
   - {fileID: 2095409911}
@@ -82703,6 +82713,7 @@ MonoBehaviour:
   conversacionActual: conv_entrevista_4
   interactUI: {fileID: 469652306}
   checkConversation: 0
+  sprite: {fileID: 1719143339}
 --- !u!135 &1719143342
 SphereCollider:
   m_ObjectHideFlags: 0

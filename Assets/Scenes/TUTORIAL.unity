@@ -6730,6 +6730,7 @@ MonoBehaviour:
   conversacionActual: conv_1_inicio
   interactUI: {fileID: 469652306}
   checkConversation: 1
+  sprite: {fileID: 0}
 --- !u!114 &130817152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10605,6 +10606,7 @@ MonoBehaviour:
   conversacionActual: conv_1_inicio
   interactUI: {fileID: 469652306}
   checkConversation: 1
+  sprite: {fileID: 0}
 --- !u!136 &223154195
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -31099,6 +31101,7 @@ MonoBehaviour:
   conversacionActual: conv_1_inicio
   interactUI: {fileID: 469652306}
   checkConversation: 1
+  sprite: {fileID: 0}
 --- !u!136 &729823392
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -37387,6 +37390,7 @@ MonoBehaviour:
   dialogoTextDer: {fileID: 0}
   personajeTextIzq: {fileID: 824932764}
   dialogoTextIzq: {fileID: 48579690}
+  sprite: {fileID: 0}
   animator: {fileID: 1687055492}
   fondoDer: {fileID: 0}
   fondoIzq: {fileID: 1780818659}
@@ -38664,6 +38668,7 @@ MonoBehaviour:
   text: {fileID: 48579690}
   Dialogue: {fileID: 889114612}
   isAfterBook: 0
+  animator: {fileID: 1687055492}
 --- !u!114 &889114617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38703,6 +38708,7 @@ MonoBehaviour:
   text: {fileID: 824932764}
   Dialogue: {fileID: 889114617}
   isAfterBook: 0
+  animator: {fileID: 1687055492}
 --- !u!114 &889114619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38743,6 +38749,7 @@ MonoBehaviour:
   text: {fileID: 48579690}
   Dialogue: {fileID: 889114619}
   isAfterBook: 1
+  animator: {fileID: 1687055492}
 --- !u!114 &889114621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38778,6 +38785,7 @@ MonoBehaviour:
   text: {fileID: 824932764}
   Dialogue: {fileID: 889114621}
   isAfterBook: 1
+  animator: {fileID: 1687055492}
 --- !u!1 &891635212
 GameObject:
   m_ObjectHideFlags: 0
@@ -42959,13 +42967,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970528148}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1687055489}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -454.1572, y: -488.71402}
@@ -42991,7 +42999,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 3a0610e7e7a4a27499b16269eeb4c4ed, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -46015,6 +46023,7 @@ MonoBehaviour:
   conversacionActual: conv_entrevista_4
   interactUI: {fileID: 469652306}
   checkConversation: 0
+  sprite: {fileID: 0}
 --- !u!135 &1051856807
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -48716,6 +48725,7 @@ MonoBehaviour:
   conversacionActual: conv_entrevista_4
   interactUI: {fileID: 469652306}
   checkConversation: 0
+  sprite: {fileID: 0}
 --- !u!135 &1091991441
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -55120,156 +55130,16 @@ MonoBehaviour:
   noteCText: {fileID: 1944528114}
   noteDText: {fileID: 558798216}
   pages:
-  - pageName: Ladrona
+  - pageName: 
     faceState:
       ojos: {fileID: 0}
       nariz: {fileID: 0}
       boca: {fileID: 0}
       cejas: {fileID: 0}
-    noteA: "No ten\xEDa arco de cupido"
-    noteB: Toda su cara mira hacia arriba
-    noteC: Tiene un agujero en la nariz
+    noteA: 
+    noteB: 
+    noteC: 
     noteD: 
-    noteAUnlocked: 0
-    noteBUnlocked: 0
-    noteCUnlocked: 0
-    noteDUnlocked: 0
-  - pageName: "Mu\xF1eca1"
-    faceState:
-      ojos: {fileID: 0}
-      nariz: {fileID: 0}
-      boca: {fileID: 0}
-      cejas: {fileID: 0}
-    noteA: "Los mismos ojos que mu\xF1eca 3"
-    noteB: "Fue hecha a la vez de mu\xF1eca 2"
-    noteC: Nariz respingona
-    noteD: Las tres tienen los mismos labios
-    noteAUnlocked: 0
-    noteBUnlocked: 0
-    noteCUnlocked: 0
-    noteDUnlocked: 0
-  - pageName: "Mu\xF1eca2"
-    faceState:
-      ojos: {fileID: 0}
-      nariz: {fileID: 0}
-      boca: {fileID: 0}
-      cejas: {fileID: 0}
-    noteA: "Es asi\xE1tica"
-    noteB: "Nariz igual que la mu\xF1eca 3"
-    noteC: Tiene los labios finos
-    noteD: 'Fue hecha en el 2002 '
-    noteAUnlocked: 0
-    noteBUnlocked: 0
-    noteCUnlocked: 0
-    noteDUnlocked: 0
-  - pageName: "Mu\xF1eca3"
-    faceState:
-      ojos: {fileID: 0}
-      nariz: {fileID: 0}
-      boca: {fileID: 0}
-      cejas: {fileID: 0}
-    noteA: Tiene ojos grandes
-    noteB: Cejas gruesas
-    noteC: Tiene arco de cupido
-    noteD: Hecha en Roma
-    noteAUnlocked: 0
-    noteBUnlocked: 0
-    noteCUnlocked: 0
-    noteDUnlocked: 0
-  - pageName: "Casa Marr\xF3n"
-    faceState:
-      ojos: {fileID: 0}
-      nariz: {fileID: 0}
-      boca: {fileID: 0}
-      cejas: {fileID: 0}
-    noteA: 'Ojos tristes '
-    noteB: 'Viaja mucho a Roma '
-    noteC: "Siempre est\xE1 enfadada"
-    noteD: Tiene los labios gruesos
-    noteAUnlocked: 0
-    noteBUnlocked: 0
-    noteCUnlocked: 0
-    noteDUnlocked: 0
-  - pageName: Casa Rosa
-    faceState:
-      ojos: {fileID: 0}
-      nariz: {fileID: 0}
-      boca: {fileID: 0}
-      cejas: {fileID: 0}
-    noteA: "Es una se\xF1ora mayor "
-    noteB: Tiene un bulto en la nariz
-    noteC: 'Tiene la boca triste '
-    noteD: No se depila las cejas
-    noteAUnlocked: 0
-    noteBUnlocked: 0
-    noteCUnlocked: 0
-    noteDUnlocked: 0
-  - pageName: Casa azul
-    faceState:
-      ojos: {fileID: 0}
-      nariz: {fileID: 0}
-      boca: {fileID: 0}
-      cejas: {fileID: 0}
-    noteA: 'Su tic nervioso es arrancarse las cejas '
-    noteB: 'Es bastante moderno '
-    noteC: 'Le gustan mucho las almendras '
-    noteD: Tiene el arco muy pronunciado
-    noteAUnlocked: 0
-    noteBUnlocked: 0
-    noteCUnlocked: 0
-    noteDUnlocked: 0
-  - pageName: Entrevista1
-    faceState:
-      ojos: {fileID: 0}
-      nariz: {fileID: 0}
-      boca: {fileID: 0}
-      cejas: {fileID: 0}
-    noteA: "Naci\xF3 en Jap\xF3n "
-    noteB: ' Lleva un piercing '
-    noteC: 'Esta en camino de quedarse sin cejas '
-    noteD: Parece una actriz
-    noteAUnlocked: 0
-    noteBUnlocked: 0
-    noteCUnlocked: 0
-    noteDUnlocked: 0
-  - pageName: Entrevista2
-    faceState:
-      ojos: {fileID: 0}
-      nariz: {fileID: 0}
-      boca: {fileID: 0}
-      cejas: {fileID: 0}
-    noteA: "Es amiga de la infancia de la due\xF1a de la casa rosa "
-    noteB: 'Las cejas poco pobladas '
-    noteC: 'La nariz hacia abajo '
-    noteD: Los labios redondos
-    noteAUnlocked: 0
-    noteBUnlocked: 0
-    noteCUnlocked: 0
-    noteDUnlocked: 0
-  - pageName: Entrevista3
-    faceState:
-      ojos: {fileID: 0}
-      nariz: {fileID: 0}
-      boca: {fileID: 0}
-      cejas: {fileID: 0}
-    noteA: "Ten\xEDa los ojos hundidos "
-    noteB: "Escuch\xE9 que acababa de perder una apuesta "
-    noteC: "Ten\xEDa la nariz de cerdito "
-    noteD: "Ten\xEDa los labios ni gruesos ni finos"
-    noteAUnlocked: 0
-    noteBUnlocked: 0
-    noteCUnlocked: 0
-    noteDUnlocked: 0
-  - pageName: "Due\xF1a"
-    faceState:
-      ojos: {fileID: 0}
-      nariz: {fileID: 0}
-      boca: {fileID: 0}
-      cejas: {fileID: 0}
-    noteA: 'Fui un regalo de su nieta '
-    noteB: "Ten\xEDa los labios gruesos "
-    noteC: "La nariz era peque\xF1a "
-    noteD: "Hace ya que dej\xF3 de  preocuparse por lo que digan"
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -68786,6 +68656,7 @@ MonoBehaviour:
   conversacionActual: conv_1_inicio
   interactUI: {fileID: 469652306}
   checkConversation: 1
+  sprite: {fileID: 0}
 --- !u!136 &1485225751
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -81165,9 +81036,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1902178597}
   - {fileID: 970528149}
   - {fileID: 361410065}
-  - {fileID: 1902178597}
   - {fileID: 2097599792}
   - {fileID: 1193181768}
   - {fileID: 1780818660}
@@ -83035,6 +82906,7 @@ MonoBehaviour:
   conversacionActual: conv_entrevista_4
   interactUI: {fileID: 469652306}
   checkConversation: 0
+  sprite: {fileID: 0}
 --- !u!135 &1719143342
 SphereCollider:
   m_ObjectHideFlags: 0

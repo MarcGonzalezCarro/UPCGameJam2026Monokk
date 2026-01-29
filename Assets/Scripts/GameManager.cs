@@ -35,7 +35,10 @@ public class GameManager : MonoBehaviour
             Debug.LogWarning("No existe cara hardcodeada con nombre: " + faceName);
             return false;
         }
-
+        foreach (var p in faceRecipes)
+        {
+            Debug.Log("Player pageName: [" + p.pageName + "]");
+        }
         // Buscar página del jugador
         FacePage playerPage = faceRecipes.Find(p => p.pageName == faceName);
         if (playerPage == null)
