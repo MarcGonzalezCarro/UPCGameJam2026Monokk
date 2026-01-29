@@ -67,8 +67,10 @@ public class DialogueCaca : MonoBehaviour
                 NextSentence();
 
           }
-            return;
+           
         }
+
+
         if (touched == true && Input.GetKeyDown(KeyCode.E)) {
 
             started = true;
