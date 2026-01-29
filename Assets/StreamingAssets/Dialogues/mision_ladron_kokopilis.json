@@ -34,7 +34,7 @@
     { "id": "coco_21", "personaje": "Pochi", "texto": "Me veo venir lo que va a decir…", "siguiente": "coco_22" },
     { "id": "coco_22", "personaje": "Koko", "texto": "Ayúdame a recordar y a hacer cárteles de se busca, por favor, y te concederé cualquier deseo.", "accion": "activar_mision_kokopilis", "siguiente": "coco_23" },
     { "id": "coco_23", "personaje": "Pochi", "texto": "¿Cualquier-?", "siguiente": "coco_24" },
-    { "id": "coco_24", "personaje": "Koko", "texto": "Dentro de un margen. No te vuelvas loco." },
+    { "id": "coco_24", "personaje": "Koko", "texto": "Dentro de un margen. No te vuelvas loco. Habláme para recordar y cuando tengas la cara con mis memorias háblame." },
 
     { "id": "coco_ayuda_01", "personaje": "Koko", "texto": "¿Has venido a ayudarme?", "siguiente": "coco_ayuda_02" },
     { "id": "coco_ayuda_02", "personaje": "Pochi", "texto": "Sí.", "siguiente": "coco_ayuda_03" },

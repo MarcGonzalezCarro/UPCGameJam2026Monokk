@@ -1,24 +1,11 @@
  {
   "escena": "exterior_barrio",
   "conversaciones": [
-    {
-      "id": "conv_1_inicio",
-      "inicio": "gato_01"
-    },
-    {
-      "id": "conv_falta_caras",
-      "inicio": "gato_falta_caras",
-      "condicion": "caras_dueños < 3"
-    },
-    {
-      "id": "conv_cara_mal",
-      "inicio": "gato_cara_mal"
-    },
-    {
-      "id": "conv_cara_bien",
-      "inicio": "gato_cara_bien",
-      "condicion": "caras_dueños >= 3"
-    }
+  { "id": "conv_1_inicio", "inicio": "gato_01" },
+  { "id": "conv_falta_caras", "inicio": "gato_falta_caras" },
+  { "id": "conv_cara_mal", "inicio": "gato_cara_mal" },
+  { "id": "conv_cara_bien", "inicio": "gato_cara_bien" }
+
   ],
   "dialogos": [
     {

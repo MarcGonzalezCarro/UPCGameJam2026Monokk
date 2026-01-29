@@ -52,11 +52,11 @@
     { "id": "zari_con_munecas_07", "personaje": "Zarita", "texto": "Pochi, perdona molestarte. Puedes ir donde las encontraste y buscar las piezas que faltan? Deberían ser 4… Te lo ruego…", "siguiente": "zari_con_munecas_08" },
     { "id": "zari_con_munecas_08", "personaje": "Pochi", "texto": "Pero…-", "siguiente": "zari_con_munecas_09" },
     { "id": "zari_con_munecas_09", "personaje": "Marc", "texto": "¡Quiero mi muñeca!", "siguiente": "zari_con_munecas_10" },
-    { "id": "zari_con_munecas_10", "personaje": "Zarita", "texto": "Gracias por la comprensión.", "accion": "activar_busqueda_partes" },
+    { "id": "zari_con_munecas_10", "personaje": "Zarita", "texto": "Gracias por la comprensión. Tráemelas.", "accion": "activar_busqueda_partes" },
 
     { "id": "zari_sin_partes", "personaje": "Irene", "texto": "Mamiiiiii, ¿donde está su cara?", "siguiente": "zari_sin_partes_02" },
     { "id": "zari_sin_partes_02", "personaje": "Luca", "texto": "Tengo sed.", "siguiente": "zari_sin_munecas_03" },
-    { "id": "zari_sin_partes_03", "personaje": "Pochi", "texto": "Parece ocupada." },
+    { "id": "zari_sin_partes_03", "personaje": "Pochi", "texto": "Parece ocupada. Le hablaré cuándo tenga las caras." },
 
     { "id": "zari_con_partes_01", "personaje": "Zarita", "texto": "¡Las has conseguido! Eres el mejor, Pochi.", "siguiente": "zari_con_partes_02" },
     { "id": "zari_con_partes_02", "personaje": "Pochi", "texto": "Sí, Zarita. Aquí tienes.", "siguiente": "zari_con_partes_03" },
