@@ -224,7 +224,7 @@
     {
       "id": "con_cara_01",
       "personaje": "Pochi",
-      "texto": "¡Es la última pieza que me faltaba! ¡Por fin!"
+      "texto": "¡Es la última pieza que me faltaba! ¡Por fin!",
 "siguiente": "con_cara_02"
     },
 {
