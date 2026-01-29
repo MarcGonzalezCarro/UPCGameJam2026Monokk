@@ -48,20 +48,47 @@
     { "id": "entrevista_3_03", "personaje": "Pochi", "texto": "¿Daltónico?", "siguiente": "entrevista_3_04" },
     { "id": "entrevista_3_04", "personaje": "PERSONA", "texto": "¿Eh? No tengo ningún tónico. Bueno, adiós." },
 
-    { "id": "maca_dibujos_mal", "personaje": "Maca", "texto": "No reconozco a nadie, sigue intentándolo…", "siguiente": "maca_dibujos_bien_01" },
+    { "id": "entrevista_4_01", "personaje": "Pochi", "texto": "Perdone señor@, ¿ha visto a una persona con camiseta azul?", "siguiente": "entrevista_4_02" },
+    { "id": "entrevista_4_02", "personaje": "PERSONA", "texto": "Sí, ¿por?", "siguiente": "entrevista_4_03" },
+    { "id": "entrevista_4_03", "personaje": "Pochi", "texto": "¡Qué bien! ¿Cree que me la podria describir?", "siguiente": "entrevista_4_04" },
+    { "id": "entrevista_4_04", "personaje": "PERSONA", "texto": "Supongo, pero tendrás que ayudarme, peludín." },
 
+    { "id": "entrevista_4_fallo", "personaje": "PERSONA", "texto": "No, no me acuerdo…", "siguiente": "entrevista_4_fallo_02" },
+    { "id": "entrevista_4_fallo_02", "personaje": "Pochi", "texto": "Ostras, tendré que volverlo a intentar más tarde." },
+    { "id": "entrevista_4_acierto_1", "personaje": "PERSONA", "texto": "Mira, ahora puedo recordar este detalle… apúntalo" },
+    { "id": "entrevista_4_acierto_3", "personaje": "PERSONA", "texto": "¿Lo tienes todo? Esta persona fue a la playa, si mal no recuerdo." },
+
+    { "id": "entrevista_5_01", "personaje": "Pochi", "texto": "Perdone señor@, ¿ha visto a una persona con camiseta azul?", "siguiente": "entrevista_5_02" },
+    { "id": "entrevista_5_02", "personaje": "PERSONA", "texto": "No, no tengo… Ah, eres tú, Pochi. Sí, ¿necesitas algo?", "siguiente": "entrevista_5_03" },
+    { "id": "entrevista_5_03", "personaje": "Pochi", "texto": "¿Lo podrías describir y decirme hacia donde ha ido?", "siguiente": "entrevista_5_04" },
+    { "id": "entrevista_5_04", "personaje": "PERSONA", "texto": "Claro, pero tendrás que ayudarme a recordar." },
+    { "id": "entrevista_5_fallo", "personaje": "PERSONA", "texto": "Mmm… Así no era.", "siguiente": "entrevista_5_fallo_02" },
+    { "id": "entrevista_5_fallo_02", "personaje": "Pochi", "texto": "Ostras, tendré que volverlo a intentar más tarde." },
+    { "id": "entrevista_5_acierto_1", "personaje": "PERSONA", "texto": "Un poco así era.." },
+    { "id": "entrevista_5_acierto_3", "personaje": "PERSONA", "texto": "Diría que ya está. Fue hacia la plaza." },
+
+    { "id": "entrevista_6_01", "personaje": "Pochi", "texto": "Perdone señor@, ¿ha visto a una persona con camiseta azul?", "siguiente": "entrevista_6_02" },
+    { "id": "entrevista_6_02", "personaje": "PERSONA", "texto": "Tengo prisa, pero sí.", "siguiente": "entrevista_6_03" },
+    { "id": "entrevista_6_03", "personaje": "Pochi", "texto": "¿Lo podría describir? Es importante…", "siguiente": "entrevista_6_04" },
+    { "id": "entrevista_6_04", "personaje": "PERSONA", "texto": "Ugh, de acuerdo, pero rápido. Necesitaré ayuda describiéndolo." },
+    { "id": "entrevista_6_fallo", "personaje": "PERSONA", "texto": "¿Qué? No… Así no era.", "siguiente": "entrevista_6_fallo_02" },
+    { "id": "entrevista_6_fallo_02", "personaje": "Pochi", "texto": "Ostras, tendré que volverlo a intentar más tarde." },
+    { "id": "entrevista_6_acierto_1", "personaje": "PERSONA", "texto": "Algo así, sí…" },
+    { "id": "entrevista_6_acierto_3", "personaje": "PERSONA", "texto": "Vale, ya estaría, ¿no? Fue hacia el parque. Tengo que irme." },
+
+    { "id": "maca_dibujos_mal", "personaje": "Maca", "texto": "No reconozco a nadie, sigue intentándolo…", "siguiente": "maca_dibujos_bien_01" },
     { "id": "maca_dibujos_bien_01", "personaje": "Maca", "texto": "¡Rubén! Es el, ¡es Rubén!", "siguiente": "maca_dibujos_bien_02" },
     { "id": "maca_dibujos_bien_02", "personaje": "Pochi", "texto": "Me alegro…", "siguiente": "maca_dibujos_bien_03" },
     { "id": "maca_dibujos_bien_03", "personaje": "Maca", "texto": "¿Hacia dónde has dicho que se ha ido?", "siguiente": "maca_dibujos_bien_04" },
     { "id": "maca_dibujos_bien_04", "personaje": "Pochi", "texto": "Hacia el parque…", "siguiente": "maca_dibujos_bien_05" },
     { "id": "maca_dibujos_bien_05", "personaje": "Maca", "texto": "¡Okay! ¡Hacia allà voy!", "siguiente": "maca_dibujos_bien_06" },
-    { "id": "maca_dibujos_bien_06", "personaje": "Pochi", "texto": "Espera. ¿Qué recuerdas de Kara?", "siguiente": "maca_dibujos_bien_07" },
+    { "id": "maca_dibujos_bien_06", "personaje": "Pochi", "texto": "Espera. ¿Qué recuerdas de Kara?" },
     { "id": "maca_dibujos_bien_07", "personaje": "Maca", "texto": "Mmm.. La boca, la tenía… ¡Me voy!", "accion": "cerrar_mision_maca" },
 
     { "id": "sin_cara_maca_01", "personaje": "Pochi", "texto": "Espera-", "siguiente": "sin_cara_maca_02" },
     { "id": "sin_cara_maca_02", "personaje": "Pochi", "texto": "Al menos ahora sé cómo era la boca de Kara." },
 
-    { "id": "con_cara_maca_01", "personaje": "Pochi", "texto": "¡Es la última pieza que me faltaba! ¡Por fin!", "siguiente": "con_cara_maca_02" },
-    { "id": "con_cara_maca_02", "personaje": "Pochi", "texto": "¡Tengo que ir a casa y dibujarlo en la libreta especial de Kara!" }
+    { "id": "con_cara_maca_01", "personaje": "Pochi", "texto": "¡Es la última pieza que me faltaba! ¡Por fin!", "siguiente": "con_cara_maca_01" },
+    { "id": "con_cara_maca_01", "personaje": "Pochi", "texto": "¡Tengo que ir a casa y dibujarlo en la libreta especial de Kara!" }
   ]
 }
