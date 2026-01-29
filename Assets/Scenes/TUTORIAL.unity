@@ -27391,7 +27391,7 @@ MonoBehaviour:
   animator: {fileID: 1687055492}
   teleport: {fileID: 682807678}
   otherDog: {fileID: 889114610}
-  thisDog: {fileID: 0}
+  thisDog: {fileID: 656976792}
 --- !u!114 &656976796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37500,6 +37500,7 @@ MonoBehaviour:
   "partesMu\xF1eca": 0
   carasZariOk: 0
   minigame: 0
+  misionesDone: 0
   minigameDialogues:
   - npcId: Coco
     fallo: conv_fallo_puzle
@@ -38751,7 +38752,7 @@ MonoBehaviour:
   animator: {fileID: 1687055492}
   teleport: {fileID: 682807678}
   otherDog: {fileID: 656976792}
-  thisDog: {fileID: 0}
+  thisDog: {fileID: 889114610}
 --- !u!114 &889114617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80218,7 +80219,8 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1201435053}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9146230563423768452, guid: 1e121767b1f3b3648b75b67c3fe8c4b8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
