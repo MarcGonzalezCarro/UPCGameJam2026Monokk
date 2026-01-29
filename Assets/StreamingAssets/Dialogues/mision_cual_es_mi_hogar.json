@@ -23,206 +23,208 @@
   "dialogos": [
     {
       "id": "gato_01",
-      "personaje": "GATO",
-      "texto": "¡PROTA!",
+      "personaje": "Holla",
+      "texto": "¡Pochi!",
       "siguiente": "gato_02"
     },
     {
       "id": "gato_02",
-      "personaje": "PROTA",
-      "texto": "Hola GATO, ¿qué haces aquí fuera? Pensaba que eras hogareña.",
+      "personaje": "Pochi",
+      "texto": "Hola Holla, ¿qué haces aquí fuera? Pensaba que eras hogareña.",
       "siguiente": "gato_03"
     },
     {
       "id": "gato_03",
-      "personaje": "GATO",
+      "personaje": "Holla",
       "texto": "Y lo soy, nunca mentiría…",
       "siguiente": "gato_04"
     },
     {
       "id": "gato_04",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "¿Entonces?",
       "siguiente": "gato_05"
     },
     {
       "id": "gato_05",
-      "personaje": "GATO",
+      "personaje": "Holla",
       "texto": "Promete que no te reirás…",
       "siguiente": "gato_06"
     },
     {
       "id": "gato_06",
-      "personaje": "GATO",
+      "personaje": "Holla",
       "texto": "…",
       "siguiente": "gato_07"
     },
     {
       "id": "gato_07",
-      "personaje": "GATO",
+      "personaje": "Holla",
       "texto": "Estaba mirando por la ventana cuando vi un pájaro y me puse a seguirlo.",
       "siguiente": "gato_08"
     },
     {
       "id": "gato_08",
-      "personaje": "GATO",
+      "personaje": "Holla",
       "texto": "Y ahora estoy sin casa y sin pájaro.",
       "siguiente": "gato_09"
     },
     {
       "id": "gato_09",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "¿Te ha ganado un pájaro?",
       "siguiente": "gato_10"
     },
     {
       "id": "gato_10",
-      "personaje": "GATO",
-      "texto": "Son extremadamente rápidos, PROTA. Un día te podría pasar a ti.",
+      "personaje": "Holla",
+      "texto": "Son extremadamente rápidos, Pochi. Un día te podría pasar a ti.",
       "siguiente": "gato_11"
     },
     {
       "id": "gato_11",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Eh, supongo.",
       "siguiente": "gato_12"
     },
     {
       "id": "gato_12",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "…",
       "siguiente": "gato_13"
     },
     {
       "id": "gato_13",
-      "personaje": "PROTA",
-      "texto": "Por cierto, ¿te acuerdas de la cara de DUEÑA?",
+      "personaje": "Pochi",
+      "texto": "Por cierto, ¿te acuerdas de la cara de Kara?",
       "siguiente": "gato_14"
     },
     {
       "id": "gato_14",
-      "personaje": "GATO",
+      "personaje": "Holla",
       "texto": "Por quién me tomas, claro que me acuerdo.",
       "siguiente": "gato_15"
     },
     {
       "id": "gato_15",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Entonces, ¿la podrías describir?",
       "siguiente": "gato_16"
     },
     {
       "id": "gato_16",
-      "personaje": "GATO",
+      "personaje": "Holla",
       "texto": "Claro… ¡Ah! Te la describo a cambio de que encuentres mi casa, ¿trato?",
       "siguiente": "gato_17",
       "accion": "activar_mision_hogar"
     },
     {
       "id": "gato_17",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "¿Cómo quieres que haga eso? ¿No sabes tú dónde vives?",
       "siguiente": "gato_18"
     },
     {
       "id": "gato_18",
-      "personaje": "GATO",
+      "personaje": "Holla",
       "texto": "No me fijé en el exterior de la casa, y los interiores todos me parecen lo mismo.",
       "siguiente": "gato_19"
     },
     {
       "id": "gato_19",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "¿Entonces?",
       "siguiente": "gato_20"
     },
     {
       "id": "gato_20",
-      "personaje": "GATO",
-      "texto": "He visto que llevas la libreta de DUEÑA. Averigua de quién es cada casa y dibújalos. Cuándo tengas a todos los dueños dímelo y te describiré a DUEÑA."
+      "personaje": "Holla",
+      "texto": "He visto que llevas la libreta de Kara. Averigua de quién es cada casa y dibújalos. Cuándo tengas a todos los dueños dímelo y te describiré a Kara."
     },
 
     {
       "id": "gato_falta_caras",
-      "personaje": "GATO",
+      "personaje": "Holla",
       "texto": "Te falta algo, ¿no?"
     },
 
     {
       "id": "gato_cara_mal",
-      "personaje": "GATO",
+      "personaje": "Holla",
       "texto": "No me suena ninguno. ¿Estás seguro de que esto se te da bien?",
       "siguiente": "gato_cara_mal_02"
     },
     {
       "id": "gato_cara_mal_02",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Nunca dije-",
       "siguiente": "gato_cara_mal_03"
     },
     {
       "id": "gato_cara_mal_03",
-      "personaje": "GATO",
+      "personaje": "Holla",
       "texto": "Sigue intentándolo."
     },
 
     {
       "id": "gato_cara_bien",
-      "personaje": "GATO",
+      "personaje": "Holla",
       "texto": "…",
       "siguiente": "gato_cara_bien_02"
     },
     {
       "id": "gato_cara_bien_02",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "¿Entonces? ¿Lo reconoces?",
       "siguiente": "gato_cara_bien_03"
     },
     {
       "id": "gato_cara_bien_03",
-      "personaje": "GATO",
-      "texto": "¡Espléndido! ¡Brillante! Le va a encantar, muchas gracias PROTA.",
+      "personaje": "Holla",
+      "texto": "¡Espléndido! ¡Brillante! Le va a encantar, muchas gracias Pochi.",
       "siguiente": "gato_cara_bien_04"
     },
     {
       "id": "gato_cara_bien_04",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "¿Qué…?",
       "siguiente": "gato_cara_bien_05"
     },
     {
       "id": "gato_cara_bien_05",
-      "personaje": "GATO",
-      "texto": "Da igual pequeñín. Tengo prisa, los ojos de DUEÑA eran…",
+      "personaje": "Holla",
+      "texto": "Da igual pequeñín. Tengo prisa, los ojos de Kara eran…",
       "siguiente": "gato_cara_bien_06"
     },
     {
       "id": "gato_cara_bien_06",
-      "personaje": "GATO",
-      "texto": "Hasta pronto, PROTA.",
+      "personaje": "Holla",
+      "texto": "Hasta pronto, Pochi.",
       "accion": "cerrar_mision_hogar"
     },
     {
       "id": "gato_cara_bien_07",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "¡Espera!"
     },
 
     {
       "id": "sin_cara_01",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Jope, ¿ahora qué hago?"
     },
     {
       "id": "sin_cara_02",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Toca preguntarle a más gente."
     },
 
     {
       "id": "con_cara_01",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "¡Es la última pieza que me faltaba! ¡Por fin!"
     }
   ]
 }
+
+

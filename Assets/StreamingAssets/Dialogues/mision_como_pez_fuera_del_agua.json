@@ -45,119 +45,119 @@
   "dialogos": [
     {
       "id": "maca_01",
-      "personaje": "MACA",
+      "personaje": "Maca",
       "texto": "Mmmm…",
       "siguiente": "maca_02"
     },
     {
       "id": "maca_02",
-      "personaje": "PROTA",
-      "texto": "MACA, ¿qué tal estás?",
+      "personaje": "Pochi",
+      "texto": "Maca, ¿qué tal estás?",
       "siguiente": "maca_03"
     },
     {
       "id": "maca_03",
-      "personaje": "MACA",
-      "texto": "Ay, hola PROTA. Podría estar mejor, ¿tú?",
+      "personaje": "Maca",
+      "texto": "Ay, hola Pochi. Podría estar mejor, ¿tú?",
       "siguiente": "maca_04"
     },
     {
       "id": "maca_04",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Un poco mal, necesito ayuda describiendo el rostro de DUEÑA, ¿tú te acuerdas de como es?",
       "siguiente": "maca_05"
     },
     {
       "id": "maca_05",
-      "personaje": "MACA",
-      "texto": "Sí, me acuerdo de que PERRO la describió alguna que otra vez. Yo estoy en las mismas. Sé que llevaba una camiseta azul, y que si lo veo lo reconoceré, pero no sé donde está DUEÑO.",
+      "personaje": "Maca",
+      "texto": "Sí, me acuerdo de que PERRO la describió alguna que otra vez. Yo estoy en las mismas. Sé que llevaba una camiseta azul, y que si lo veo lo reconoceré, pero no sé donde está Rubén.",
       "siguiente": "maca_06"
     },
     {
       "id": "maca_06",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "¿Te ha dejado aquí sola?",
       "siguiente": "maca_07"
     },
     {
       "id": "maca_07",
-      "personaje": "MACA",
+      "personaje": "Maca",
       "texto": "Sí, ya sabes, como soy un pez me trae muchas veces al lago para que disfrute de mi hábitat.",
       "siguiente": "maca_08"
     },
     {
       "id": "maca_08",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Un-",
       "siguiente": "maca_09"
     },
     {
       "id": "maca_09",
-      "personaje": "MACA",
+      "personaje": "Maca",
       "texto": "Pero ha tenido una urgencia y me ha dejado aquí solita.",
       "siguiente": "maca_10"
     },
     {
       "id": "maca_10",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Qué mal. Pero, ¿me puedes ayudar?",
       "siguiente": "maca_11"
     },
     {
       "id": "maca_11",
-      "personaje": "MACA",
+      "personaje": "Maca",
       "texto": "Supongo… ¡¿Es esa la libreta de dueña?!",
       "siguiente": "maca_12"
     },
     {
       "id": "maca_12",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Sí-",
       "siguiente": "maca_13"
     },
     {
       "id": "maca_13",
-      "personaje": "MACA",
-      "texto": "PROTA, yo te diré todo lo que sé de DUEÑA, pero a cambio, te lo ruego, encuentra a DUEÑO.",
+      "personaje": "Maca",
+      "texto": "Pochi, yo te diré todo lo que sé de DUEÑA, pero a cambio, te lo ruego, encuentra a Rubén.",
       "siguiente": "maca_14"
     },
     {
       "id": "maca_14",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "¿Cómo quieres que-?",
       "siguiente": "maca_15"
     },
     {
       "id": "maca_15",
-      "personaje": "MACA",
+      "personaje": "Maca",
       "texto": "Pregúntale a los humanos que te describan a alguien con camiseta azul, y cuando lo tengas, tráemelo ¡gracias por adelantado!",
       "accion": "activar_mision_dueno",
       "siguiente": "maca_16"
     },
     {
       "id": "maca_16",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Pero…"
     },
     {
       "id": "maca_17",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "No parece que quiera ayudarme."
     },
 
     {
       "id": "maca_sin_dibujos",
-      "personaje": "MACA",
+      "personaje": "Maca",
       "texto": "¿No los tienes? Quiero volver a mi pecera…"
     },
     {
       "id": "maca_sin_dibujos_02",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Eh, estoy en ello."
     },
     {
       "id": "entrevista_1_01",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Perdone señor@, ¿ha visto a una persona con camiseta azul?"
     },
     {
@@ -167,7 +167,7 @@
     },
     {
       "id": "entrevista_2_01",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Perdone señor@, ¿ha visto a una persona con camiseta azul?"
     },
     {
@@ -177,7 +177,7 @@
     },
     {
       "id": "entrevista_2_03",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Perdona-"
     },
     {
@@ -187,12 +187,12 @@
     },
     {
       "id": "entrevista_2_05",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "No creo que esté por la labor."
     },
     {
       "id": "entrevista_3_01",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Perdone señor@, ¿ha visto a una persona con camiseta azul?"
     },
     {
@@ -202,7 +202,7 @@
     },
     {
       "id": "entrevista_3_03",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "¿Daltónico?"
     },
     {
@@ -212,7 +212,7 @@
     },
     {
       "id": "entrevista_4_01",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Perdone señor@, ¿ha visto a una persona con camiseta azul?"
     },
     {
@@ -222,7 +222,7 @@
     },
     {
       "id": "entrevista_4_03",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "¡Qué bien! ¿Cree que me la podria describir?"
     },
     {
@@ -237,7 +237,7 @@
     },
     {
       "id": "entrevista_4_fallo_02",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Ostras, tendré que volverlo a intentar más tarde."
     },
     {
@@ -252,17 +252,17 @@
     },
     {
       "id": "entrevista_5_01",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Perdone señor@, ¿ha visto a una persona con camiseta azul?"
     },
     {
       "id": "entrevista_5_02",
       "personaje": "PERSONA",
-      "texto": "No, no tengo… Ah, eres tú, PROTA. Sí, ¿necesitas algo?"
+      "texto": "No, no tengo… Ah, eres tú, Pochi. Sí, ¿necesitas algo?"
     },
     {
       "id": "entrevista_5_03",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "¿Lo podrías describir y decirme hacia donde ha ido?"
     },
     {
@@ -277,7 +277,7 @@
     },
     {
       "id": "entrevista_5_fallo_02",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Ostras, tendré que volverlo a intentar más tarde."
     },
     {
@@ -292,7 +292,7 @@
     },
     {
       "id": "entrevista_6_01",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Perdone señor@, ¿ha visto a una persona con camiseta azul?"
     },
     {
@@ -302,7 +302,7 @@
     },
     {
       "id": "entrevista_6_03",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "¿Lo podría describir? Es importante…"
     },
     {
@@ -317,7 +317,7 @@
     },
     {
       "id": "entrevista_6_fallo_02",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Ostras, tendré que volverlo a intentar más tarde."
     },
     {
@@ -332,66 +332,67 @@
     },
     {
       "id": "maca_dibujos_mal",
-      "personaje": "MACA",
+      "personaje": "Maca",
       "texto": "No reconozco a nadie, sigue intentándolo…"
     },
     {
       "id": "maca_dibujos_bien_01",
-      "personaje": "MACA",
-      "texto": "¡DUEÑO! Es el, ¡es DUEÑO!",
+      "personaje": "Maca",
+      "texto": "¡Rubén! Es el, ¡es Rubén!",
       "siguiente": "maca_dibujos_bien_02"
     },
     {
       "id": "maca_dibujos_bien_02",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Me alegro…",
       "siguiente": "maca_dibujos_bien_03"
     },
     {
       "id": "maca_dibujos_bien_03",
-      "personaje": "MACA",
+      "personaje": "Maca",
       "texto": "¿Hacia dónde has dicho que se ha ido?",
       "siguiente": "maca_dibujos_bien_04"
     },
     {
       "id": "maca_dibujos_bien_04",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Hacia el parque…",
       "siguiente": "maca_dibujos_bien_05"
     },
     {
       "id": "maca_dibujos_bien_05",
-      "personaje": "MACA",
+      "personaje": "Maca",
       "texto": "¡Okay! ¡Hacia allà voy!",
       "siguiente": "maca_dibujos_bien_06"
     },
     {
       "id": "maca_dibujos_bien_06",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Espera. ¿Qué recuerdas de DUEÑA?"
     },
     {
       "id": "maca_dibujos_bien_07",
-      "personaje": "MACA",
+      "personaje": "Maca",
       "texto": "Mmm.. La boca, la tenía… ¡Me voy!",
       "accion": "cerrar_mision_maca"
     },
 
     {
       "id": "sin_cara_maca_01",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Espera-"
     },
     {
       "id": "sin_cara_maca_02",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Al menos ahora sé cómo era la boca de DUEÑA."
     },
 
     {
       "id": "con_cara_maca_01",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "¡Es la última pieza que me faltaba! ¡Por fin!"
     }
   ]
 }
+

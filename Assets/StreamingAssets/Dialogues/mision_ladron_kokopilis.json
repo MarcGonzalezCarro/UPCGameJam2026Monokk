@@ -37,164 +37,164 @@
   "dialogos": [
     {
       "id": "coco_01",
-      "personaje": "COCO",
-      "texto": "Ey, PROTA…",
+      "personaje": "Koko",
+      "texto": "Ey, Pochi…",
       "siguiente": "coco_02"
     },
     {
       "id": "coco_02",
-      "personaje": "PROTA",
-      "texto": "¡COCO! Necesito que me hagas un favor.",
+      "personaje": "Pochi",
+      "texto": "¡Koko! Necesito que me hagas un favor.",
       "siguiente": "coco_03"
     },
     {
       "id": "coco_03",
-      "personaje": "COCO",
+      "personaje": "Koko",
       "texto": "TSK, no estoy para favores, yo. ¿No ves que estoy más triste que un chihuahua sin su jersey?",
       "siguiente": "coco_04"
     },
     {
       "id": "coco_04",
-      "personaje": "PROTA",
-      "texto": "Es muy rápido, COCO, por favor-",
+      "personaje": "Pochi",
+      "texto": "Es muy rápido, Koko, por favor-",
       "siguiente": "coco_05"
     },
     {
       "id": "coco_05",
-      "personaje": "COCO",
-      "texto": "AH, pobre de mí, PROTA. Pobre de mí, ¿qué será de la pobre COCO? ¿Qué haré yo?",
+      "personaje": "Koko",
+      "texto": "AH, pobre de mí, Pochi. Pobre de mí, ¿qué será de la pobre Koko? ¿Qué haré yo?",
       "siguiente": "coco_06"
     },
     {
       "id": "coco_06",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "…",
       "siguiente": "coco_07"
     },
     {
       "id": "coco_07",
-      "personaje": "COCO",
+      "personaje": "Koko",
       "texto": "Deberé rehusarme a esta vida de infeliz. Ah, qué injusta es la vida y como maltrata a los más guautásticos.",
       "siguiente": "coco_08"
     },
     {
       "id": "coco_08",
-      "personaje": "PROTA",
-      "texto": "¿Qué ha pasado, COCO?",
+      "personaje": "Pochi",
+      "texto": "¿Qué ha pasado, Koko?",
       "siguiente": "coco_09"
     },
     {
       "id": "coco_09",
-      "personaje": "COCO",
-      "texto": "Ay, no quieras saber, PROTA. ¡Ay! ¡Pobre de mí!",
+      "personaje": "Koko",
+      "texto": "Ay, no quieras saber, Pochi. ¡Ay! ¡Pobre de mí!",
       "siguiente": "coco_10"
     },
     {
       "id": "coco_10",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "…",
       "siguiente": "coco_11"
     },
     {
       "id": "coco_11",
-      "personaje": "COCO",
+      "personaje": "Koko",
       "texto": "…",
       "siguiente": "coco_12"
     },
     {
       "id": "coco_12",
-      "personaje": "COCO",
+      "personaje": "Koko",
       "texto": "¡Te lo contaré igual, pues mi sufrimiento ha sido nunca visto! Me… me…",
       "siguiente": "coco_13"
     },
     {
       "id": "coco_13",
-      "personaje": "COCO",
+      "personaje": "Koko",
       "texto": "¡He sido víctima de un robo! ¡Mis kokopilis! ¡Mis dulces gominolas!",
       "siguiente": "coco_14"
     },
     {
       "id": "coco_14",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Oh, ¿quién ha sido?",
       "siguiente": "coco_15"
     },
     {
       "id": "coco_15",
-      "personaje": "COCO",
+      "personaje": "Koko",
       "texto": "Pues…",
       "siguiente": "coco_16"
     },
     {
       "id": "coco_16",
-      "personaje": "COCO",
+      "personaje": "Koko",
       "texto": "No me acuerdo.",
       "siguiente": "coco_17"
     },
     {
       "id": "coco_17",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "?!?!?",
       "siguiente": "coco_18"
     },
     {
       "id": "coco_18",
-      "personaje": "COCO",
+      "personaje": "Koko",
       "texto": "No me mires así. Ya sabes que no se me da bien acordarme de estas cosas. Y además…",
       "siguiente": "coco_19"
     },
     {
       "id": "coco_19",
-      "personaje": "COCO",
+      "personaje": "Koko",
       "texto": "!!!",
       "siguiente": "coco_20"
     },
     {
       "id": "coco_20",
-      "personaje": "COCO",
-      "texto": "¿Es ese el cuaderno de DUEÑA? PROTA, ¿no ves lo magnífico que es esto?",
+      "personaje": "Koko",
+      "texto": "¿Es ese el cuaderno de Kara? Pochi, ¿no ves lo magnífico que es esto?",
       "siguiente": "coco_21"
     },
     {
       "id": "coco_21",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Me veo venir lo que va a decir…",
       "siguiente": "coco_22"
     },
     {
       "id": "coco_22",
-      "personaje": "COCO",
+      "personaje": "Koko",
       "texto": "Ayúdame a recordar y a hacer cárteles de se busca, por favor, y te concederé cualquier deseo.",
       "siguiente": "coco_23",
       "accion": "activar_mision_kokopilis"
     },
     {
       "id": "coco_23",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "¿Cualquier-?",
       "siguiente": "coco_24"
     },
     {
       "id": "coco_24",
-      "personaje": "COCO",
+      "personaje": "Koko",
       "texto": "Dentro de un margen. No te vuelvas loco."
     },
 
     {
       "id": "coco_ayuda_01",
-      "personaje": "COCO",
+      "personaje": "Koko",
       "texto": "¿Has venido a ayudarme?",
       "siguiente": "coco_ayuda_02"
     },
     {
       "id": "coco_ayuda_02",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Sí.",
       "siguiente": "coco_ayuda_03"
     },
     {
       "id": "coco_ayuda_03",
-      "personaje": "COCO",
+      "personaje": "Koko",
       "texto": "Pues a qué esperas…",
       "accion": "iniciar_puzle_recuerdo"
     },
@@ -202,85 +202,87 @@
     {
       "id": "coco_puzle_primero",
       "personaje": "NARRADOR",
-      "texto": "Durante el tiempo establecido deberás petar las burbujas negras e impedir que COCO se distraiga."
+      "texto": "Durante el tiempo establecido deberás petar las burbujas negras e impedir que Koko se distraiga."
     },
 
     {
       "id": "coco_fallo_01",
-      "personaje": "COCO",
+      "personaje": "Koko",
       "texto": "No… No recuerdo nada.",
       "siguiente": "coco_fallo_02"
     },
     {
       "id": "coco_fallo_02",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Joder, tendré que volverlo a intentar más tarde."
     },
 
     {
       "id": "coco_acierto_parcial_01",
-      "personaje": "COCO",
+      "personaje": "Koko",
       "texto": "¡Sí! Ahora me acuerdo de una parte. Te lo dejo apuntado en la libreta."
     },
 
     {
       "id": "coco_acierto_total_01",
-      "personaje": "COCO",
-      "texto": "¡Ya está! ¡Ya me acuerdo! PROTA, debes dibujarlo, así aunque me olvide podré mostrárselo a la gente"
+      "personaje": "Koko",
+      "texto": "¡Ya está! ¡Ya me acuerdo! Pochi, debes dibujarlo, así aunque me olvide podré mostrárselo a la gente"
     },
 
     {
       "id": "coco_cara_mal",
-      "personaje": "COCO",
+      "personaje": "Koko",
       "texto": "Eh… Esa no es la persona que he descrito, vuelve a intentarlo. No tengo todo el día."
     },
 
     {
       "id": "coco_cara_bien",
-      "personaje": "COCO",
-      "texto": "¡Es él! ¡El ladrón! Muchas gracias PROTA. Tengo que ir a buscarlo, ten, quédate tú también con carteles de búsqueda a ver si tienes suerte… ¡Adiós!",
+      "personaje": "Koko",
+      "texto": "¡Es él! ¡El ladrón! Muchas gracias Pochi. Tengo que ir a buscarlo, ten, quédate tú también con carteles de búsqueda a ver si tienes suerte… ¡Adiós!",
       "siguiente": "coco_cara_bien_02"
     },
     {
       "id": "coco_cara_bien_02",
-      "personaje": "PROTA",
-      "texto": "Espera, COCO. ¡Mi favor!",
+      "personaje": "Pochi",
+      "texto": "Espera, Koko. ¡Mi favor!",
       "siguiente": "coco_cara_bien_03"
     },
     {
       "id": "coco_cara_bien_03",
-      "personaje": "COCO",
+      "personaje": "Koko",
       "texto": "Ah, es verdad, ¿qué quieres?",
       "siguiente": "coco_cara_bien_04"
     },
     {
       "id": "coco_cara_bien_04",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Descríbeme a dueña, por favor que no me…",
       "siguiente": "coco_cara_bien_05"
     },
     {
       "id": "coco_cara_bien_05",
-      "personaje": "COCO",
+      "personaje": "Koko",
       "texto": "¿Qué? Tenía la nariz descripción. ¡Bueno, me voy, que tengo prisa!",
       "accion": "cerrar_mision_kokopilis"
     },
 
     {
       "id": "sin_cara_koko_01",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Espero que encuentre al ladrón. Supongo que tendré que ir preguntando por el ladrón…"
     },
     {
       "id": "sin_cara_koko_02",
-      "personaje": "PROTA",
-      "texto": "¡Pero lo importante ahora es acordarme de DUEÑA!"
+      "personaje": "Pochi",
+      "texto": "¡Pero lo importante ahora es acordarme de Kara!"
     },
 
     {
       "id": "con_cara_koko_01",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "¡Es la última pieza que me faltaba! ¡Por fin!"
     }
   ]
 }
+
+

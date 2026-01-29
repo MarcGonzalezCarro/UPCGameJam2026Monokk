@@ -20,6 +20,8 @@ public class FacePage
     public string noteC;
     public string noteD;
 
+    public bool unlocked = false;
+
     public bool noteAUnlocked;
     public bool noteBUnlocked;
     public bool noteCUnlocked;
@@ -34,6 +36,8 @@ public class FacePage
         noteB = "";
         noteC = "";
         noteD = "";
+
+        unlocked = false;
 
         noteAUnlocked = false;
         noteBUnlocked = false;
