@@ -22362,7 +22362,7 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 6.5
   m_Height: 17.6
@@ -22406,7 +22406,7 @@ MonoBehaviour:
   conversacionActual: 
   interactUI: {fileID: 469652306}
   checkConversation: 1
-  sprite: {fileID: 0}
+  sprite: {fileID: -8887354294683853318, guid: b49daaae1fee20e44a2419a28e23d2af, type: 3}
 --- !u!114 &536437343
 MonoBehaviour:
   m_ObjectHideFlags: 0
