@@ -3,28 +3,28 @@
   "dialogos": [
     {
       "id": "final_inicio",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "Vale, voy a abrir la libreta para dibujarla de una vez por todas.",
       "accion": "activar_puzle_final"
     },
     {
       "id": "final_fallo",
-      "personaje": "PROTA",
-      "texto": "No… Así no era DUEÑA… Era más bonita."
+      "personaje": "Pochi",
+      "texto": "No… Así no era Kara… Era más bonita."
     },
     {
       "id": "final_exito",
-      "personaje": "PROTA",
-      "texto": "¡DUEÑA!"
+      "personaje": "Pochi",
+      "texto": "¡Kara!"
     },
     {
       "id": "final_perro",
-      "personaje": "PERRO",
-      "texto": "Creo que lo sabes, PROTA."
+      "personaje": "Chopi",
+      "texto": "Creo que lo sabes, Pochi."
     },
     {
       "id": "final_cierre",
-      "personaje": "PROTA",
+      "personaje": "Pochi",
       "texto": "…"
     }
   ]

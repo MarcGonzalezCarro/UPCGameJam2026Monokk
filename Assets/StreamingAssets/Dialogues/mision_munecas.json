@@ -37,405 +37,173 @@
   "dialogos": [
     {
       "id": "zari_01",
-      "personaje": "ZARI",
+      "personaje": "Zarita",
       "texto": "Calma, calma niños. Imploro.",
       "siguiente": "zari_02"
     },
     {
       "id": "zari_02",
-      "personaje": "PROTA",
-      "texto": "…",
+      "personaje": "Irene",
+      "texto": "¡Pero mamá! ¡He perdido mi muñeca!",
       "siguiente": "zari_03"
     },
     {
       "id": "zari_03",
-      "personaje": "ZARI",
-      "texto": "Si no os calmáis no puedo buscarlos.",
+      "personaje": "Luca",
+      "texto": "¡Y yo la mía!",
       "siguiente": "zari_04"
     },
     {
       "id": "zari_04",
-      "personaje": "ZARI1",
-      "texto": "¡Mamá! ¡Dónde está! ¡Mamá!",
+      "personaje": "Marc",
+      "texto": "Gugú tata...",
       "siguiente": "zari_05"
     },
     {
       "id": "zari_05",
-      "personaje": "ZARI2",
-      "texto": "¡Mamá! ¡Dámela!",
+      "personaje": "Zarita",
+      "texto": "Oh, hola Pochi. Perdona el alboroto.",
       "siguiente": "zari_06"
     },
     {
       "id": "zari_06",
-      "personaje": "ZARI3",
-      "texto": "¡Quiero mi muñeca!",
+      "personaje": "Pochi",
+      "texto": "Hola Zarita. ¿Necesitáis ayuda?",
       "siguiente": "zari_07"
     },
     {
       "id": "zari_07",
-      "personaje": "ZARI",
-      "texto": "Dadme un…",
+      "personaje": "Zarita",
+      "texto": "Sí, por favor. Irene, Luca y Marc han perdido sus muñecas por la plaza. Si las encuentras...",
       "siguiente": "zari_08"
     },
     {
       "id": "zari_08",
-      "personaje": "PROTA",
-      "texto": "…",
+      "personaje": "Pochi",
+      "texto": "Las buscaré. A cambio, ¿sabes algo de Kara?",
       "siguiente": "zari_09"
     },
     {
       "id": "zari_09",
-      "personaje": "ZARI",
-      "texto": "¡PROTA! Necesito tu ayuda. Por favor.",
-      "siguiente": "zari_10"
+      "personaje": "Zarita",
+      "texto": "Puede ser... Encuentra las muñecas y hablaremos.",
+      "accion": "activar_busqueda_munecas"
     },
-    {
-      "id": "zari_10",
-      "personaje": "PROTA",
-      "texto": "Estoy un poco liado…-",
-      "siguiente": "zari_11"
-    },
-    {
-      "id": "zari_11",
-      "personaje": "ZARI1",
-      "texto": "Va a buscarlos PROTA’",
-      "siguiente": "zari_12"
-    },
-    {
-      "id": "zari_12",
-      "personaje": "ZARI3",
-      "texto": "Siii, PROTA!",
-      "siguiente": "zari_13"
-    },
-    {
-      "id": "zari_13",
-      "personaje": "ZARI",
-      "texto": "Te lo ruego, PROTA, hazme el favor esta vez. Los niños han perdido sus muñecas. Dicen que saben donde están, pero no tengo tiempo para ponerme a buscar.",
-      "siguiente": "zari_14"
-    },
-    {
-      "id": "zari_14",
-      "personaje": "PROTA",
-      "texto": "Yo-",
-      "siguiente": "zari_15"
-    },
-    {
-      "id": "zari_15",
-      "personaje": "ZARI",
-      "texto": "Muchas gracias, PROTA. Niños, decidle donde están.",
-      "accion": "activar_mision_munecas",
-      "siguiente": "zari_16"
-    },
-    {
-      "id": "zari_16",
-      "personaje": "ZARI1",
-      "texto": "Mi muñeca está cerca del pez raro.",
-      "siguiente": "zari_17"
-    },
-    {
-      "id": "zari_17",
-      "personaje": "ZARI2",
-      "texto": "La mía estaba tomando el sol…",
-      "siguiente": "zari_18"
-    },
-    {
-      "id": "zari_18",
-      "personaje": "ZARI3",
-      "texto": "Lo último que recuerdo era pedir un deseo…",
-      "siguiente": "zari_19"
-    },
-    {
-      "id": "zari_19",
-      "personaje": "PROTA",
-      "texto": "ZARI, yo…",
-      "siguiente": "zari_20"
-    },
-    {
-      "id": "zari_20",
-      "personaje": "ZARI1",
-      "texto": "¡Mamá!",
-      "siguiente": "zari_21"
-    },
-    {
-      "id": "zari_21",
-      "personaje": "ZARI",
-      "texto": "Lo siento PROTA…",
-      "siguiente": "zari_22"
-    },
-    {
-      "id": "zari_22",
-      "personaje": "ZARI",
-      "texto": "Niños sí, ahora…",
-      "siguiente": "zari_23"
-    },
-    {
-      "id": "zari_23",
-      "personaje": "PROTA",
-      "texto": "…"
-    },
-
     {
       "id": "zari_buscar_01",
-      "personaje": "PROTA",
-      "texto": "¡Aquí está la primera! Ya me puede agradecer ZARI bien…"
+      "personaje": "Zarita",
+      "texto": "Están por aquí cerca."
     },
-    {
-      "id": "zari_buscar_02",
-      "personaje": "PROTA",
-      "texto": "Va, que solo queda una."
-    },
-    {
-      "id": "zari_buscar_03",
-      "personaje": "PROTA",
-      "texto": "¡Por fin! Las tengo todas, ahora a por ZARI."
-    },
-
     {
       "id": "zari_sin_munecas",
-      "personaje": "ZARI1",
-      "texto": "Mamiiiiii, quiero mi muñeca.",
-      "siguiente": "zari_sin_munecas_02"
+      "personaje": "Zarita",
+      "texto": "¿Aún no las tienes todas? A los niños les va a dar algo."
     },
-    {
-      "id": "zari_sin_munecas_02",
-      "personaje": "ZARI2",
-      "texto": "Tengo hambre",
-      "siguiente": "zari_sin_munecas_03"
-    },
-    {
-      "id": "zari_sin_munecas_03",
-      "personaje": "PROTA",
-      "texto": "Parece ocupada."
-    },
-
     {
       "id": "zari_con_munecas_01",
-      "personaje": "ZARI",
-      "texto": "¡PROTA! ¿Las tienes…?",
+      "personaje": "Zarita",
+      "texto": "¡Las has encontrado! ¡Mil gracias!",
       "siguiente": "zari_con_munecas_02"
     },
     {
       "id": "zari_con_munecas_02",
-      "personaje": "PROTA",
-      "texto": "Sí, aquí están.",
+      "personaje": "Irene",
+      "texto": "¡Mi muñeca! ¡Gracias Pochi!",
       "siguiente": "zari_con_munecas_03"
     },
     {
       "id": "zari_con_munecas_03",
-      "personaje": "ZARI1",
-      "texto": "¡Están rotas!",
-      "siguiente": "zari_con_munecas_04"
+      "personaje": "Zarita",
+      "texto": "Pero... ¡Están rotas! Oh, no. Pochi, ¿tú dibujas, verdad? ¿Podrías arreglarles las caras?",
+      "accion": "desbloquear_puzle_munecas"
     },
-    {
-      "id": "zari_con_munecas_04",
-      "personaje": "ZARI3",
-      "texto": "Esta no es mi muñeca…",
-      "siguiente": "zari_con_munecas_05"
-    },
-    {
-      "id": "zari_con_munecas_05",
-      "personaje": "ZARI",
-      "texto": "Jopelines… Ya os las arreglaré, esta noche me pongo…",
-      "siguiente": "zari_con_munecas_06"
-    },
-    {
-      "id": "zari_con_munecas_06",
-      "personaje": "ZARI2",
-      "texto": "¡Quiero mi muñeca mamá! No es justo…",
-      "siguiente": "zari_con_munecas_07"
-    },
-    {
-      "id": "zari_con_munecas_07",
-      "personaje": "ZARI",
-      "texto": "PROTA, perdona molestarte. Puedes ir donde las encontraste y buscar las piezas que faltan? Deberían ser 4… Te lo ruego…",
-      "siguiente": "zari_con_munecas_08"
-    },
-    {
-      "id": "zari_con_munecas_08",
-      "personaje": "PROTA",
-      "texto": "Pero…-",
-      "siguiente": "zari_con_munecas_09"
-    },
-    {
-      "id": "zari_con_munecas_09",
-      "personaje": "ZARI3",
-      "texto": "¡Quiero mi muñeca!",
-      "siguiente": "zari_con_munecas_10"
-    },
-    {
-      "id": "zari_con_munecas_10",
-      "personaje": "ZARI",
-      "texto": "Gracias por la comprensión.",
-      "accion": "activar_busqueda_partes"
-    },
-
     {
       "id": "zari_sin_partes",
-      "personaje": "ZARI1",
-      "texto": "Mamiiiiii, ¿donde está su cara?",
-      "siguiente": "zari_sin_partes_02"
+      "personaje": "Zarita",
+      "texto": "Necesitan caras nuevas, Pochi. Por favor."
     },
-    {
-      "id": "zari_sin_partes_02",
-      "personaje": "ZARI2",
-      "texto": "Tengo sed.",
-      "siguiente": "zari_sin_munecas_03"
-    },
-    {
-      "id": "zari_sin_partes_03",
-      "personaje": "PROTA",
-      "texto": "Parece ocupada."
-    },
-
-    {
-      "id": "zari_con_partes_01",
-      "personaje": "ZARI",
-      "texto": "¡Las has conseguido! Eres el mejor, PROTA.",
-      "siguiente": "zari_con_partes_02"
-    },
-    {
-      "id": "zari_con_partes_02",
-      "personaje": "PROTA",
-      "texto": "Sí, ZARI. Aquí tienes.",
-      "siguiente": "zari_con_partes_03"
-    },
-    {
-      "id": "zari_con_partes_03",
-      "personaje": "ZARI3",
-      "texto": "No tiene cara…",
-      "siguiente": "zari_con_partes_04"
-    },
-    {
-      "id": "zari_con_partes_04",
-      "personaje": "ZARI",
-      "texto": "No podré arreglarlas hasta mañana… Y están insistiendo en ver sus caras… ¿Qué puedo hacer?",
-      "siguiente": "zari_con_partes_05"
-    },
-    {
-      "id": "zari_con_partes_05",
-      "personaje": "PROTA",
-      "texto": "Si quieres puedo intentar dibujarlos, tengo la libreta de DUEÑA.",
-      "siguiente": "zari_con_partes_06"
-    },
-    {
-      "id": "zari_con_partes_06",
-      "personaje": "ZARI",
-      "texto": "Ya has hecho mucho por mí, ¿estás seguro?",
-      "siguiente": "zari_con_partes_07"
-    },
-    {
-      "id": "zari_con_partes_07",
-      "personaje": "PROTA",
-      "texto": "Claro, no pasa nada.",
-      "siguiente": "zari_con_partes_08"
-    },
-    {
-      "id": "zari_con_partes_08",
-      "personaje": "ZARI",
-      "texto": "Me salvas.",
-      "accion": "activar_puzle_dibujar_munecas"
-    },
-
     {
       "id": "zari_caras_mal",
-      "personaje": "ZARI3",
-      "texto": "Así no era…"
+      "personaje": "Irene",
+      "texto": "¡Esa no es mi muñeca! ¡Buaaaah!"
     },
-
     {
       "id": "zari_caras_bien_01",
-      "personaje": "ZARI2",
-      "texto": "Mira mamá, ¡son las muñecas!",
+      "personaje": "Zarita",
+      "texto": "¡Están perfectas! Eres un artista, Pochi.",
       "siguiente": "zari_caras_bien_02"
     },
     {
       "id": "zari_caras_bien_02",
-      "personaje": "ZARI1",
-      "texto": "¡Sí! ¡Tiene razón!",
+      "personaje": "Irene",
+      "texto": "¡Sí! ¡Me encanta!",
       "siguiente": "zari_caras_bien_03"
     },
     {
       "id": "zari_caras_bien_03",
-      "personaje": "PROTA",
-      "texto": "Es un regalo para que tengáis mientras se arreglan las vuestras.",
+      "personaje": "Luca",
+      "texto": "¡A mí también!",
       "siguiente": "zari_caras_bien_04"
     },
     {
       "id": "zari_caras_bien_04",
-      "personaje": "ZARI3",
-      "texto": "Sr. PROTA, ¡eres el mejor!",
+      "personaje": "Marc",
+      "texto": "¡Tata!",
       "siguiente": "zari_caras_bien_05"
     },
     {
       "id": "zari_caras_bien_05",
-      "personaje": "ZARI",
-      "texto": "Muchas gracias, PROTA, ¿hay algo que pueda hacer para compensarte?",
+      "personaje": "Zarita",
+      "texto": "Bueno, lo prometido es deuda.",
       "siguiente": "zari_caras_bien_06"
     },
     {
       "id": "zari_caras_bien_06",
-      "personaje": "PROTA",
-      "texto": "En realidad, sí.",
+      "personaje": "Zarita",
+      "texto": "Vi a Kara el otro día. Parecía triste.",
       "siguiente": "zari_caras_bien_07"
     },
     {
       "id": "zari_caras_bien_07",
-      "personaje": "PROTA",
-      "texto": "¿Podrías describir a DUEÑA?",
+      "personaje": "Pochi",
+      "texto": "¿Podrías describir a Kara?",
       "siguiente": "zari_caras_bien_08"
     },
     {
       "id": "zari_caras_bien_08",
-      "personaje": "ZARI2",
+      "personaje": "Luca",
       "texto": "Mami, quiero ir a casa.",
       "siguiente": "zari_caras_bien_09"
     },
     {
       "id": "zari_caras_bien_09",
-      "personaje": "ZARI3",
+      "personaje": "Marc",
       "texto": "Mamá tengo sueño.",
       "siguiente": "zari_caras_bien_10"
     },
     {
       "id": "zari_caras_bien_10",
-      "personaje": "ZARI",
+      "personaje": "Zarita",
       "texto": "Un momento, niños.",
       "siguiente": "zari_caras_bien_11"
     },
     {
       "id": "zari_caras_bien_11",
-      "personaje": "ZARI",
+      "personaje": "Zarita",
       "texto": "La verdad no me acuerdo mucho. Pero tenía las cejas…",
       "siguiente": "zari_caras_bien_12"
     },
     {
       "id": "zari_caras_bien_12",
-      "personaje": "ZARI1",
+      "personaje": "Irene",
       "texto": "MAMÁ!!!",
       "siguiente": "zari_caras_bien_13"
     },
     {
       "id": "zari_caras_bien_13",
-      "personaje": "ZARI",
-      "texto": "Lo siento, no puedo seguir hablando. ¡Adiós!",
-      "accion": "cerrar_mision_munecas"
-    },
-
-    {
-      "id": "sin_cara_zari_01",
-      "personaje": "PROTA",
-      "texto": "Pobrecita…"
-    },
-    {
-      "id": "sin_cara_zari_02",
-      "personaje": "PROTA",
-      "texto": "A ver si alguien más me puede ayudar…"
-    },
-
-    {
-      "id": "con_cara_zari_01",
-      "personaje": "PROTA",
-      "texto": "¡Es la última pieza que me faltaba! ¡Por fin!"
+      "personaje": "Zarita",
+      "texto": "¡Ya voy! Lo siento Pochi, las cejas... eran finas. ¡Adiós!",
+      "accion": "completar_mision_zari"
     }
   ]
 }
