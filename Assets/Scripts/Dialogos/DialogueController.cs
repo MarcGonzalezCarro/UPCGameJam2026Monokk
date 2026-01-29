@@ -121,6 +121,11 @@ public class DialogueController : MonoBehaviour
     {
         if (currentLine != null && Input.GetKeyDown(KeyCode.Space))
             Next();
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     private void Start()
@@ -490,78 +495,85 @@ public class DialogueController : MonoBehaviour
 
     public void OnMinigameFinished(bool won)
     {
-
+        FindFirstObjectByType<ThirdPersonMovement>().canMove = true;
         switch (npcActual.nombre)
         {
             case "NPC1":
-                Debug.Log(npcActual.nombre);
-                if (won)
-                {
-                    Debug.Log("Ganaste");
-                    npc1Wins++;
-                    facePages.UnlockNote("Entrevista1", npc1Wins - 1);
-                    if (npc1Wins < 3)
+                if (pezState != PezState.PrimerDialogo) {
+
+                    Debug.Log(npcActual.nombre);
+                    if (won)
                     {
-                        Debug.Log("TEst");
-                        StartDialogueNow("mision_como_pez_fuera_del_agua.json", "conv_acierto_parcial", npcActual, -1);
+                        Debug.Log("Ganaste");
+                        npc1Wins++;
+                        facePages.UnlockNote("Entrevista1", npc1Wins - 1);
+                        if (npc1Wins < 3)
+                        {
+                            Debug.Log("TEst");
+                            StartDialogueNow("mision_como_pez_fuera_del_agua.json", "conv_acierto_parcial", npcActual, -1);
+                        }
+                        else
+                        {
+                            Debug.Log("TEst4");
+                            StartDialogueNow("mision_como_pez_fuera_del_agua.json", "conv_acierto_total", npcActual, -1);
+                        }
+
                     }
                     else
                     {
-                        Debug.Log("TEst4");
-                        StartDialogueNow("mision_como_pez_fuera_del_agua.json", "conv_acierto_total", npcActual, -1);
+                        npcActual.conversacionActual = "conv_fallo_puzle";
                     }
-
+                    minigame = false;
                 }
-                else
-                {
-                    npcActual.conversacionActual = "conv_fallo_puzle";
-                }
-                minigame = false;
-
                 break;
             case "NPC2":
-                if (won)
+                if (pezState != PezState.PrimerDialogo)
                 {
-                    npc2Wins++;
-                    facePages.UnlockNote("Entrevista2", npc2Wins - 1);
-                    if (npc2Wins < 3)
+                    if (won)
                     {
-                        StartDialogueNow("mision_ladron_kokopilis.json", "conv_acierto_parcial", npcActual, -1);
+
+                        npc2Wins++;
+                        facePages.UnlockNote("Entrevista2", npc2Wins - 1);
+                        if (npc2Wins < 3)
+                        {
+                            StartDialogueNow("mision_ladron_kokopilis.json", "conv_acierto_parcial", npcActual, -1);
+                        }
+                        else
+                        {
+                            StartDialogueNow("mision_ladron_kokopilis.json", "conv_acierto_total", npcActual, -1);
+                        }
+
                     }
                     else
                     {
-                        StartDialogueNow("mision_ladron_kokopilis.json", "conv_acierto_total", npcActual, -1);
+                        npcActual.conversacionActual = "conv_fallo_puzle";
                     }
-
+                    minigame = false;
                 }
-                else
-                {
-                    npcActual.conversacionActual = "conv_fallo_puzle";
-                }
-                minigame = false;
-
                 break;
             case "NPC3":
-                if (won)
+                if (pezState != PezState.PrimerDialogo)
                 {
-                    npc3Wins++;
-                    facePages.UnlockNote("Entrevista3", npc3Wins - 1);
-                    if (npc3Wins < 3)
+                    if (won)
                     {
-                        StartDialogueNow("mision_ladron_kokopilis.json", "conv_acierto_parcial", npcActual, -1);
+                        npc3Wins++;
+                        facePages.UnlockNote("Entrevista3", npc3Wins - 1);
+                        if (npc3Wins < 3)
+                        {
+                            StartDialogueNow("mision_ladron_kokopilis.json", "conv_acierto_parcial", npcActual, -1);
+                        }
+                        else
+                        {
+                            StartDialogueNow("mision_ladron_kokopilis.json", "conv_acierto_total", npcActual, -1);
+                        }
+
                     }
                     else
                     {
-                        StartDialogueNow("mision_ladron_kokopilis.json", "conv_acierto_total", npcActual, -1);
+                        npcActual.conversacionActual = "conv_fallo_puzle";
                     }
-
+                    minigame = false;
                 }
-                else
-                {
-                    npcActual.conversacionActual = "conv_fallo_puzle";
-                }
-                minigame = false;
-
                 break;
             case "Coco":
                 if (won)

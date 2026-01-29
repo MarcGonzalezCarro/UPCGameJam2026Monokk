@@ -7508,6 +7508,8 @@ GameObject:
   - component: {fileID: 138600119}
   - component: {fileID: 138600118}
   - component: {fileID: 138600117}
+  - component: {fileID: 138600121}
+  - component: {fileID: 138600120}
   m_Layer: 0
   m_Name: NPC5_recolor_0 (1)
   m_TagString: Untagged
@@ -7606,6 +7608,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &138600120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138600116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328254c93dc73614a8d9e4a63154ed15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  archivoDialogo: mision_como_pez_fuera_del_agua.json
+  nombre: NPC4
+  conversacionActual: conv_entrevista_1
+  interactUI: {fileID: 469652306}
+  checkConversation: 0
+  sprite: {fileID: 5717448139613795268, guid: a7335b14e4862e24e9dc96c6dbe69e63, type: 3}
+--- !u!135 &138600121
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138600116}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 3.695
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &142388757
 GameObject:
   m_ObjectHideFlags: 0
@@ -11954,6 +11995,8 @@ GameObject:
   - component: {fileID: 241733036}
   - component: {fileID: 241733035}
   - component: {fileID: 241733034}
+  - component: {fileID: 241733038}
+  - component: {fileID: 241733039}
   m_Layer: 0
   m_Name: Npc 5_0
   m_TagString: Untagged
@@ -12065,6 +12108,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &241733038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241733033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328254c93dc73614a8d9e4a63154ed15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  archivoDialogo: mision_como_pez_fuera_del_agua.json
+  nombre: NPC4
+  conversacionActual: conv_entrevista_1
+  interactUI: {fileID: 469652306}
+  checkConversation: 0
+  sprite: {fileID: -672287309464910988, guid: b73d69a05371b20409bb70c3bd2ebd3c, type: 3}
+--- !u!135 &241733039
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241733033}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 6.7649994
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &241830614
 GameObject:
   m_ObjectHideFlags: 0
@@ -40711,6 +40793,8 @@ GameObject:
   - component: {fileID: 879218435}
   - component: {fileID: 879218434}
   - component: {fileID: 879218433}
+  - component: {fileID: 879218437}
+  - component: {fileID: 879218438}
   m_Layer: 0
   m_Name: NPC4_recolor_0
   m_TagString: Untagged
@@ -40822,6 +40906,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -173.505, z: 0}
+--- !u!114 &879218437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879218432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328254c93dc73614a8d9e4a63154ed15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  archivoDialogo: mision_como_pez_fuera_del_agua.json
+  nombre: NPC5
+  conversacionActual: conv_entrevista_2
+  interactUI: {fileID: 469652306}
+  checkConversation: 0
+  sprite: {fileID: 5788409256049584894, guid: 076a13636c39bda4b88affb791b18246, type: 3}
+--- !u!135 &879218438
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879218432}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 3.705
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &880299006
 GameObject:
   m_ObjectHideFlags: 0
@@ -58849,6 +58972,7 @@ MonoBehaviour:
     noteB: Toda su cara mira hacia arriba
     noteC: Tiene un agujero en la nariz
     noteD: 
+    unlocked: 0
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -58863,6 +58987,7 @@ MonoBehaviour:
     noteB: "Fue hecha a la vez de mu\xF1eca 2"
     noteC: Nariz respingona
     noteD: Las tres tienen los mismos labios
+    unlocked: 0
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -58877,6 +59002,7 @@ MonoBehaviour:
     noteB: "Nariz igual que la mu\xF1eca 3"
     noteC: Tiene los labios finos
     noteD: 'Fue hecha en el 2002 '
+    unlocked: 0
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -58891,6 +59017,7 @@ MonoBehaviour:
     noteB: Cejas gruesas
     noteC: Tiene arco de cupido
     noteD: Hecha en Roma
+    unlocked: 0
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -58905,6 +59032,7 @@ MonoBehaviour:
     noteB: 'Viaja mucho a Roma '
     noteC: "Siempre est\xE1 enfadada"
     noteD: Tiene los labios gruesos
+    unlocked: 0
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -58919,6 +59047,7 @@ MonoBehaviour:
     noteB: Tiene un bulto en la nariz
     noteC: 'Tiene la boca triste '
     noteD: No se depila las cejas
+    unlocked: 0
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -58933,6 +59062,7 @@ MonoBehaviour:
     noteB: 'Es bastante moderno '
     noteC: 'Le gustan mucho las almendras '
     noteD: Tiene el arco muy pronunciado
+    unlocked: 0
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -58947,6 +59077,7 @@ MonoBehaviour:
     noteB: ' Lleva un piercing '
     noteC: 'Esta en camino de quedarse sin cejas '
     noteD: Parece una actriz
+    unlocked: 0
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -58961,6 +59092,7 @@ MonoBehaviour:
     noteB: 'Las cejas poco pobladas '
     noteC: 'La nariz hacia abajo '
     noteD: Los labios redondos
+    unlocked: 0
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -58975,6 +59107,7 @@ MonoBehaviour:
     noteB: "Escuch\xE9 que acababa de perder una apuesta "
     noteC: "Ten\xEDa la nariz de cerdito "
     noteD: "Ten\xEDa los labios ni gruesos ni finos"
+    unlocked: 0
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -58989,6 +59122,7 @@ MonoBehaviour:
     noteB: "Ten\xEDa los labios gruesos "
     noteC: "La nariz era peque\xF1a "
     noteD: "Hace ya que dej\xF3 de  preocuparse por lo que digan"
+    unlocked: 0
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -68601,6 +68735,8 @@ GameObject:
   - component: {fileID: 1402844977}
   - component: {fileID: 1402844976}
   - component: {fileID: 1402844975}
+  - component: {fileID: 1402844978}
+  - component: {fileID: 1402844979}
   m_Layer: 0
   m_Name: NPC6_recolor_0
   m_TagString: Untagged
@@ -68699,6 +68835,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1402844978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402844974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328254c93dc73614a8d9e4a63154ed15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  archivoDialogo: mision_como_pez_fuera_del_agua.json
+  nombre: NPC6
+  conversacionActual: conv_entrevista_3
+  interactUI: {fileID: 469652306}
+  checkConversation: 0
+  sprite: {fileID: 4451817253992307753, guid: 4a3589fb38cca954b88d45b1ed6f907d, type: 3}
+--- !u!135 &1402844979
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402844974}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 3.64
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1405243992
 GameObject:
   m_ObjectHideFlags: 0

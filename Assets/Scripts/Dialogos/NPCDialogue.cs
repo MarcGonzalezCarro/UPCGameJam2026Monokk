@@ -65,6 +65,27 @@ public class NPCDialogue : MonoBehaviour
                     this, 3
                 );
                     break;
+                case "NPC4":
+                    controller.StartDialogueNow(
+                    archivoDialogo,
+                    conversacionActual,
+                    this, 0
+                );
+                    break;
+                case "NPC5":
+                    controller.StartDialogueNow(
+                    archivoDialogo,
+                    conversacionActual,
+                    this, 0
+                );
+                    break;
+                case "NPC6":
+                    controller.StartDialogueNow(
+                    archivoDialogo,
+                    conversacionActual,
+                    this, 0
+                );
+                    break;
 
             }
 
