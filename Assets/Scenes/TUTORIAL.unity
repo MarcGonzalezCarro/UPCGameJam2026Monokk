@@ -4366,6 +4366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetoMapa: {fileID: 1309347092}
   pausarAlAbrir: 1
+  text: {fileID: 0}
 --- !u!1 &91185914
 GameObject:
   m_ObjectHideFlags: 0
@@ -15339,6 +15340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetoMapa: {fileID: 1309347092}
   pausarAlAbrir: 1
+  text: {fileID: 0}
 --- !u!1 &355019956
 GameObject:
   m_ObjectHideFlags: 0
@@ -27373,6 +27375,7 @@ MonoBehaviour:
       no vas a preguntar a los dem\xE1s? Est\xE1n repartidos por el pueblo. As\xED
       te calmas.\r\n"
     - "Supongo\u2026"
+    - "Recuerda que todas las pistas se almacenar\xE1n en t\xFA libreta."
 --- !u!114 &656976795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27412,6 +27415,7 @@ MonoBehaviour:
     - Pochi
     - Chopi
     - Pochi
+    - Chopi
 --- !u!114 &656976797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38330,6 +38334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetoMapa: {fileID: 1309347092}
   pausarAlAbrir: 1
+  text: {fileID: 0}
 --- !u!1 &882312358
 GameObject:
   m_ObjectHideFlags: 0
@@ -55251,6 +55256,7 @@ MonoBehaviour:
     noteB: 
     noteC: 
     noteD: 
+    unlocked: 0
     noteAUnlocked: 0
     noteBUnlocked: 0
     noteCUnlocked: 0
@@ -80169,7 +80175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1919269181298870605, guid: 1e121767b1f3b3648b75b67c3fe8c4b8, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.813062
+      value: 26.68
       objectReference: {fileID: 0}
     - target: {fileID: 1919269181298870605, guid: 1e121767b1f3b3648b75b67c3fe8c4b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -80177,11 +80183,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1919269181298870605, guid: 1e121767b1f3b3648b75b67c3fe8c4b8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 136.4
+      value: 136.8
       objectReference: {fileID: 0}
     - target: {fileID: 1919269181298870605, guid: 1e121767b1f3b3648b75b67c3fe8c4b8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 655.9
+      value: 657.9
       objectReference: {fileID: 0}
     - target: {fileID: 1919269181298870605, guid: 1e121767b1f3b3648b75b67c3fe8c4b8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -84946,6 +84952,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetoMapa: {fileID: 1309347092}
   pausarAlAbrir: 1
+  text: {fileID: 0}
 --- !u!1 &1753921708
 GameObject:
   m_ObjectHideFlags: 0
@@ -102219,6 +102226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetoMapa: {fileID: 1309347092}
   pausarAlAbrir: 1
+  text: {fileID: 0}
 --- !u!1 &2076683817
 GameObject:
   m_ObjectHideFlags: 0
